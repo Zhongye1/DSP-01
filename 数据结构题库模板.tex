@@ -1,0 +1,88 @@
+\documentclass[12pt,a4paper]{article}
+
+% 导入必要的宏包
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+% 页面设置
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% 标题页设置
+\title{\textbf{数据结构题库} \\ \large }
+\author{}
+\date{}
+
+% 定义题型环境
+\newenvironment{choicequestion}[1][]{
+    \vspace{0.5cm}
+    \noindent\textbf{[#1]}\par
+    \vspace{0.2cm}
+}{}
+
+\newenvironment{answersection}{
+    \vspace{0.2cm}
+    \noindent\textbf{[参考答案]}\par
+    \vspace{0.1cm}
+}{}
+
+\newenvironment{analysissection}{
+    \vspace{0.2cm}
+    \noindent\textbf{[答案解析]}\par
+    \vspace{0.1cm}
+}{}
+
+% 定义题号计数器
+\newcounter{questioncounter}
+
+% 问题格式化命令
+% \newcommand{\question}[2]{%
+%     \stepcounter{questioncounter}%
+%     \noindent\textbf{\thequestioncounter.} #1%
+%     \begin{flushright}
+%         (#2)
+%     \end{flushright}
+% }
+
+% 问题格式化命令
+\newcommand{\question}[2]{%
+    \stepcounter{questioncounter}%
+    \noindent\textbf{\thequestioncounter} #1%
+    % \begin{flushright}
+    %     （  ）
+    % \end{flushright}
+}
+
+% 选择题选项格式 PDF
+% \newcommand{\choices}[4]{%
+%     \begin{multicols}{2}
+%     \begin{enumerate}[left=1.5em,itemsep=0.4ex,parsep=0pt]
+%         \item[A.] #1
+%         \item[B.] #2
+%         \item[C.] #3
+%         \item[D.] #4
+%     \end{enumerate}
+%     \end{multicols}
+% }
+
+% 选择题选项格式 DOCX
+\newcommand{\choices}[4]{%
+    \begin{multicols}
+    \noindent \textbf{A.} #1 \par
+    \noindent \textbf{B.} #2 \par
+    \noindent \textbf{C.} #3 \par
+    \noindent \textbf{D.} #4 \par
+    \end{multicols}%
+}
+
+% 数学公式环境
+\newcommand

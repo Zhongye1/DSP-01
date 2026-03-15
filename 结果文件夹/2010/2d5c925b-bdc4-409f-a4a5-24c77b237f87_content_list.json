@@ -1,0 +1,2955 @@
+[
+    {
+        "type": "text",
+        "text": "2010年全国硕士研究生入学统一考试",
+        "text_level": 1,
+        "bbox": [
+            233,
+            142,
+            734,
+            169
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "计算机科学与技术学科联考计算机学科专业基础综合试题",
+        "text_level": 1,
+        "bbox": [
+            102,
+            182,
+            865,
+            211
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "一、单项选择题（第 $1\\sim 40$ 小题，每小题2分，共80分。下列每题给出的四个选项中，只有一个选项最符合试题要求）",
+        "text_level": 1,
+        "bbox": [
+            119,
+            260,
+            882,
+            300
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. 若元素 a, b, c, d, e, f 依次进栈，允许进栈、退栈操作交替进行，但不允许连续三次进行退栈操作，则不可能得到的出栈序列是 ______。",
+        "bbox": [
+            82,
+            308,
+            882,
+            347
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. dcebfa ",
+        "bbox": [
+            119,
+            355,
+            236,
+            371
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. c bdaef ",
+        "bbox": [
+            321,
+            355,
+            433,
+            370
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C.bcaefd",
+        "bbox": [
+            500,
+            355,
+            611,
+            369
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. afedcb ",
+        "bbox": [
+            678,
+            355,
+            791,
+            369
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. 某队列允许在其两端进行入队操作，但仅允许在一端进行出队操作。若元素a,b,c,d,e依次入此队列后再进行出队操作，则不可能得到的出队序列是",
+        "bbox": [
+            82,
+            375,
+            882,
+            413
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A.bace ",
+        "bbox": [
+            119,
+            420,
+            221,
+            435
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. dbace ",
+        "bbox": [
+            321,
+            421,
+            418,
+            435
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. dbcae ",
+        "bbox": [
+            500,
+            421,
+            600,
+            435
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D.ecbad ",
+        "bbox": [
+            678,
+            421,
+            779,
+            435
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3. 下列线索二叉树中（用虚线表示线索），符合后序线索树定义的是____。",
+        "bbox": [
+            119,
+            440,
+            761,
+            458
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/0c069b44bc1b7db1bbdc05c492b9bed298cd68b415711709822412bb6dbd9946.jpg",
+        "image_caption": [
+            "A. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            144,
+            461,
+            268,
+            593
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/98c003e1ddd553b921caa90d3917fb4ce37450593ab631b5b88002c7f6f8b609.jpg",
+        "image_caption": [
+            "B. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            278,
+            461,
+            484,
+            591
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/962ff12d60dc202fb6f5c5ce3e63638aa3222e37846f0aef8e25bc00ad5522be.jpg",
+        "image_caption": [
+            "C. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            507,
+            461,
+            670,
+            591
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/2dcaeb7e282dd834794cf501f0264f9c19a9d93d0e97627020f7563323f4f84b.jpg",
+        "image_caption": [
+            "D. "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            690,
+            461,
+            821,
+            591
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4. 在右图所示的平衡二叉树中，插入关键字 48 后得到一棵新平衡二叉树。在新平衡二叉树中，关键字 37 所在结点的左、右子结点中保存的关键字分别是",
+        "bbox": [
+            80,
+            617,
+            682,
+            675
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/506230e2fa9ca24ec813cbef43235cfa9af8df355ef5208fa63655bc2c972a96.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            715,
+            633,
+            867,
+            719
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 13,48 ",
+        "bbox": [
+            119,
+            679,
+            205,
+            695
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 24, 48 ",
+        "bbox": [
+            499,
+            680,
+            581,
+            694
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 24,53 ",
+        "bbox": [
+            119,
+            700,
+            203,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 24, 90 ",
+        "bbox": [
+            499,
+            700,
+            581,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5. 在一棵度为 4 的树 T 中，若有 20 个度为 4 的结点，10 个度为 3 的结点，1 个度为 2 的结点，10 个度为 1 的结点，则树 T 的叶结点个数是",
+        "bbox": [
+            82,
+            719,
+            757,
+            757
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 41 ",
+        "bbox": [
+            119,
+            760,
+            176,
+            775
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 82 ",
+        "bbox": [
+            319,
+            761,
+            373,
+            775
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 113 ",
+        "bbox": [
+            499,
+            761,
+            561,
+            775
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 122 ",
+        "bbox": [
+            678,
+            761,
+            742,
+            774
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "6. 对 $n$ ( $n \\geq  2$ )个权值均不相同的字符构造成哈夫曼树。下列关于该哈夫曼树的叙述中,错误的是_____。",
+        "bbox": [
+            82,
+            780,
+            878,
+            821
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 该树一定是一棵完全二叉树",
+            "B. 树中一定没有度为 1 的结点",
+            "C. 树中两个权值最小的结点一定是兄弟结点",
+            "D. 树中任一非叶结点的权值一定不小于下一层任一结点的权值 "
+        ],
+        "bbox": [
+            119,
+            828,
+            648,
+            904
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "2010年计算机408统考真题",
+        "bbox": [
+            346,
+            954,
+            522,
+            967
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "第1页，共8页",
+        "bbox": [
+            526,
+            954,
+            650,
+            969
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "7. 若无向图 $\\mathrm{G} = (\\mathrm{V}, \\mathrm{E})$ 中含有 7 个顶点，要保证图 $\\mathrm{G}$ 在任何情况下都是连通的，则需要的边数最少是 ______。",
+        "bbox": [
+            109,
+            58,
+            910,
+            96
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 6 ",
+        "bbox": [
+            147,
+            122,
+            200,
+            137
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 15 ",
+        "bbox": [
+            349,
+            122,
+            403,
+            137
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 16 ",
+        "bbox": [
+            527,
+            122,
+            583,
+            136
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 21 ",
+        "bbox": [
+            707,
+            123,
+            761,
+            137
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "8. 对右图进行拓扑排序, 可以得到不同的拓扑序列的个数是",
+        "bbox": [
+            147,
+            141,
+            702,
+            159
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/370be03481aeffa4ed94e0dc01745979c4712bf16808b2cbe68a10396d87dc89.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            722,
+            143,
+            914,
+            223
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 4 ",
+            "B. 3 ",
+            "C. 2 ",
+            "D. 1 "
+        ],
+        "bbox": [
+            149,
+            163,
+            200,
+            239
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "9. 已知一个长度为 16 的顺序表 L，其元素按关键字有序排列。若采用折半查找法查找一个 L 中不存在的元素，则关键字的比较次数最多的是 ________。",
+        "bbox": [
+            109,
+            243,
+            907,
+            281
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 4 ",
+            "B. 5 ",
+            "C. 6 ",
+            "D. 7 "
+        ],
+        "bbox": [
+            149,
+            285,
+            752,
+            300
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "10. 采用递归方式对顺序表进行快速排序。下列关于递归次数的叙述中, 正确的是____。",
+        "bbox": [
+            149,
+            305,
+            900,
+            321
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 递归次数与初始数据的排列次序无关",
+            "B. 每次划分后, 先处理较长的分区可以减少递归次数",
+            "C. 每次划分后, 先处理较短的分区可以减少递归次数",
+            "D. 递归次数与每次划分后得到的分区的处理顺序无关"
+        ],
+        "bbox": [
+            149,
+            326,
+            603,
+            402
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "11．对一组数据（2,12,16,88,5,10）进行排序，若前三趟排序结果如下：",
+        "bbox": [
+            149,
+            406,
+            757,
+            423
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "第一趟排序结果：2,12,16,5,10,88",
+        "bbox": [
+            188,
+            427,
+            487,
+            444
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "第二趟排序结果：2,12,5,10,16,88",
+        "bbox": [
+            189,
+            447,
+            487,
+            464
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "第三趟排序结果：2,5,10,12,16,88",
+        "bbox": [
+            189,
+            467,
+            487,
+            485
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "则采用的排序方法可能是",
+        "bbox": [
+            189,
+            488,
+            465,
+            505
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 冒泡排序 ",
+        "bbox": [
+            147,
+            509,
+            265,
+            524
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 希尔排序",
+        "bbox": [
+            349,
+            509,
+            460,
+            524
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 归并排序 ",
+        "bbox": [
+            529,
+            509,
+            638,
+            524
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 基数排序 ",
+        "bbox": [
+            707,
+            509,
+            818,
+            524
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "12. 下列选项中, 能缩短程序执行时间的措施是",
+        "bbox": [
+            149,
+            529,
+            618,
+            546
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "I. 提高CPU时钟频率 ",
+        "bbox": [
+            149,
+            549,
+            339,
+            565
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "II. 优化数据通路结构",
+        "bbox": [
+            527,
+            549,
+            712,
+            566
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "III. 对程序进行编译优化",
+        "bbox": [
+            149,
+            570,
+            364,
+            586
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 仅 I 和 II",
+        "bbox": [
+            149,
+            590,
+            262,
+            606
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 仅 I 和 III",
+        "bbox": [
+            349,
+            590,
+            463,
+            605
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 仅 II 和 III",
+        "bbox": [
+            529,
+            590,
+            648,
+            605
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. I、II 和 III",
+        "bbox": [
+            707,
+            590,
+            830,
+            605
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "13. 假定有 4 个整数用 8 位补码分别表示 $\\mathrm{r}1 = \\mathrm{FEH}$ ， $\\mathrm{r}2 = \\mathrm{F2H}$ ， $\\mathrm{r}3 = 90\\mathrm{H}$ ， $\\mathrm{r}4 = \\mathrm{F8H}$ ，若将运算结果存放在一个 8 位寄存器中，则下列运算中会发生溢出的是 ______。",
+        "bbox": [
+            109,
+            610,
+            909,
+            648
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $\\mathrm{r}1 \\times  \\mathrm{r}2$ ",
+        "bbox": [
+            149,
+            652,
+            231,
+            667
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $r 2 \\times r 3$ ",
+        "bbox": [
+            349,
+            653,
+            426,
+            667
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $\\mathrm{r}1 \\times  \\mathrm{r}4$ ",
+        "bbox": [
+            529,
+            653,
+            606,
+            667
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $r 2 \\times r 4$ ",
+        "bbox": [
+            707,
+            653,
+            786,
+            667
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "14. 假定变量 $i$ 、 $f$ 和 $d$ 的数据类型分别为 int、float 和 double（int 用补码表示，float 和 double 分别用 IEEE 754 单精度和双精度浮点数格式表示），已知 $i = 785, f = 1.5678e3, d = 1.5e100$ 。若在 32 位机器中执行下列关系表达式，则结果为“真”的是 ________。",
+        "bbox": [
+            109,
+            671,
+            910,
+            730
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "I. $\\mathrm{i} = (\\mathrm{int})(\\mathrm{float})\\mathrm{i}$ ",
+        "bbox": [
+            149,
+            733,
+            294,
+            750
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "II. $f == (\\text{float})(\\text{int})f$ ",
+        "bbox": [
+            529,
+            733,
+            680,
+            749
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "III. $f =$ (float)(double)f ",
+        "bbox": [
+            151,
+            754,
+            342,
+            770
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "IV. $(d + f) - d = f$ ",
+        "bbox": [
+            529,
+            754,
+            658,
+            770
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 仅 I 和 II",
+        "bbox": [
+            149,
+            773,
+            262,
+            789
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 仅 I 和 III",
+        "bbox": [
+            349,
+            773,
+            463,
+            789
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 仅 II 和 III",
+        "bbox": [
+            529,
+            773,
+            648,
+            788
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 仅 III 和 IV",
+        "bbox": [
+            709,
+            773,
+            835,
+            788
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "15. 假定用若干 $2\\mathrm{K} \\times 4$ 位的芯片组成一个 $8\\mathrm{K} \\times 8$ 位的存储器，则地址0B1FH所在芯片的最小地址是 ______。",
+        "bbox": [
+            109,
+            793,
+            909,
+            831
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 0000H ",
+        "bbox": [
+            149,
+            834,
+            242,
+            850
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 0600H ",
+        "bbox": [
+            349,
+            834,
+            438,
+            849
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. ${0700}\\mathrm{H}$ ",
+        "bbox": [
+            529,
+            834,
+            618,
+            849
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 0800H ",
+        "bbox": [
+            709,
+            834,
+            796,
+            847
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "16. 下列有关 RAM 和 ROM 的叙述中, 正确的是____。",
+        "bbox": [
+            149,
+            853,
+            628,
+            871
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. RAM是易失性存储器，ROM是非易失性存储器",
+            "II. RAM和ROM都采用随机存取方式进行信息访问"
+        ],
+        "bbox": [
+            149,
+            875,
+            589,
+            910
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "国",
+        "bbox": [
+            322,
+            41,
+            450,
+            54
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "2010年计算机408统考真题",
+        "bbox": [
+            344,
+            954,
+            522,
+            967
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "第2页，共8页",
+        "bbox": [
+            526,
+            954,
+            650,
+            967
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "III. RAM和ROM都可用作Cache ",
+            "IV. RAM和ROM都需要进行刷新"
+        ],
+        "bbox": [
+            115,
+            77,
+            413,
+            115
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 仅 I 和 II",
+            "B. 仅 II 和 III",
+            "C. 仅 I、II 和 IV",
+            "D. 仅 II、III 和 IV"
+        ],
+        "bbox": [
+            117,
+            119,
+            655,
+            155
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "17. 下列命中组合情况中，一次访存过程中不可能发生的是________。",
+        "bbox": [
+            117,
+            159,
+            680,
+            178
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. TLB 未命中, Cache 未命中, Page 未命中",
+            "B. TLB 未命中, Cache 命中, Page 命中",
+            "C. TLB 命中, Cache 未命中, Page 命中",
+            "D. TLB 命中, Cache 命中, Page 未命中"
+        ],
+        "bbox": [
+            117,
+            185,
+            497,
+            264
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "18. 下列寄存器中，汇编语言程序员可见的是",
+        "bbox": [
+            117,
+            268,
+            568,
+            285
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 存储器地址寄存器 (MAR)",
+            "B. 程序计数器 (PC)",
+            "C. 存储器数据寄存器 (MDR)",
+            "D. 指令寄存器 (IR)"
+        ],
+        "bbox": [
+            117,
+            289,
+            678,
+            327
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "19. 下列选项中，不会引起指令流水线阻塞的是________。",
+        "bbox": [
+            117,
+            331,
+            588,
+            349
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 数据旁路（转发）",
+            "B. 数据相关",
+            "C. 条件转移 ",
+            "D. 资源冲突 "
+        ],
+        "bbox": [
+            117,
+            355,
+            611,
+            393
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "20. 下列选项中的英文缩写均为总线标准的是________。",
+        "bbox": [
+            117,
+            397,
+            569,
+            415
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. PCI、CRT、USB、EISA",
+            "B. ISA、CPI、VESA、EISA",
+            "C. ISA、SCSI、RAM、MIPS",
+            "D. ISA、EISA、PCI、PCI-Express"
+        ],
+        "bbox": [
+            117,
+            419,
+            791,
+            456
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "21. 单级中断系统中，中断服务程序内的执行顺序是",
+        "bbox": [
+            117,
+            460,
+            626,
+            477
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "I. 保护现场",
+        "bbox": [
+            117,
+            480,
+            225,
+            497
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "II. 开中断",
+        "bbox": [
+            317,
+            480,
+            411,
+            496
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "III. 关中断 ",
+        "bbox": [
+            495,
+            480,
+            596,
+            496
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "IV. 保存断点",
+        "bbox": [
+            677,
+            480,
+            794,
+            496
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "V. 中断事件处理",
+        "bbox": [
+            117,
+            502,
+            270,
+            517
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "VI. 恢复现场",
+        "bbox": [
+            317,
+            502,
+            436,
+            517
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "VII. 中断返回",
+        "bbox": [
+            495,
+            502,
+            621,
+            517
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $\\mathrm{I} \\rightarrow \\mathrm{V} \\rightarrow \\mathrm{VI} \\rightarrow \\mathrm{II} \\rightarrow \\mathrm{VII}$ ",
+        "bbox": [
+            117,
+            523,
+            312,
+            538
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $\\mathrm{III} \\rightarrow \\mathrm{I} \\rightarrow \\mathrm{V} \\rightarrow \\mathrm{VII}$ ",
+        "bbox": [
+            495,
+            523,
+            657,
+            538
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $\\mathrm{III} \\rightarrow \\mathrm{IV} \\rightarrow \\mathrm{V} \\rightarrow \\mathrm{VI} \\rightarrow \\mathrm{VII}$ ",
+        "bbox": [
+            117,
+            543,
+            331,
+            559
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $\\mathrm{IV} \\rightarrow \\mathrm{I} \\rightarrow \\mathrm{V} \\rightarrow \\mathrm{VI} \\rightarrow \\mathrm{VII}$ ",
+        "bbox": [
+            495,
+            543,
+            699,
+            559
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "22. 假定一台计算机的显示存储器用DRAM芯片实现，若要求显示分辨率为 $1600 \\times 1200$ ，颜色深度为24位，帧频为 $85\\mathrm{Hz}$ ，显存总带宽的 $50\\%$ 用来刷新屏幕，则需要的显存总带宽至少约为",
+        "bbox": [
+            78,
+            564,
+            882,
+            624
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 245Mbps ",
+        "bbox": [
+            117,
+            628,
+            230,
+            644
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 979Mbps ",
+        "bbox": [
+            495,
+            628,
+            606,
+            644
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 1958Mbps ",
+        "bbox": [
+            117,
+            649,
+            243,
+            665
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 7834Mbps ",
+        "bbox": [
+            495,
+            649,
+            621,
+            665
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "23. 下列选项中，操作系统提供给应用程序的接口是____。",
+        "bbox": [
+            117,
+            668,
+            626,
+            686
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 系统调用",
+        "bbox": [
+            117,
+            688,
+            233,
+            706
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 中断",
+        "bbox": [
+            317,
+            690,
+            393,
+            705
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 库函数",
+        "bbox": [
+            495,
+            688,
+            591,
+            705
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 原语",
+        "bbox": [
+            677,
+            688,
+            752,
+            705
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "24. 下列选项中，导致创建新进程的操作是________。",
+        "bbox": [
+            117,
+            710,
+            551,
+            726
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "I. 用户登录成功",
+        "bbox": [
+            117,
+            731,
+            263,
+            748
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "II. 设备分配",
+        "bbox": [
+            317,
+            731,
+            431,
+            747
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "III. 启动程序执行",
+        "bbox": [
+            495,
+            731,
+            653,
+            747
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 仅 I 和 II",
+        "bbox": [
+            117,
+            752,
+            230,
+            768
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 仅 II 和 III",
+        "bbox": [
+            317,
+            752,
+            440,
+            767
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 仅 I 和 III",
+        "bbox": [
+            495,
+            752,
+            611,
+            767
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. I、II 和 III",
+        "bbox": [
+            677,
+            752,
+            801,
+            767
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "25. 设与某资源关联的信号量初值为 3 , 当前值为 1 。若 $M$ 表示该资源的可用个数, $N$ 表示等待该资源的进程数, 则 $M$ 、 $N$ 分别是_____。",
+        "bbox": [
+            78,
+            771,
+            880,
+            809
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 0、1",
+        "bbox": [
+            117,
+            814,
+            196,
+            828
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 1、0",
+        "bbox": [
+            317,
+            815,
+            394,
+            828
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 1、2",
+        "bbox": [
+            495,
+            814,
+            573,
+            828
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 2、0",
+        "bbox": [
+            677,
+            814,
+            752,
+            828
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "26. 下列选项中，降低进程优先级的合理时机是________。",
+        "bbox": [
+            117,
+            834,
+            589,
+            851
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 进程的时间片用完",
+        "bbox": [
+            117,
+            855,
+            310,
+            872
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 进程刚完成 I/O, 进入就绪列队",
+        "bbox": [
+            495,
+            853,
+            791,
+            870
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 进程长期处于就绪列队中",
+        "bbox": [
+            117,
+            875,
+            364,
+            891
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 进程从就绪状态转为运行状态 ",
+        "bbox": [
+            495,
+            874,
+            783,
+            890
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "2010年计算机408统考真题",
+        "bbox": [
+            344,
+            954,
+            522,
+            969
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "第3页，共8页",
+        "bbox": [
+            524,
+            954,
+            650,
+            969
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "27. 进程 $\\mathbf{P}_0$ 和 $\\mathbf{P}_1$ 的共享变量定义及其初值为：",
+        "bbox": [
+            154,
+            79,
+            537,
+            95
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "boolean flag[2]; ",
+        "bbox": [
+            154,
+            100,
+            280,
+            117
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "int turn $= 0$ ",
+        "bbox": [
+            154,
+            122,
+            240,
+            135
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "flag[0]=FALSE; flag[1]=FALSE;",
+        "bbox": [
+            154,
+            141,
+            421,
+            157
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "若进程 $\\mathbf{P}_0$ 和 $\\mathbf{P}_1$ 访问临界资源的类C伪代码实现如下：",
+        "bbox": [
+            154,
+            161,
+            596,
+            176
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "void P0() //进程P0  \n{  \nwhile (TRUE)  \n{  \n    flag[0] = TRUE; turn = 1;  \n    while (flag[1] && (turn == 1));  \n   临界区；  \n    flag[0] = FALSE;  \n} ",
+        "guess_lang": "c",
+        "bbox": [
+            127,
+            184,
+            515,
+            355
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "void P1() //进程P1  \n{  \nwhile (TRUE)  \n{  \n    flag[1] = TRUE; turn = 0;  \n    while (flag[0] && (turn == 0));  \n   临界区；  \n    flag[1] = FALSE;  \n} ",
+        "guess_lang": "lisp",
+        "bbox": [
+            521,
+            185,
+            905,
+            355
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "则并发执行进程 $\\mathbf{P}_0$ 和 $\\mathbf{P}_1$ 时产生的情形是",
+        "bbox": [
+            154,
+            364,
+            557,
+            381
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 不能保证进程互斥进入临界区, 会出现 “饥饿” 现象",
+            "B. 不能保证进程互斥进入临界区, 不会出现 “饥饿” 现象",
+            "C. 能保证进程互斥进入临界区, 会出现 “饥饿” 现象",
+            "D. 能保证进程互斥进入临界区, 不会出现 “饥饿” 现象"
+        ],
+        "bbox": [
+            154,
+            385,
+            643,
+            461
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "28. 某基于动态分区存储管理的计算机，其主存容量为 55MB（初始为空闲），采用最佳适配（Best Fit）算法，分配和释放的顺序为：分配 15MB，分配 30MB，释放 15MB，分配 8MB，分配 6MB，此时主存中最大空闲分区的大小是 ______。",
+        "bbox": [
+            114,
+            466,
+            914,
+            523
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 7MB ",
+        "bbox": [
+            154,
+            528,
+            231,
+            542
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 9MB ",
+        "bbox": [
+            354,
+            529,
+            428,
+            542
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 10MB ",
+        "bbox": [
+            534,
+            529,
+            616,
+            542
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 15MB ",
+        "bbox": [
+            712,
+            529,
+            794,
+            542
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "29. 某计算机采用二级页表的分页存储管理方式，按字节编址，页大小为 $2^{10}\\mathrm{B}$ ，页表项大小为 2B，逻辑地址结构为",
+        "bbox": [
+            115,
+            547,
+            914,
+            584
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/3810cc2dcaaa314da34e259d9e55cda2d4e84671e81b82dfdb9b382e606d8aca.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>页目录号</td><td>页号</td><td>页内偏移量</td></tr></table>",
+        "bbox": [
+            285,
+            589,
+            744,
+            612
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "逻辑地址空间大小为 $2^{16}$ 页，则表示整个逻辑地址空间的页目录表中包含表项的个数至少是",
+        "bbox": [
+            115,
+            618,
+            914,
+            661
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 64 ",
+        "bbox": [
+            154,
+            666,
+            213,
+            679
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 128 ",
+        "bbox": [
+            354,
+            666,
+            418,
+            679
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 256 ",
+        "bbox": [
+            534,
+            666,
+            596,
+            679
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 512 ",
+        "bbox": [
+            712,
+            666,
+            774,
+            679
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "30. 设文件索引结点中有 7 个地址项, 其中 4 个地址项是直接地址索引, 2 个地址项是一级间接地址索引, 1 个地址项是二级间接地址索引, 每个地址项大小为 4B。若磁盘索引块和磁盘数据块大小均为 256B, 则可表示的单个文件最大长度是_____。",
+        "bbox": [
+            115,
+            684,
+            914,
+            742
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 33KB ",
+        "bbox": [
+            154,
+            747,
+            238,
+            760
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 519KB ",
+        "bbox": [
+            354,
+            747,
+            443,
+            760
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 1057KB ",
+        "bbox": [
+            534,
+            747,
+            636,
+            760
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 16513KB ",
+        "bbox": [
+            712,
+            747,
+            825,
+            760
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "31. 设置当前工作目录的主要目的是",
+        "bbox": [
+            154,
+            766,
+            529,
+            783
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 节省外存空间",
+        "bbox": [
+            154,
+            786,
+            305,
+            802
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 节省内存空间",
+        "bbox": [
+            534,
+            786,
+            680,
+            800
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 加快文件的检索速度",
+        "bbox": [
+            154,
+            807,
+            361,
+            823
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 加快文件的读/写速度",
+        "bbox": [
+            534,
+            807,
+            744,
+            821
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "32. 本地用户通过键盘登录系统时，首先获得键盘输入信息的程序是",
+        "bbox": [
+            154,
+            826,
+            791,
+            843
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 命令解释程序",
+        "bbox": [
+            154,
+            847,
+            307,
+            863
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 中断处理程序",
+        "bbox": [
+            534,
+            847,
+            680,
+            861
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 系统调用服务程序",
+        "bbox": [
+            154,
+            866,
+            342,
+            883
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 用户登录程序",
+        "bbox": [
+            534,
+            866,
+            680,
+            882
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "33. 下列选项中，不属于网络体系结构所描述的内容是",
+        "bbox": [
+            154,
+            887,
+            678,
+            904
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "2010年计算机408统考真题",
+        "bbox": [
+            344,
+            954,
+            522,
+            967
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "第4页，共8页",
+        "bbox": [
+            526,
+            954,
+            650,
+            967
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 网络的层次",
+        "bbox": [
+            119,
+            81,
+            253,
+            97
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 每层使用的协议",
+        "bbox": [
+            500,
+            81,
+            670,
+            97
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 协议的内部实现细节 ",
+        "bbox": [
+            119,
+            100,
+            329,
+            117
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 每层必须完成的功能",
+        "bbox": [
+            500,
+            100,
+            710,
+            117
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "34. 在右图所示的采用“存储-转发”方式的分组交换网络中，所有链路的数据传输速率为100Mbps，分组大小为1000B，其中分组头大小为20B。若主机H1向主机H2发送一个大小为980000B的文件，则在不考虑分组拆装时间和传播延迟的情况下，从H1发送开始到H2接收完为止，需要的时",
+        "bbox": [
+            80,
+            121,
+            591,
+            222
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/57b989ae5444cb3155c6d893db76002f3a5a895d33fb4f9f5e0d98cdf96edd14.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            615,
+            119,
+            875,
+            192
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 80ms ",
+        "bbox": [
+            119,
+            229,
+            201,
+            243
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $80.08 \\mathrm{~ms}$ ",
+        "bbox": [
+            322,
+            229,
+            421,
+            243
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $80.16 \\mathrm{~ms}$ ",
+        "bbox": [
+            502,
+            229,
+            601,
+            243
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $80.24 \\mathrm{~ms}$ ",
+        "bbox": [
+            680,
+            229,
+            781,
+            243
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "35. 某自治系统内采用RIP协议，若该自治系统内的路由器R1收到其邻居路由器R2的距离矢量，距离矢量中包含信息<net1,16>，则能得出的结论是________。",
+        "bbox": [
+            80,
+            248,
+            884,
+            286
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. R2 可以经过 R1 到达 net1, 跳数为 17",
+            "B. R2 可以到达 net1, 跳数为 16",
+            "C. R1 可以经过 R2 到达 net1, 跳数为 17",
+            "D. R1 不能经过 R2 到达 net1"
+        ],
+        "bbox": [
+            119,
+            290,
+            470,
+            366
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "36. 若路由器 R 因为拥塞丢弃 IP 分组，则此时 R 可向发出该 IP 分组的源主机发送的 ICMP 报文类型是 ________。",
+        "bbox": [
+            80,
+            371,
+            884,
+            409
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 路由重定向",
+        "bbox": [
+            119,
+            412,
+            253,
+            429
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 目的不可达",
+        "bbox": [
+            322,
+            413,
+            452,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 源点抑制",
+        "bbox": [
+            502,
+            413,
+            613,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 超时",
+        "bbox": [
+            680,
+            413,
+            754,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "37. 某网络的 IP 地址空间为 192.168.5.0/24, 采用定长子网划分, 子网掩码为 255.255.255.248, 则该网络中的最大子网个数、每个子网内的最大可分配地址个数分别是____。",
+        "bbox": [
+            80,
+            433,
+            880,
+            470
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 32,8 ",
+        "bbox": [
+            119,
+            473,
+            200,
+            490
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 32,6 ",
+        "bbox": [
+            322,
+            475,
+            396,
+            489
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 8,32 ",
+        "bbox": [
+            502,
+            475,
+            574,
+            489
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 8,30 ",
+        "bbox": [
+            680,
+            475,
+            754,
+            490
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "38. 下列网络设备中，能够抑制广播风暴的是",
+        "bbox": [
+            119,
+            494,
+            573,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "I. 中继器",
+        "bbox": [
+            119,
+            515,
+            208,
+            530
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "II. 集线器",
+        "bbox": [
+            322,
+            516,
+            413,
+            530
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "III. 网桥",
+        "bbox": [
+            502,
+            516,
+            579,
+            530
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "IV. 路由器",
+        "bbox": [
+            680,
+            516,
+            779,
+            530
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 仅 I 和 II",
+        "bbox": [
+            119,
+            536,
+            231,
+            551
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 仅 III ",
+        "bbox": [
+            322,
+            536,
+            401,
+            551
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 仅 III 和 IV",
+        "bbox": [
+            502,
+            536,
+            628,
+            549
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 仅 IV ",
+        "bbox": [
+            680,
+            536,
+            761,
+            549
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "39. 主机甲和主机乙之间已建立了一个TCP连接，TCP最大段长度为1000B。若主机甲的当前拥塞窗口为4000B，在主机甲向主机乙连续发送两个最大段后，成功收到主机乙发送的第一个段的确认段，确认段中通告的接收窗口大小为2000B，则此时主机甲还可以向主机乙发送的最大字节数是____。",
+        "bbox": [
+            80,
+            555,
+            884,
+            634
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 1000 ",
+        "bbox": [
+            119,
+            638,
+            200,
+            653
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 2000 ",
+        "bbox": [
+            322,
+            638,
+            396,
+            652
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 3000 ",
+        "bbox": [
+            502,
+            638,
+            574,
+            652
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 4000 ",
+        "bbox": [
+            680,
+            638,
+            754,
+            652
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "40. 如果本地域名服务器无缓存，当采用递归方法解析另一网络某主机域名时，用户主机、本地域名服务器发送的域名请求消息数分别为________。",
+        "bbox": [
+            80,
+            657,
+            877,
+            695
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 一条、一条",
+        "bbox": [
+            119,
+            699,
+            253,
+            714
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 一条、多条",
+        "bbox": [
+            322,
+            700,
+            452,
+            714
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 多条、一条",
+        "bbox": [
+            502,
+            700,
+            631,
+            714
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 多条、多条",
+        "bbox": [
+            680,
+            700,
+            811,
+            714
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "二、综合应用题（第 $41\\sim 47$ 题，共70分）",
+        "text_level": 1,
+        "bbox": [
+            119,
+            726,
+            478,
+            743
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "41.（10分）将关键字序列（7,8,30,11,18,9,14）散列存储到散列表中。散列表的存储空间是一个下标从0开始的一维数组，散列函数为 $\\mathrm{H(key) = (key\\times 3)\\bmod 7}$ ，处理冲突采用线性探测再散列法，要求装填（载）因子为0.7。",
+        "bbox": [
+            80,
+            752,
+            884,
+            809
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1）请画出所构造的散列表。",
+        "bbox": [
+            121,
+            814,
+            352,
+            830
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2）分别计算等概率情况下查找成功和查找不成功的平均查找长度。",
+        "bbox": [
+            119,
+            834,
+            675,
+            851
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "42.（13分）设将 $n(n > 1)$ 个整数存放到一维数组R中。试设计一个在时间和空间两方面都尽可能高效的算法。将R中保存的序列循环左移 $p(0 < p < n)$ 个位置，即将R中的数据由 $(\\mathbf{X}_0,\\mathbf{X}_1,\\dots ,\\mathbf{X}_{n - 1})$ 变换为 $(\\mathrm{X}_p,\\mathrm{X}_{p + 1},\\dots ,\\mathrm{X}_{n - 1},\\mathrm{X}_0,\\mathrm{X}_1,\\dots ,\\mathrm{X}_{p - 1})$ 。要求：",
+        "bbox": [
+            80,
+            855,
+            884,
+            914
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "2010年计算机408统考真题",
+        "bbox": [
+            344,
+            954,
+            524,
+            967
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "第5页，共8页",
+        "bbox": [
+            526,
+            954,
+            650,
+            967
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1）给出算法的基本设计思想。",
+        "bbox": [
+            149,
+            79,
+            400,
+            95
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "(2) 根据设计思想, 采用 C、C++或 Java 语言描述算法, 关键之处给出注释。",
+        "bbox": [
+            147,
+            99,
+            779,
+            116
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3）说明你所设计算法的时间复杂度和空间复杂度。",
+        "bbox": [
+            147,
+            119,
+            571,
+            136
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "43.（11分）某计算机字长为16位，主存地址空间大小为128KB，按字编址。采用单字长指令格式，指令各字段定义如下图所示。",
+        "bbox": [
+            107,
+            140,
+            912,
+            176
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/44fd3228d0824f80b0b658a843402a86a02cb28f8162ceda25dc05895c9f7713.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>15</td><td>12</td><td>11</td><td>6</td><td>5</td><td>0</td></tr><tr><td>OP</td><td>Ms</td><td>Rs</td><td>Md</td><td>Rd</td><td></td></tr><tr><td colspan=\"6\">源操作数 目的操作数</td></tr></table>",
+        "bbox": [
+            152,
+            185,
+            867,
+            236
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "转移指令采用相对寻址方式，相对偏移量用补码表示，寻址方式定义见下表。",
+        "bbox": [
+            147,
+            247,
+            789,
+            264
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/6b940a135b56aea52989d9fdef7aa1e90776071672fdca365b96d4108749787a.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "注：(X)表示存储器地址 X 或寄存器 X 的内容。"
+        ],
+        "table_body": "<table><tr><td>Ms/Md</td><td>寻址方式</td><td>助记符</td><td>含义</td></tr><tr><td>000B</td><td>寄存器直接</td><td>Rn</td><td>操作数 = (Rn)</td></tr><tr><td>001B</td><td>寄存器间接</td><td>(Rn)</td><td>操作数 = ((Rn))</td></tr><tr><td>010B</td><td>寄存器间接、自增</td><td>(Rn)+</td><td>操作数 = ((Rn)), (Rn) + 1 → Rn</td></tr><tr><td>011B</td><td>相对</td><td>D(Rn)</td><td>转移目标地址 = (PC) + (Rn)</td></tr></table>",
+        "bbox": [
+            152,
+            269,
+            868,
+            372
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "请回答下列问题：",
+        "bbox": [
+            149,
+            400,
+            294,
+            416
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1）该指令系统最多可有多少条指令？该计算机最多有多少个通用寄存器？存储器地址寄存器（MAR）和存储器数据寄存器（MDR）至少各需要多少位？",
+            "2）转移指令的目标地址范围是多少？",
+            "3）若操作码0010B表示加法操作（助记符为add)，寄存器R4和R5的编号分别为100B和101B，R4的内容为 $1234\\mathrm{H}$ ，R5的内容为 $5678\\mathrm{H}$ ，地址 $1234\\mathrm{H}$ 中的内容为 $5678\\mathrm{H}$ ，地址 $5678\\mathrm{H}$ 中的内容为 $1234\\mathrm{H}$ ，则汇编语言为“ $\\mathrm{add(R4),(R5)^+}$ ”（逗号前为源操作数，逗号后为目的操作数）对应的机器码是什么（用十六进制表示）？该指令执行后，哪些寄存器和存储单元中的内容会改变？改变后的内容是什么？",
+            "44.（12分）某计算机的主存地址空间大小为 $256\\mathrm{MB}$ ，按字节编址。指令Cache和数据Cache分离，均有8个Cache行，每个Cache行大小为64B，数据Cache采用直接映射方式。现有两个功能相同的程序A和B，其伪代码如下："
+        ],
+        "bbox": [
+            105,
+            421,
+            917,
+            638
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "程序A: int a[256][256] ..... int sum_array1() { int i,j,sum $= 0$ for $(\\mathrm{i} = 0;\\mathrm{i} <   256;\\mathrm{i} + + )$ for(j=0;j<256;j++) sum+=a[i][j]; return sum; } ",
+        "bbox": [
+            184,
+            643,
+            494,
+            815
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "程序B: int a[256][256] ..... int sum_array2() { int i,j,sum $= 0$ for $(j = 0;j <   256;j + + )$ for(i=0;i<256;i++) sum+=a[i][j]; return sum; }",
+        "bbox": [
+            510,
+            643,
+            816,
+            815
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "假定int类型数据用32位补码表示，程序编译时i、j、sun均分配在寄存器中，数组a按行优先方式存放，其首地址为320（十进制数）。请回答下列问题，要求说明理由或给出计算过程。",
+        "bbox": [
+            107,
+            826,
+            912,
+            863
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1）若不考虑用于Cache一致性维护和替换算法的控制位，则数据Cache的总容量为多少？",
+            "2）数组元素a[0][31]和a[1][1]各自所在的主存块对应的Cache行号分别是多少（Cache行号从0开始）？"
+        ],
+        "bbox": [
+            107,
+            866,
+            915,
+            925
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "2010年计算机408统考真题",
+        "bbox": [
+            342,
+            954,
+            522,
+            969
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "第6页，共8页",
+        "bbox": [
+            524,
+            954,
+            650,
+            969
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3）程序A和B的数据访问命中率各是多少？哪个程序的执行时间更短？",
+        "bbox": [
+            115,
+            79,
+            721,
+            95
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "45.（7分）假设计算机系统采用CSCAN（循环扫描）磁盘调度策略，使用2KB的内存空间记录16384个磁盘块的空闲状态。",
+        "bbox": [
+            75,
+            100,
+            880,
+            137
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1）请说明在上述条件下如何进行磁盘块空闲状态的管理。",
+            "2）设某单面磁盘旋转速度为 $6000\\mathrm{rpm}$ ，每个磁道有100个扇区，相邻磁道间的平均移动时间为1ms。若在某时刻，磁头位于100号磁道处，并沿着磁道号增大的方向移动（见下图），磁道号请求队列为50,90,30,120，对请求队列中的每个磁道需读取1个随机分布的扇区，则读完这4个扇区点共需要多少时间？要求给出计算过程。",
+            "3）如果将磁盘替换为随机访问的Flash半导体存储器（如U盘、SSD等），是否有比CSCAN更高效的磁盘调度策略？若有，给出磁盘调度策略的名称并说明理由；若无，说明理由。"
+        ],
+        "bbox": [
+            75,
+            141,
+            882,
+            281
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/9e7252416ebc699fe6c0ad8f3e58f1d36811365dd4194e36ca8a16421ee2ce8a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            245,
+            295,
+            710,
+            450
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "46.（8分）设某计算机的逻辑地址空间和物理地址空间均为64KB，按字节编址。若某进程最多需要6页（Page）数据存储空间，页的大小为1KB，操作系统采用固定分配局部置换策略为此进程分配4个页框（Page Frame）。在时刻260前的该进程访问情况见下表（访问位即使用位）。",
+        "bbox": [
+            75,
+            457,
+            882,
+            516
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/01033ee2c0c7df8eaa8d0e40f926510cffd912e7146dc9114e13308f1912fd69.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>页号</td><td>页框号</td><td>装入时刻</td><td>访问位</td></tr><tr><td>0</td><td>7</td><td>130</td><td>1</td></tr><tr><td>1</td><td>4</td><td>230</td><td>1</td></tr><tr><td>2</td><td>2</td><td>200</td><td>1</td></tr><tr><td>3</td><td>9</td><td>260</td><td>1</td></tr></table>",
+        "bbox": [
+            119,
+            521,
+            838,
+            623
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "当该进程执行到时刻260时，要访问逻辑地址为17CAH的数据。请回答下列问题：",
+        "bbox": [
+            117,
+            625,
+            808,
+            643
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1）该逻辑地址对应的页号是多少？",
+            "2）若采用先进先出（FIFO）置换算法，该逻辑地址对应的物理地址是多少？要求给出计算过程。",
+            "3）若采用时钟（CLOCK）置换算法，该逻辑地址对应的物理地址是多少？要求给出计算过程（设搜索下一页的指针沿顺时针方向移动，且当前指向2号页框，示意图见下图）。"
+        ],
+        "bbox": [
+            73,
+            647,
+            880,
+            744
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/bd0e8c258d178b9f6c96b36d878dfc4745f01b3ec22251bf0ac227d10d5f7ad0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            337,
+            755,
+            613,
+            906
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "2010年计算机408统考真题",
+        "bbox": [
+            344,
+            954,
+            522,
+            969
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "第7页，共8页",
+        "bbox": [
+            526,
+            954,
+            650,
+            969
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "47.（9分）某局域网采用CSMA/CD协议实现介质访问控制，数据传输速率为10Mbps，主机甲和主机乙之间的距离为 $2\\mathrm{km}$ ，信号传播速度为 $200000\\mathrm{km/s}$ 。请回答下列问题，要求说明理由或写出计算过程。",
+        "bbox": [
+            105,
+            99,
+            910,
+            157
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1）若主机甲和主机乙发送数据时发生冲突，则从开始发送数据时刻起，到两台主机均检测到冲突时刻止，最短需经过多长时间？最长需经过多长时间（假设主机甲和主机乙发送数据过程中，其他主机不发送数据）？",
+        "bbox": [
+            105,
+            161,
+            912,
+            220
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2）若网络不存在任何冲突与差错，主机甲总是以标准的最长以太网数据帧（1518B）向主机乙发送数据，主机乙每成功收到一个数据帧后立即向主机甲发送一个64B的确认帧，主机甲收到确认帧后方可发送下一个数据帧。此时主机甲的有效数据传输速率是多少（不考虑以太网的前导码）？",
+        "bbox": [
+            112,
+            264,
+            917,
+            340
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "2010年计算机408统考真题 第8页，共8页",
+        "bbox": [
+            344,
+            954,
+            653,
+            970
+        ],
+        "page_idx": 7
+    }
+]

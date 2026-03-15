@@ -1,0 +1,5517 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2011年全国硕士研究生人学统一考试"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                223,
+                144,
+                731,
+                170
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "计算机科学与技术学科联考计算机学科专业基础综合试题"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                90,
+                184,
+                866,
+                212
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "一、单项选择题（ "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "_ { 1 \\sim 4 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "小题，每小题2分，共80分。下列每小题给出的四个选项中，只有一项符合题目要求)"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                108,
+                263,
+                882,
+                301
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1.设 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "_ n"
+                    },
+                    {
+                        "type": "text",
+                        "content": "是描述问题规模的非负整数，下面程序片段的时间复杂度是 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                310,
+                750,
+                327
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array}{r l} & \\mathbf {x} = 2; \\\\ & \\text {w h i l e} (\\mathbf {x} <   \\mathbf {n} / 2) \\\\ & \\mathbf {x} = 2 ^ {*} \\mathbf {x}; \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/02ae195229069bb3a093388f86a095eacec2563bc965724a3cbdaffe5bbfac62.jpg"
+                }
+            },
+            "bbox": [
+                138,
+                331,
+                266,
+                376
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { O } } ( \\log _ { 2 } n )"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                380,
+                218,
+                398
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B.0(n) "
+                    }
+                ]
+            },
+            "bbox": [
+                314,
+                380,
+                386,
+                397
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. O(nlog2n) "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                380,
+                608,
+                397
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D.0（n) "
+                    }
+                ]
+            },
+            "bbox": [
+                677,
+                380,
+                758,
+                397
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2．元素a,b,c,d,e依次进入初始为空的栈中，若元素进栈后可停留、可出栈，直到所有元素都出栈，则在所有可能的出栈序列中，以元素d开头的序列个数是 o"
+                    }
+                ]
+            },
+            "bbox": [
+                69,
+                399,
+                882,
+                437
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A.3 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                442,
+                160,
+                457
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B.4 "
+                    }
+                ]
+            },
+            "bbox": [
+                314,
+                442,
+                359,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                496,
+                442,
+                542,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                677,
+                442,
+                725,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3．已知循环队列存储在一维数组 A[0...n-1中，且队列非空时 front 和 rear 分别指向队头元素和队尾元素。若初始时队列为空，且要求第1个进入队列的元素存储在A[0]处，则初始时 front和rear的值分别是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                69,
+                461,
+                884,
+                520
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A.0,0 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                524,
+                179,
+                539
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B.0,n-1 "
+                    }
+                ]
+            },
+            "bbox": [
+                314,
+                524,
+                397,
+                538
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. n-1,0 "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                524,
+                579,
+                539
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. n-1, n-1 "
+                    }
+                ]
+            },
+            "bbox": [
+                677,
+                524,
+                781,
+                539
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4．若一棵完全二叉树有768个结点，则该二叉树中叶结点的个数是"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                543,
+                685,
+                559
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 257 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                565,
+                179,
+                580
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B.258 "
+                    }
+                ]
+            },
+            "bbox": [
+                314,
+                565,
+                378,
+                578
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C.384 "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                565,
+                561,
+                578
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 385 "
+                    }
+                ]
+            },
+            "bbox": [
+                677,
+                565,
+                743,
+                578
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "5．若一棵二叉树的前序遍历序列和后序遍历序列分别为1,2,3,4和4,3,2,1，则该二叉树的中序遍历序列不会是 "
+                    }
+                ]
+            },
+            "bbox": [
+                69,
+                584,
+                882,
+                621
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 1,2,3,4 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                625,
+                218,
+                641
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 2,3,4,1 "
+                    }
+                ]
+            },
+            "bbox": [
+                314,
+                625,
+                416,
+                641
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 3,2,4,1 "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                625,
+                598,
+                641
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 4,3,2,1. "
+                    }
+                ]
+            },
+            "bbox": [
+                677,
+                625,
+                787,
+                641
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "6．已知一棵有2011个结点的树，其叶结点个数为116，该树对应的二叉树中无右孩子的结点个数是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                69,
+                644,
+                882,
+                683
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 115 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                687,
+                179,
+                702
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B.116 "
+                    }
+                ]
+            },
+            "bbox": [
+                314,
+                687,
+                378,
+                702
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 1895 "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                687,
+                569,
+                702
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 1896 "
+                    }
+                ]
+            },
+            "bbox": [
+                677,
+                687,
+                754,
+                702
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "7．对于下列关键字序列，不可能构成某二叉排序树中一条查找路径的序列是 "
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                707,
+                826,
+                724
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 95,22,91,24,94, 71 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                728,
+                312,
+                744
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 92,20,91,34,88,35 "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                728,
+                696,
+                744
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 21, 89,77,29,36,38 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                748,
+                312,
+                764
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 12,25,71,68,33,34 "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                748,
+                698,
+                764
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "8．下列关于图的叙述中，正确的是"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                768,
+                480,
+                784
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "I．回路是简单路径"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                788,
+                277,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "II．存储稀疏图，用邻接矩阵比邻接表更省空间"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                808,
+                513,
+                825
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "III．若有向图中存在拓扑序列，则该图不存在回路"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                827,
+                540,
+                845
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A.仅I "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                847,
+                187,
+                865
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B.仅I、I"
+                    }
+                ]
+            },
+            "bbox": [
+                314,
+                849,
+                413,
+                864
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C.仅II "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                849,
+                575,
+                864
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D.仅I、HI"
+                    }
+                ]
+            },
+            "bbox": [
+                677,
+                849,
+                783,
+                865
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "9．为提高散列（Hash）表的查找效率，可以采取的正确措施是"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                869,
+                712,
+                886
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "I．增大装填（载）因子"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                889,
+                316,
+                905
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "II．设计冲突（碰撞）少的散列函数"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                909,
+                418,
+                925
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2018年计算机408统考真题"
+                    }
+                ]
+            },
+            "bbox": [
+                320,
+                948,
+                527,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "第 1 页，共 8 页"
+                    }
+                ]
+            },
+            "bbox": [
+                530,
+                948,
+                675,
+                965
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "III. 处理冲突（碰撞）时避免产生聚集（堆积）现象"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                84,
+                605,
+                100
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 仅I "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                104,
+                225,
+                119
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 仅II "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                104,
+                431,
+                119
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 仅I、II"
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                104,
+                640,
+                119
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 仅II、III"
+                    }
+                ]
+            },
+            "bbox": [
+                722,
+                104,
+                838,
+                121
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "10. 为实现快速排序算法， 待排序序列宜采用的存储方式是 "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                125,
+                728,
+                142
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 顺序存储 "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                145,
+                269,
+                162
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 散列存储 "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                146,
+                469,
+                162
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 链式存储"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                146,
+                654,
+                162
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 索引存储"
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                146,
+                838,
+                162
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "11. 已知序列25,13,10,12,9 是大根堆， 在序列尾部插入新元素18, 将其再调整为大根堆，调整过程中元素之间进行的比较次数是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                165,
+                924,
+                203
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 1 "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                207,
+                201,
+                222
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 2 "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                208,
+                403,
+                222
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 4 "
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                208,
+                586,
+                222
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 5 "
+                    }
+                ]
+            },
+            "bbox": [
+                722,
+                208,
+                770,
+                222
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "12. 下列选项中， 描述浮点数操作速度指标的是 "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                227,
+                631,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. MIPS "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                248,
+                238,
+                265
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. CPI "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                250,
+                423,
+                263
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. IPC "
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                250,
+                607,
+                263
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. MFLOPS "
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                248,
+                836,
+                263
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "13. float型数据通常用IEEE 754单精度浮点数格式表示。 若编译器将float型变量 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "分配到一个32位浮点寄存器FRI中， 且 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf x } = - 8 . 2 5"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 则FRI的内容是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                267,
+                930,
+                306
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. C104 OOOOH "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                310,
+                291,
+                325
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. C242 OOOOH "
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                310,
+                675,
+                325
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. C184 OOOOH "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                331,
+                289,
+                345
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. C1C2 OOOOH "
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                331,
+                679,
+                345
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "14. 下列各类存储器中， 不采用随机存取方式的是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                349,
+                650,
+                367
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. EPROM "
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                371,
+                258,
+                386
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. CDROM "
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                372,
+                464,
+                384
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. DRAM "
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                372,
+                634,
+                384
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. SRAM "
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                372,
+                815,
+                384
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "15. 某计算机存储器按字节编址，主存地址空间大小为64MB 现用 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4 { \\bf M } { \\bf B } { \\bf \\times } { \\bf 8 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "位的RAM芯片组成32MB的主存储器， 则存储器地址寄存器MAR的位数至少是 "
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                391,
+                928,
+                429
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 22位"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                432,
+                234,
+                448
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 23位"
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                433,
+                436,
+                446
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 25位"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                433,
+                619,
+                446
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 26位"
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                433,
+                803,
+                446
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "16. 偏移寻址通过将某个寄存器内容与一个形式地址相加而生成有效地址。下列寻址方式中，不属于偏移寻址方式的是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                452,
+                926,
+                491
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 间接寻址"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                497,
+                267,
+                514
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 基址寻址"
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                497,
+                469,
+                512
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 相对寻址"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                497,
+                652,
+                512
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 变址寻址"
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                497,
+                838,
+                512
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "17. 某机器有一个标志寄存器， 其中有进位／借位标志CF、零标志ZF、符号标志SF 和溢出标志OF, 条件转移指令hgt (无符号整数比较大于时转移）的转移条件是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                518,
+                928,
+                555
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C F } + \\mathrm { O F } = 1"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                559,
+                285,
+                576
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { \\mathsf { S F } } } + Z \\mathbf { F } = 1"
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                561,
+                481,
+                574
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C F } { + } \\mathrm { Z F } = 1"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                561,
+                662,
+                574
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. CF+SF=l "
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                561,
+                844,
+                574
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "18. 下列给出的指令系统特点中， 有利于实现指令流水线的是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                581,
+                747,
+                597
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "I. 指令格式规整且长度一致 "
+                    }
+                ]
+            },
+            "bbox": [
+                200,
+                601,
+                444,
+                617
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "II. 指令和数据按边界对齐存放"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                601,
+                807,
+                616
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "III. 只有Load/Store指令才能对操作数进行存储访问"
+                    }
+                ]
+            },
+            "bbox": [
+                200,
+                621,
+                650,
+                637
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 仅I、II"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                641,
+                254,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 仅II、III"
+                    }
+                ]
+            },
+            "bbox": [
+                357,
+                643,
+                469,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 仅I、III"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                643,
+                644,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. I、II、III"
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                643,
+                838,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "19. 假定不采用Cache和指令预取技术， 且机器处于 “开中断” 状态。在下列有关指令执行的叙述中，错误的是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                662,
+                928,
+                699
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "A. 每个指令周期中CPU都至少访问内存一次 "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "B. 每个指令周期一定大于等于一个CPU时钟周期"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "C. 空操作指令的指令周期中任何寄存器的内容都不会被改变"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "D. 当前程序在每条指令执行结束时都可能被外部中断打断"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                707,
+                673,
+                784
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "20. 在系统总线的数据线上，不可能传输的是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                788,
+                611,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 指令"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                812,
+                229,
+                829
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 操作数"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                812,
+                634,
+                829
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 握手（应答）信号"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                834,
+                343,
+                850
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 中断类型号"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                834,
+                673,
+                849
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "21. 某计算机有五级中断 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { L } } _ { 4 } { \\sim } { \\mathrm { L } } _ { 0 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "， 中断屏蔽字为 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { M _ { 4 } M _ { 3 } M _ { 2 } M _ { 1 } M _ { 0 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf M } _ { i } = 1"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\langle 0 { \\leqslant } i { \\leqslant } 4 \\rangle"
+                    },
+                    {
+                        "type": "text",
+                        "content": ")表示对"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { L } _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "级中断进行屏蔽。若中断响应优先级从高到低的顺序是 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { L } _ { 4 } {  } \\mathrm { L } _ { 0 } {  } \\mathrm { L } _ { 2 } {  } \\mathrm { L } _ { 1 } {  } \\mathrm { L } _ { 3 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 则 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\mathrm { L } } _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "的中断处理程序中设置的中断屏蔽字是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                854,
+                930,
+                912
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2018年计算机408统考真题"
+                    }
+                ]
+            },
+            "bbox": [
+                318,
+                948,
+                526,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "第 2 页，共 8 页"
+                    }
+                ]
+            },
+            "bbox": [
+                530,
+                948,
+                675,
+                963
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1 1 1 1 0 "
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                83,
+                193,
+                99
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B . 0 1 1 0 1 "
+                    }
+                ]
+            },
+            "bbox": [
+                490,
+                82,
+                575,
+                97
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "000 1 1 "
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                103,
+                189,
+                118
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D . 0 1 0 1 0 "
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                103,
+                577,
+                117
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "某计算机处理器主频为 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ 5 0 } \\mathbf { M } \\mathbf { H } \\mathbf { z }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 采用定时查询方式控制设备 A 的 I/0, 查询程序运行一次所用的时钟周期数至少为500。在设备A工作期间，为保证数据不丢失，每秒需对其查询至少200次，则CPU用于设备A的I/O的时间占整个CPU时间的百分比至少是 "
+                    }
+                ]
+            },
+            "bbox": [
+                63,
+                122,
+                883,
+                181
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "A. "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "0 . 0 2 \\%"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "B . "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "0 . 0 5 \\%"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "C. "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "0 . 2 0 \\%"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "D . "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "0 . 5 0 \\%"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                185,
+                579,
+                221
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "下列选项中， 满足短任务优先且不会发生饥饿现象的调度算法是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                225,
+                757,
+                242
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "先来先服务"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "B. 高响应比优先"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "时间片轮转"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "D. 非抢占式短任务优先"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                246,
+                703,
+                283
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "下列选项中， 在用户态执行的是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                287,
+                488,
+                304
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "命令解释程序"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "B 缺页处理程序"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "进程调度程序"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "D 时钟中断处理程序"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                307,
+                684,
+                343
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "在支持多线程的系统中， 进程 P 创建的若干线程不能共享的是 "
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                347,
+                740,
+                365
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "进程 P 的代码段"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "B. 进程 P 中打开的文件"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "C．进程P的全局变量"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "D．进程P中某线程的栈指针 "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                369,
+                744,
+                405
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "用户程序发出磁盘 I/0 请求后， 系统的正确处理流程是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                409,
+                678,
+                425
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "用户程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "系统调用处理程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "中断处理程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "设备驱动程序"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "用户程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "系统调用处理程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "设备驱动程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "中断处理程序"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "用户程序一设备驱动程序一系统调用处理程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "中断处理程序"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "用户程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "设备驱动程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "中断处理程序 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\twoheadrightarrow"
+                            },
+                            {
+                                "type": "text",
+                                "content": "系统调用处理程序"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                429,
+                668,
+                506
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "某时刻进程的资源使用情况如下表所示。"
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                512,
+                488,
+                529
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/87593d703884d07dc27796f6ac43e54781924c9854c9e3cb4436c85922345435.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td rowspan=\"2\">进程</td><td colspan=\"3\">已分配资源</td><td colspan=\"3\">尚需分配</td><td colspan=\"3\">可用资源</td></tr><tr><td>R1</td><td>R2</td><td>R3</td><td>R1</td><td>R2</td><td>R3</td><td>R1</td><td>R2</td><td>R3</td></tr><tr><td>P1</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td rowspan=\"4\">0</td><td rowspan=\"4\">2</td><td rowspan=\"4\">1</td></tr><tr><td>P2</td><td>1</td><td>2</td><td>0</td><td>1</td><td>3</td><td>2</td></tr><tr><td>P3</td><td>0</td><td>1</td><td>1</td><td>1</td><td>3</td><td>1</td></tr><tr><td>P4</td><td>0</td><td>0</td><td>1</td><td>2</td><td>0</td><td>0</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                112,
+                535,
+                841,
+                657
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "此时的安全序列是 "
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                665,
+                335,
+                684
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "A. "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { P } _ { 1 } , \\mathbf { P } _ { 2 } , \\mathbf { P } _ { 3 } , \\mathbf { P } _ { 4 }"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "B . "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { P } _ { 1 } , \\mathbf { P } _ { 3 } , \\mathbf { P } _ { 2 } , \\mathbf { P } _ { 4 }"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "C. "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { P } _ { 1 } , \\mathbf { P } _ { 4 } , \\mathbf { P } _ { 3 } , \\mathbf { P } _ { 2 }"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "不存在的"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                685,
+                629,
+                722
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "在缺页处理过程中， 操作系统执行的操作可能是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                726,
+                627,
+                743
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "修改页表"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                746,
+                218,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "II . 磁 盘 1/0 "
+                    }
+                ]
+            },
+            "bbox": [
+                313,
+                746,
+                418,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "III 分配页框"
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                746,
+                616,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "仅 I 、 II"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                766,
+                211,
+                783
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B . 仅 II "
+                    }
+                ]
+            },
+            "bbox": [
+                313,
+                766,
+                387,
+                781
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C . 仅 III "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                766,
+                575,
+                781
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D . I 、 II 和 III"
+                    }
+                ]
+            },
+            "bbox": [
+                680,
+                766,
+                804,
+                781
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "当系统发生抖动 (thrashing) 时， 可以采取的有效措施是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                785,
+                697,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "撤销部分进程"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                807,
+                257,
+                823
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "II. 增加磁盘交换区的容量"
+                    }
+                ]
+            },
+            "bbox": [
+                313,
+                807,
+                544,
+                823
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "提高用户进程的优先级"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                827,
+                346,
+                843
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "仅 I "
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                847,
+                180,
+                863
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B . 仅 II "
+                    }
+                ]
+            },
+            "bbox": [
+                313,
+                847,
+                387,
+                863
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C . 仅 III "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                847,
+                575,
+                863
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D . 仅 I 、 II"
+                    }
+                ]
+            },
+            "bbox": [
+                680,
+                847,
+                779,
+                863
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "在虚拟内存管理中 地址变换机构将逻辑地址变换为物理地址 形成该逻辑地址的阶段是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                69,
+                867,
+                885,
+                905
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "编辑"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                908,
+                187,
+                924
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B 编译"
+                    }
+                ]
+            },
+            "bbox": [
+                313,
+                908,
+                387,
+                924
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 链接 "
+                    }
+                ]
+            },
+            "bbox": [
+                496,
+                908,
+                571,
+                923
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D . 装 载"
+                    }
+                ]
+            },
+            "bbox": [
+                680,
+                908,
+                755,
+                923
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "2011年全国硕士研究生入学统一考试计算机科学与技术学科联考计算机学科专业基础综合试题"
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                40,
+                872,
+                57
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "囡 函 潞 颐 圉 囡 国 国 回 回 团 园"
+                    }
+                ]
+            },
+            "bbox": [
+                565,
+                59,
+                866,
+                72
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2018年计算机408统考真题"
+                    }
+                ]
+            },
+            "bbox": [
+                319,
+                948,
+                525,
+                964
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "第 3 页，共 8 页"
+                    }
+                ]
+            },
+            "bbox": [
+                531,
+                948,
+                676,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "31. 某文件占10个磁盘块， 现要把该文件磁盘块逐个读入主存缓冲区 ，并送用户区进行分析 ，假设一个缓冲区与一个磁盘块大小相同，把一个磁盘块读入缓冲区的时间 为 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 0 0 \\mu \\mathbf { s }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 将缓冲区的数据传送到用户区的时间是 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 0 \\mu \\ s"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", CPU对一块数据进行分析的时间 为 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 0 \\mu \\mathbf { s }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "。在单缓冲区和双缓冲区结构下，读入并分析完该文件的时间分别是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                79,
+                937,
+                159
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. l_SOOµs、lOOOµs "
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                163,
+                330,
+                179
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 5 5 0 \\mu \\mathbf { s }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "、llOOµs "
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                163,
+                712,
+                179
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 1550µs、1550µs"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                184,
+                328,
+                200
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 2000µs、2000µs"
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                184,
+                714,
+                200
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "32. 有两个并发执行的进程 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf P } _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "和 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf P } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 共享初值为1的变量 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "。 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf P } _ { 1 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "对 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "加1, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf P } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "对 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "减l。加1和减l操作的指令序列分别如下所示。"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                203,
+                935,
+                239
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "／／加1操作 II减1操作 load "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbb { R 1 } , \\mathbb { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "/ /取 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "到寄存器Rl 中 load R2, x inc Rl. dei::: �2 玩ore x, Rl //将Rl的内容存入又 s 氐 re x, "
+                    }
+                ]
+            },
+            "bbox": [
+                182,
+                241,
+                675,
+                308
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "两个操作完成后， "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "的值 "
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                309,
+                434,
+                328
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 可能为-1或3"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                331,
+                310,
+                347
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 只能为1"
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                331,
+                648,
+                347
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 可能为0、 1或2"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                351,
+                333,
+                367
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 可能为-1、 0 、 1或2"
+                    }
+                ]
+            },
+            "bbox": [
+                539,
+                351,
+                753,
+                367
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "33. TCP/IP参考模型的网络层提供的是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                371,
+                559,
+                389
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 无连接不可靠的数据报服务"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                392,
+                425,
+                409
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 无连接可靠的数据报服务"
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                392,
+                790,
+                407
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 有连接不可靠的虚电路服务"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                413,
+                423,
+                429
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 有连接可靠的虚电路服务"
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                412,
+                790,
+                428
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "34. 若某通信链路的数据传输速率 为2400bps,采用四相位调制，则该链路的波特率是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                433,
+                928,
+                450
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 600波特"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                454,
+                264,
+                469
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 1200波特"
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                454,
+                477,
+                469
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 4800波特"
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                454,
+                660,
+                469
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 9600波特"
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                454,
+                842,
+                469
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "35. 数据链路层采用选择重传协议(SR) 传输数据，发送方已发送了 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0 { \\sim } 3"
+                    },
+                    {
+                        "type": "text",
+                        "content": "号数据帧 ，现已收到1号帧的确认 ，而O、 2号帧依次超时， 则此时需要重传的帧数是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                473,
+                930,
+                512
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 1 "
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                516,
+                203,
+                530
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 2 "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                516,
+                405,
+                530
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 3 "
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                516,
+                588,
+                530
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 4 "
+                    }
+                ]
+            },
+            "bbox": [
+                724,
+                516,
+                772,
+                530
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "36. 下列选项中，对正确接收到的数据帧进行确认的 MAC协议是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                536,
+                784,
+                553
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. CSMA "
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                557,
+                248,
+                572
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. CDMA "
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                557,
+                636,
+                571
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. CSMA/CD "
+                    }
+                ]
+            },
+            "bbox": [
+                155,
+                578,
+                279,
+                592
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. CSMA/CA "
+                    }
+                ]
+            },
+            "bbox": [
+                541,
+                578,
+                667,
+                592
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "37. 某网络拓扑如下图所示，路由器Rl只有到达子网192.168.1.0/24的路由。为使Rl可以将1P分组正确地路由到 图中所有的子网，则在 Rl中需要增加的一条路由（目的网络，子网掩码，下一跳）是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                595,
+                930,
+                656
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/da885e2146da728dd94f01ae39b0f7e302d956b874cd1dd7953f0e6bdcae8e6b.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                287,
+                665,
+                763,
+                770
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 192.168.2.0 "
+                    }
+                ]
+            },
+            "bbox": [
+                155,
+                785,
+                287,
+                801
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "255.255.255.128 "
+                    }
+                ]
+            },
+            "bbox": [
+                337,
+                785,
+                473,
+                801
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "192.168.1.1 "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                785,
+                594,
+                801
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 192.168.2.0 "
+                    }
+                ]
+            },
+            "bbox": [
+                155,
+                805,
+                285,
+                820
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "255.255.255.0 "
+                    }
+                ]
+            },
+            "bbox": [
+                337,
+                805,
+                452,
+                820
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "192.168.1.1 "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                805,
+                594,
+                820
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 192.168.2.0 "
+                    }
+                ]
+            },
+            "bbox": [
+                155,
+                826,
+                285,
+                840
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "255.255.255.128 "
+                    }
+                ]
+            },
+            "bbox": [
+                337,
+                826,
+                471,
+                840
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "192.168.1.2 "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                826,
+                596,
+                840
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 192.168.2.0 "
+                    }
+                ]
+            },
+            "bbox": [
+                155,
+                847,
+                285,
+                861
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "255.255.255.0 "
+                    }
+                ]
+            },
+            "bbox": [
+                337,
+                847,
+                452,
+                861
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "192.1�8.l.2 "
+                    }
+                ]
+            },
+            "bbox": [
+                502,
+                847,
+                596,
+                861
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "38.在子网192.168.4.0/30中能接收目的地址为192.168.4.3的IP分组的最大主机数是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                153,
+                865,
+                928,
+                882
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 0 "
+                    }
+                ]
+            },
+            "bbox": [
+                155,
+                886,
+                205,
+                902
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 1 "
+                    }
+                ]
+            },
+            "bbox": [
+                359,
+                886,
+                405,
+                902
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 2 "
+                    }
+                ]
+            },
+            "bbox": [
+                543,
+                886,
+                590,
+                901
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 4 "
+                    }
+                ]
+            },
+            "bbox": [
+                726,
+                886,
+                774,
+                901
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "39. 主机甲向主机乙发送一个( "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { \\nabla } \\cdot \\mathbf { S } \\mathbf { Y } \\mathbf { N } = 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathtt { s e q } = 1 1 2 2 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ")的TCP段，期望与主机乙建立TCP"
+                    }
+                ]
+            },
+            "bbox": [
+                155,
+                905,
+                933,
+                923
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2018年计算机408统考真题"
+                    }
+                ]
+            },
+            "bbox": [
+                318,
+                948,
+                526,
+                964
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "第 4 页，共 8 页"
+                    }
+                ]
+            },
+            "bbox": [
+                530,
+                948,
+                675,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "连接，若主机乙接受该连接请求，则主机乙向主机甲发送的正确的TCP段可能是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                84,
+                818,
+                102
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "A. "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { S Y N } = 0"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { A C K } = 0"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathtt { s e q } = 1 1 2 2 1"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { a c k } = 1 1 2 2 1 ."
+                            },
+                            {
+                                "type": "text",
+                                "content": ") "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "B. "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { S Y N } = 1"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { A C K } = 1"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathtt { s e q } = 1 1 2 2 0"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { a c k } = 1 1 2 2 0 ,"
+                            },
+                            {
+                                "type": "text",
+                                "content": ") "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "C. "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { S Y N } = 1"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { A C K } = 1"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathtt { s e q } . = 1 1 2 2 1"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { a c k } = 1 1 2 2 1 \\AA )"
+                            },
+                            {
+                                "type": "text",
+                                "content": ") "
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "D. "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { S Y N } = 0"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { A C K } = 0"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathtt { s e q } = 1 1 2 2 0"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", ack= 11220) "
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                107,
+                528,
+                182
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "40. 主机甲与主机乙之间已建立一个TCP连接，主机甲向主机乙发送了3个连续的TCP段，分别包含300B、400B和500B的有效载荷， 第3个段的序号为900。 若主机乙仅正确接收到第1段和第3段，则主机乙发送给主机甲的确认序号是 。"
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                186,
+                880,
+                245
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A. 300 "
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                250,
+                177,
+                264
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "B. 500 "
+                    }
+                ]
+            },
+            "bbox": [
+                308,
+                250,
+                376,
+                264
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "C. 1200 "
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                250,
+                569,
+                264
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "D. 1400 "
+                    }
+                ]
+            },
+            "bbox": [
+                675,
+                250,
+                750,
+                264
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "二、综合应用题（第 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "4 1 { \\sim } 4 7"
+                    },
+                    {
+                        "type": "text",
+                        "content": "小题，共70分）"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                106,
+                278,
+                490,
+                295
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "41. (8分）已知有6个 顶点（顶点 编号为 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0 \\sim 5"
+                    },
+                    {
+                        "type": "text",
+                        "content": ") 的有向带权图G, 其邻接矩阵 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A"
+                    },
+                    {
+                        "type": "text",
+                        "content": "为上三角矩阵，按行为主序（行优先）保存在如下的一维数组中 。"
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                303,
+                880,
+                341
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/a25a1728ee1c32c0e9679f5bf5e404cea0e4a7d72649b12b76b9e95915222cf8.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>4</td><td>6</td><td>∞</td><td>∞</td><td>∞</td><td>5</td><td>∞</td><td>∞</td><td>∞</td><td>4</td><td>3</td><td>∞</td><td>∞</td><td>3</td><td>3</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                115,
+                346,
+                833,
+                370
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "要求："
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                379,
+                158,
+                395
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(1)写出图G的邻接矩阵 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "A"
+                            },
+                            {
+                                "type": "text",
+                                "content": "。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(2)画出有向带权图G。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(3)求图G的关键路径，并计算该关键路径的长度。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                399,
+                548,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "42. (15分） 一 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( L { \\geqslant } 1 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ")的升序序列S, 处在第 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lfloor { L } / { 2 } \\rceil"
+                    },
+                    {
+                        "type": "text",
+                        "content": "个位置的数称为 S的中位数。例如，若序列 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { S } 1 = ( 1 1 , 1 3 , 1 5 , 1 7 , 1 9 )"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { S } 1 ="
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 则Sl的中位数是15, 两个序列的中位数是含它们所有元素的升序序列的中位数。例如，若 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf S } 2 = ( 2 , 4 , 6 , 8 , 2 0 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 则 Sl和S2的中位数是11。现在有两个等长升序序列A和B, 试设计一个在时间和空间两方面都尽可能高效的算法，找出两个序列A和B的中位数。要求："
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                459,
+                882,
+                557
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(1)给出算法的基本设计思想 。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(2)根据设计思想，采用C、 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "{ \\mathrm { C } } { \\mathrm { + } } { \\mathrm { + } }"
+                            },
+                            {
+                                "type": "text",
+                                "content": "或Java语言描述算法，关键之处给出注释。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(3)说明你所设计算法的时间复杂度和空间复杂度。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                104,
+                563,
+                754,
+                619
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "43. Cll分）假定在一个8位字长的计算机中 运行如下 C程序段 ："
+                    }
+                ]
+            },
+            "bbox": [
+                106,
+                625,
+                658,
+                639
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "unsigned int x=134;  \nunsigned int y=246;  \nint m=x;  \nint n=y;  \nunsigned int z1=x-y;  \nunsigned int z2=x+y;  \nint k1=m-n;  \nint k2=m+n; "
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                133,
+                643,
+                355,
+                770
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "若 编译器编译时将8个8位寄存器 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\bf R } 1 \\sim { \\bf R } 8"
+                    },
+                    {
+                        "type": "text",
+                        "content": "分别分配给变量x、y、m、n、zl、z2、kl和k2。请回答下列问题 。（提示：带符号整数用补码表示。）"
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                775,
+                878,
+                811
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(1)执行上述程序段后，寄存器Rl、R5和R6的内容分别 是什么（用十六进制表示）？"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(2)执行上述程序段后，变量 "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\mathbf { m }"
+                            },
+                            {
+                                "type": "text",
+                                "content": "和kl的值分别是多少（用十进制表示）？"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(3)上述程序段涉及带符号整数加／减、无符号整数加／减运算，这四种运算能否利用同一个加法器辅助电路实现？简述理由。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(4)计算机内部如何判断带符号整数加I减运算的结果是否发生溢出？上述程序段中，哪些带"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                65,
+                815,
+                878,
+                913
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "2011年全国硕士研究生入学统—考试计算机科学与技术学科联考计算机学科专业基础综合试题"
+                    }
+                ]
+            },
+            "bbox": [
+                69,
+                44,
+                868,
+                61
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "园蓝面图匿回回囡囡园"
+                    }
+                ]
+            },
+            "bbox": [
+                565,
+                61,
+                864,
+                76
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2018年计算机408统考真题"
+                    }
+                ]
+            },
+            "bbox": [
+                320,
+                948,
+                527,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "第 5 页，共 8 页"
+                    }
+                ]
+            },
+            "bbox": [
+                530,
+                948,
+                675,
+                965
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "符号整数运算语句的执行结果会发生溢出？ "
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                61,
+                472,
+                77
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "44. (12分）某计算机存储器按字节编址，虚拟（逻辑）地址空间大小为16MB, 主存（物理）地址空间大小为1MB, 页面大小为4KB; Cache采用直接映射方式，共8行；主存与Cache之间交换的块大小为32B。 系统运行到某一时刻时，页表的部分内容和Cache的部分内容分别如题44-a图、 题44-b图所示，图中页框号及标记字段的内容为十六进制形式。"
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                103,
+                930,
+                182
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d2ecdbbfb78ef9dd49d2839e51cd8dd0497ba7e165084c68b57028da8d736d37.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "题44-a图 页表的部分内容"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                201,
+                190,
+                488,
+                388
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/caaa8392f4383a64922c58d1b5117153dd122f63f17e554eb208502245cc4f31.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "题44-b图 Cache的部分内容"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                575,
+                190,
+                854,
+                388
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "请回答下列问题。"
+                    }
+                ]
+            },
+            "bbox": [
+                151,
+                423,
+                300,
+                439
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(1)虚拟地址共有几位，哪儿位表示虚页号？物理地址共有几位，哪几位表示页框号（物理页号）？"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(2)使用物理地址访问Cache时，物理地址应划分成哪儿个字段？要求说明每个字段的位数及在物理地址中的位置。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(3)虚拟地址001C60H所在的页面是否在主存中？若在主存中，则该虚拟地址对应的物理地址是什么？访问该地址时是否Cache命中？要求说明理由。"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(4) 一 TLB共可存放8个页表项， 若其当前内容（ 十六进制）如题44-c图所示， 则此时虚拟地址024BACH所在的页面是否存在主存中？要求说明理由。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                444,
+                926,
+                603
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/63c41ad410760ad5a30becbb3f648e63158105ff5f555c57094cd5a28b7a5925.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "题44-c图 TLB的部分内容"
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td>组号</td><td>有效位</td><td>标记</td><td>页框号</td><td>有效位</td><td>标记</td><td>页框号</td><td>有效位</td><td>标记</td><td>页框号</td><td>有效位</td><td>标记</td><td>页框号</td></tr><tr><td>0</td><td>0</td><td>-</td><td>-</td><td>1</td><td>001</td><td>15</td><td>0</td><td>-</td><td>-</td><td>1</td><td>012</td><td>1F</td></tr><tr><td>1</td><td>1</td><td>013</td><td>2D</td><td>0</td><td>-</td><td>-</td><td>1</td><td>008</td><td>7E</td><td>0</td><td>-</td><td>-</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                133,
+                608,
+                922,
+                676
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "45. (8分）某银行提供1个服务窗口和10个供顾客等待的座位。 顾客到达银行时，若有空座位，则到取号机上领取一个号，等待叫号。取号机每次仅允许一位顾客使用。 当营业员空闲时，通过叫号选取一位顾客，并为其服务。顾客和营业员的活动过程描述如下："
+                    }
+                ]
+            },
+            "bbox": [
+                108,
+                709,
+                928,
+                768
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "cobegin  \n{process 顾客i从取号机获取一个号码；等待叫号；获取服务；}process 营业员"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                180,
+                771,
+                437,
+                916
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": []
+            },
+            "bbox": [
+                339,
+                43,
+                461,
+                55
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2018年计算机408统考真题"
+                    }
+                ]
+            },
+            "bbox": [
+                319,
+                950,
+                527,
+                965
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "第 6 页，共 8 页"
+                    }
+                ]
+            },
+            "bbox": [
+                531,
+                951,
+                674,
+                965
+            ]
+        }
+    ],
+    [
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "while（TRUE） 叫号； 为客户服务； }   \n}coend"
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                146,
+                53,
+                349,
+                206
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "请添加必要的信号量和P、V (或wait()、signal())操作，实现上述过程中的互斥与同步。 要求写出完整的过程，说明信号量的含义并赋初值。"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                208,
+                889,
+                247
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "46. (7分）某 文件系统为一级目录结构，文件的数据 一次性写入磁盘，已写入的文件不可修改，但可多次创建新文件。 请回答如下问题。"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                250,
+                886,
+                288
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(1)在连续、 链式、 索引三种文件的数据块组织方式中，哪种更合适？要求说明理由。 为定位文件数据块，需要FCB中设计哪些相关描述字段？"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(2)为快速找到文件，对于FCB, 是集中存储好，还是与对应的文件数据块连续存储好？要求说明理由。"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                292,
+                886,
+                369
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "47. (9分） 某主机的MAC地址为00-15-CS-Cl-SE-28 , IP地址为10.2.128.100 (私有地址）。 题47-a图是网络拓扑，题47-b图是该主机进行Web请求的1个以太网 数据帧前80B的十六进制及ASCII码内容。"
+                    }
+                ]
+            },
+            "bbox": [
+                71,
+                373,
+                889,
+                431
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/563dfe0e9cff1b6fe71026fcc90deffee4fdcfd68e735a57291a9911aeb7d1ac.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "题47-b图 以太网数据帧（前80B)"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                279,
+                442,
+                687,
+                495
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "题47-a图 网络拓扑"
+                    }
+                ]
+            },
+            "bbox": [
+                397,
+                506,
+                565,
+                522
+            ]
+        },
+        {
+            "type": "code",
+            "content": {
+                "code_caption": [],
+                "code_content": [
+                    {
+                        "type": "text",
+                        "content": "0000 00 21 27 21 51 ee 00 15 c5 c1 5e 28 08 00 45 00 .!!Q...^(.E.  \n0010 01 ef 11 3b 40 00 80 06 ba 9d 0a 02 80 64 40 aa ...@... ....d@.  \n0020 62 20 04 ff 00 50 e0 e2 00 fa 7b f9 f8 05 50 18 b ...P...{...P.  \n0030 fa f0 1a c4 00 00 47 45 54 20 2f 72 66 63 2e 68 ....GE T /rfc.h  \n0040 74 6d 6c 20 48 54 54 50 2f 31 2e 31 0d 0a 41 63 tml HTTP /1..Ac "
+                    }
+                ],
+                "code_language": "txt"
+            },
+            "bbox": [
+                233,
+                526,
+                718,
+                642
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "请参考图中的数据 回答以下问题。"
+                    }
+                ]
+            },
+            "bbox": [
+                113,
+                676,
+                397,
+                692
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(1) Web服务器的IP地址是什么？该主机的默认网关的MAC地址是什么？"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(2)该主机在构造题47-b图的数据帧时，使用什么协议确定目的MAC地址？封装该协议请求报文的以太网帧的目的MAC地址是什么？"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(3)假设HTTP/1.1协议以持续 的非流水线方式工作，一次请求－响应时间为RTT , rfc.html页面引用了5个JPEG小图像，则从发出题47-b图中的Web请求开始到浏览器收到全部内容为止，需要多少个RTT?"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "(4)该帧所封装的IP分组经过路由器R转发时，需修改IP分组头中的哪些字段？"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                71,
+                696,
+                886,
+                836
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2018年计算机408统考真题"
+                    }
+                ]
+            },
+            "bbox": [
+                320,
+                950,
+                525,
+                964
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "第 7 页，共 8 页"
+                    }
+                ]
+            },
+            "bbox": [
+                530,
+                948,
+                673,
+                964
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "注： 以太网数据帧结构和IP分组头结构分别如题47-c图、题47-d图所示。"
+                    }
+                ]
+            },
+            "bbox": [
+                144,
+                80,
+                774,
+                96
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/8cf42f555c0b3dd40c55b743e36ee982f028ce02294ad87a0fff4151296f6ed2.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>6B</td><td>6B</td><td>2B</td><td>46-1500B</td><td>4B</td></tr><tr><td>目的MAC地址</td><td>源MAC地址</td><td>类型</td><td>数据</td><td>CRC</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                181,
+                108,
+                840,
+                142
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/398ac570a58a8f5f4a65c70a6913804cc279f608cf1fb914444d635a7591b44c.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "题47-c图 以太网帧结构"
+                    },
+                    {
+                        "type": "text",
+                        "content": "题47-d图 IP分组头结构"
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td colspan=\"5\">比特 0 8 16 24 31</td></tr><tr><td>版本</td><td>头部长度</td><td>服务类型</td><td colspan=\"2\">总长度</td></tr><tr><td colspan=\"3\">标识</td><td>标志</td><td>片偏移</td></tr><tr><td colspan=\"2\">生存时间(TTL)</td><td>协议</td><td colspan=\"2\">头部校验和</td></tr><tr><td colspan=\"5\">源IP地址</td></tr><tr><td colspan=\"5\">目的IP地址</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                298,
+                179,
+                722,
+                316
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": []
+            },
+            "bbox": [
+                319,
+                41,
+                439,
+                53
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "2018年计算机408统考真题 第 8 页，共 8 页"
+                    }
+                ]
+            },
+            "bbox": [
+                321,
+                950,
+                674,
+                965
+            ]
+        }
+    ]
+]

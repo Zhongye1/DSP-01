@@ -1,0 +1,2156 @@
+[
+    {
+        "type": "text",
+        "text": "2012年计算机学科专业基础综合试题参考答案",
+        "text_level": 1,
+        "bbox": [
+            176,
+            157,
+            810,
+            185
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "一、单项选择题",
+        "text_level": 1,
+        "bbox": [
+            133,
+            236,
+            274,
+            255
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            98,
+            264,
+            860,
+            280
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            100,
+            286,
+            860,
+            302
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "17.C18.C19.C 20.D 21.D 22. B 23.C 24. B ",
+        "bbox": [
+            100,
+            307,
+            860,
+            323
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "25. B26.A 27.D 28.A 29.B 30.C 31.A32. B ",
+        "bbox": [
+            100,
+            330,
+            860,
+            346
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "33.B 34.C 35.A 36.B 37.C 38.A 39.D 40.D ",
+        "bbox": [
+            100,
+            353,
+            860,
+            369
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1．解析：",
+        "text_level": 1,
+        "bbox": [
+            133,
+            373,
+            214,
+            389
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "本算法是一个递归运算，即算法中出现了调用自身的情形。递归的边界条件是 $\\scriptstyle n \\leqslant 1$ ，每调用一次factO，传入该层 factO的参数值减1。采用递归式来表示时间复杂度有",
+        "bbox": [
+            90,
+            392,
+            893,
+            431
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT (n) = \\left\\{ \\begin{array}{c c} \\mathrm {O} (1) & n \\leqslant 1 \\\\ T (n - 1) + 1 & n > 1 \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            384,
+            432,
+            601,
+            471
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "则 $T ( n ) = T ( n ^ { - 1 } ) + 1 = T ( n ^ { - 2 } ) + 2 = \\cdots = T ( 1 ) + n ^ { - 1 } = \\operatorname { O } ( n )$ ，故时间复杂度为 ${ \\mathrm { O } } ( n )$ 。",
+        "bbox": [
+            90,
+            475,
+            758,
+            495
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2．解析：",
+        "text_level": 1,
+        "bbox": [
+            133,
+            497,
+            216,
+            514
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "表达式求值是栈的典型应用。中缀表达式不仅依赖于运算符的优先级，而且要处理括号。后缀表达式的运算符在表达式的后面且没有括号，其形式已经包含了运算符的优先级。所以从中缀表达式转换到后缀表达式需要用运算符进行处理，使其包含运算符优先级的信息，从而转换为后缀表达式的形式。转换过程如下表：",
+        "bbox": [
+            90,
+            517,
+            893,
+            596
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/6e5cee399e9f8e75a3ebccaf2d0d744cbde2bbe77abddc2a1491044d127fa1ef.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>运算符栈</td><td>中缀未处理部分</td><td>后缀生成部分</td><td>说明</td></tr><tr><td>#</td><td>a+b-a*((c+d)/e-f)+g</td><td></td><td></td></tr><tr><td>#</td><td>+b-a*((c+d)/e-f)+g</td><td>a</td><td></td></tr><tr><td>+</td><td>b-a*(c+d)/e-f)+g</td><td>a</td><td>“+”入栈</td></tr><tr><td>+</td><td>-a*((c+d)/e-f)+g</td><td>ab</td><td></td></tr><tr><td>-</td><td>a*((c+d)/e-f)+g</td><td>ab+</td><td>“+”出栈,“-”入栈</td></tr><tr><td>-</td><td>*(c+d)/e-f)+g</td><td>ab+a</td><td></td></tr><tr><td>-*</td><td>((c+d)/e-f)+g</td><td>ab+a</td><td>“*”入栈</td></tr><tr><td>-*((</td><td>c+d)/e-f)+g</td><td>ab+a</td><td>两个“(”依次入栈</td></tr><tr><td>-*((</td><td>+d)/e-f)+g</td><td>ab+ac</td><td></td></tr><tr><td>-*((+</td><td>d)/e-f)+g</td><td>ab+ac</td><td>“+”入栈</td></tr><tr><td>-*((+</td><td>)/e-f)+g</td><td>ab+acd</td><td></td></tr><tr><td>-*</td><td>/e-f)+g</td><td>ab+acd+</td><td>“+”和“(”依次出栈</td></tr><tr><td>-*(/</td><td>e-f)+g</td><td>ab+acd+</td><td>“/”入栈</td></tr><tr><td>-*(/</td><td>-f)+g</td><td>ab+acd+e</td><td></td></tr><tr><td>-*(-</td><td>f)+g</td><td>ab+acd+e/</td><td>“/”出栈,“-”入栈</td></tr><tr><td>-*(-</td><td>)+g</td><td>ab+acd+e/f</td><td></td></tr><tr><td>-*</td><td>+g</td><td>ab+acd+e/f-</td><td>“-”和“(”依次出栈</td></tr><tr><td>-</td><td>+g</td><td>ab+acd+e/f-*</td><td>“*”出栈</td></tr><tr><td>#</td><td>+g</td><td>ab+acd+e/f-*</td><td>“-”出栈</td></tr><tr><td>+</td><td>g</td><td>ab+acd+e/f-*</td><td>“+”入栈</td></tr><tr><td>#</td><td></td><td>ab+acd+e/f-*g</td><td>“+”出栈</td></tr></table>",
+        "bbox": [
+            135,
+            600,
+            852,
+            932
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [
+            ""
+        ],
+        "table_footnote": [],
+        "bbox": [
+            145,
+            111,
+            858,
+            310
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "可知， 栈中的操作符的最大个数为5。",
+        "bbox": [
+            143,
+            313,
+            460,
+            329
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3. 解析：",
+        "text_level": 1,
+        "bbox": [
+            143,
+            333,
+            224,
+            349
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "序列不能唯一 一棵二叉树， 但可以确定二叉树中结点的祖先关系： 当两个结点的前序序列为XY与后序序列为YX时，则X为Y的祖先。考虑前序序列�'e,b,d, C 、后序序列bc, , de, ,且，可知a为根结点，e为a的孩子结点。此外，a的孩子结点的前序序列�.b,dc, 、 后序序列bc, ,d,�. 可知e是bed的祖先， 故根结点的孩子结点只有e。 故选A。",
+        "bbox": [
+            100,
+            353,
+            905,
+            434
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "除法】显然a为根结点， 且确定e为a的孩子结点，排除D。各种遍历算法中左右子树的遍历次序是固定的，若b也为a的孩子结点，则在前序序列和后序序列中e、b的相对次序应是不变的， 故排除B, 同理排除C。",
+        "bbox": [
+            102,
+            436,
+            905,
+            493
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "【特殊法】前序序列和后序序列对应着多棵不同的二叉树树形，我们只需画出满足该条件的任一棵二叉树即可， 任意一棵二叉树必定满足正确选项的要求。",
+        "bbox": [
+            102,
+            497,
+            903,
+            534
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/fd5c0f94296a06d68efdd928ed64b324b94b6d1635eec4682c3ff52919f1e58d.jpg",
+        "image_caption": [
+            "(a) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            222,
+            535,
+            352,
+            639
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a5b6da6a8f657492a48de25f2a1143f7df6eb17d463eb6ceb7ca2d9594268f2.jpg",
+        "image_caption": [
+            "(b) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            355,
+            535,
+            487,
+            640
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/1887182443e854e05308706b831709fe4fe0e365288bd1408d0ca8185bf5c922.jpg",
+        "image_caption": [
+            "(c) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            495,
+            535,
+            630,
+            670
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/adb8e3a0f37911c5b5a8ae199650ba3b9f3bbd92b13531abc1b206c51e424f9e.jpg",
+        "image_caption": [
+            "(d) "
+        ],
+        "image_footnote": [],
+        "bbox": [
+            649,
+            535,
+            787,
+            683
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "显然选A, 最终得到的二叉树满足题设中前序序列和后序序列的要求。",
+        "bbox": [
+            145,
+            699,
+            740,
+            717
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4. 解析：",
+        "text_level": 1,
+        "bbox": [
+            145,
+            721,
+            226,
+            736
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "因子均为 平衡二叉树满足平衡的最少结点情况， 如下图所示。高度分别为N1- 和N2- 、所有非叶结点的平衡因子均为1的平衡二叉树，总结点数的公式为： $C _ { N } = C _ { N - 1 } + C _ { N - 2 } + 1$ , $C _ { 1 } = 1$ , $C _ { 2 } = 2$ , $C _ { 3 } = 2 + 1 + 1 = 4$ ,可推出 $C _ { 6 } = 2 0$ 。",
+        "bbox": [
+            102,
+            740,
+            905,
+            798
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/c5c6b9e43c51f13553b3e025aece473baa824afc19beca3db942bfe56b7c8da6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            187,
+            800,
+            224,
+            839
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/9a3763baa6741a01b52dcf0e7285f7744aa42e79bf0a26393ffdf610f539a2a7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            237,
+            800,
+            303,
+            870
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/57aea8b45df5f0d0b6dce8048968fb4df55cd239fbe36af50b9f4ad3850c80bb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            323,
+            800,
+            448,
+            901
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/6034bcfe201375edb6b1dececbd77eb8bdbf91eacb6d145ce9a099307c0d8105.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            468,
+            800,
+            647,
+            930
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/693bc4fb8af2e327f7115934875243ee9ee0bd9afe1d9e3a4ce5f4f7cdf89ca8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            694,
+            799,
+            823,
+            874
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "",
+        "bbox": [
+            363,
+            41,
+            433,
+            55
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "【画图法】先画出 $\\mathrm { T } _ { 1 }$ 和 $\\mathrm { T } _ { 2 }$ ; 然后新建一个根结点，连接 $\\mathrm { T } _ { 2 }$ 公 $\\mathrm { T } _ { 1 }$ 构成 ${ \\mathrm { T } } _ { 3 }$ ; 新建一个根结点，连接 $\\mathrm { T } _ { 3 }$ 、 $\\mathrm { T } _ { 2 }$ 构成 $\\mathrm { T } _ { 4 }$ ; 以此类推，直到画出 $\\mathrm { T } _ { 6 }$ , 可知 $\\mathrm { T } _ { 6 }$ 的结点数为20。",
+        "bbox": [
+            87,
+            94,
+            883,
+            132
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "【排除法】对千选项A, 高度为6、 结点数为10 的树怎么也无法达到平衡。对于选项c,结点较多时，考虑较极端情形，即第6层只有最左叶子的完全二叉树刚好有32个结点，虽然满足平衡的条件，但显然再删去部分结点，依然不影响平衡，不是最少结点的情况。同理D错误。只可能选B。",
+        "bbox": [
+            87,
+            134,
+            887,
+            214
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5. 解析：",
+        "text_level": 1,
+        "bbox": [
+            129,
+            218,
+            207,
+            235
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "广度优先遍历需要借助队列实现。邻接表的结构包括：顶点表；边表（有向图为出边表）。当采用邻接表存储方式时，在对图进行广度优先遍历时每个顶点均需入队一次 （顶点表遍历），故时间复杂度为 ${ \\mathrm { O } } ( n )$ , 在搜索所有顶点的邻接点的过程中，每条边至少访问一次（出边表遍历），故时间复杂度为 $O ( e )$ , 算法总的时间复杂度为 ${ \\mathrm { O } } ( n + e )$ 。",
+        "bbox": [
+            87,
+            237,
+            887,
+            318
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "6. 解析：",
+        "text_level": 1,
+        "bbox": [
+            129,
+            320,
+            207,
+            336
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "对角线以下元素均为零，表明只有顶点 $_ i$ 到顶点 $\\textbf { \\textit { j } } ( i < j )$ )可能有边，而顶点 $j$ 到顶点i 一定没有边，即有向图是一个无环图，因此一定存在拓扑序列。对于拓扑序列是否唯一，试举一例：",
+        "bbox": [
+            87,
+            339,
+            887,
+            378
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "设有向图的邻接矩阵 $\\scriptstyle { \\left[ \\begin{array} { l l l } { 0 } & { 1 } & { 1 } \\\\ { 0 } & { 0 } & { 0 } \\\\ { 0 } & { 0 } & { 0 } \\end{array} \\right] } ,$ 则存在两个拓扑序列，因此该图存在可能不唯一的拓扑序列。",
+        "bbox": [
+            87,
+            378,
+            885,
+            440
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "结论：对于任一有向图，如果它的邻接矩阵中对角线以下（或以上）的元素均为零，则存在拓扑序列（可能不唯一）。反正，若图存在拓扑序列，却不一定能满足邻接矩阵中主对角线以下的元素均为零，但是可以通过适当地调整结点编号，使其邻接矩阵满足前述性质。",
+        "bbox": [
+            87,
+            444,
+            887,
+            504
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "7. 解析：",
+        "text_level": 1,
+        "bbox": [
+            129,
+            506,
+            207,
+            524
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "从a到各顶点的最短路径的求解过程：",
+        "bbox": [
+            129,
+            526,
+            447,
+            545
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/f0404a4c93a3f122729a52c21d2dcc2e4625465d3419021af311470f578bc2dd.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>顶点</td><td>第1趟</td><td>第2趟</td><td>第3趟</td><td>第4趟</td><td>第5趟</td></tr><tr><td>b</td><td>(a,b)2</td><td></td><td></td><td></td><td></td></tr><tr><td>c</td><td>(a,c)5</td><td>(a,b,c)3</td><td></td><td></td><td></td></tr><tr><td>d</td><td>∞</td><td>(a,b,d)5</td><td>(a,b,d)5</td><td>(a,b,d)5</td><td></td></tr><tr><td>e</td><td>∞</td><td>∞</td><td>(a,b,c,f)4</td><td></td><td></td></tr><tr><td>f</td><td>∞</td><td>∞</td><td>(a,b,c,e)7</td><td>(a,b,c,e)7</td><td>(a,b,d,e)6</td></tr><tr><td>集合S</td><td>{a,b}</td><td>{a,b,c}</td><td>{a,b,c,f}</td><td>{a,b,c,f,d}</td><td>{a,b,c,f,d,e}</td></tr></table>",
+        "bbox": [
+            129,
+            548,
+            846,
+            694
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "后续目标顶点依次为f, d, e。",
+        "bbox": [
+            129,
+            704,
+            364,
+            722
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "【排除法】对于A, 若下一个顶点为d, 路径a,b,d的长度5, 而a,b, c,f的长度仅为4, 显然错误。同理可以排除B。将f加入集合S后，采用上述的方法也可以排除D。",
+        "bbox": [
+            87,
+            723,
+            887,
+            762
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "8. 解析：",
+        "text_level": 1,
+        "bbox": [
+            129,
+            766,
+            207,
+            781
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "一（这是因为可能存在权值相同的边），但是代价一定是唯一的，I正确。对于II, 如果权值最小的边有多条并且构成环状，则总有权值最小的边将不出现在某棵最小生成树中，I错误。对于III，设 $N$ - 1条边权值相等，则从不同的顶点开始普里姆算法会得到 $N - 1$ 中不同的最小生成树，III错误。对于IV, 当最小生成树唯一时 (各边的权值不同)， $\\operatorname { P r i m }$ 算法和Kruskal算法得到的最小生成树相同，IV错误。",
+        "bbox": [
+            87,
+            785,
+            887,
+            885
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "9. 解析：",
+        "text_level": 1,
+        "bbox": [
+            129,
+            886,
+            207,
+            902
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "对于上图所示的3阶B-树，被删关键字78所在结点在删除前的关键字个数 $= 1 = \\lceil 3 / 2 \\rceil - 1$ '",
+        "bbox": [
+            129,
+            905,
+            883,
+            925
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "且其左兄弟结点的关键字个数=2≥[3/2]，属于“兄弟够借”的情况，则需把该结点的左兄弟 $= 2 { \\geqslant } \\lceil 3 / 2 \\rceil$ 结点中最大的关键字上移到双亲结点中，同时把双亲结点中大于上移关键字的关键字下移到要删除关键字的结点中，这样就达到了新的平衡，如下图所示。",
+        "bbox": [
+            106,
+            92,
+            910,
+            150
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/ee865869d0e1f90d1894ff0843ffd80e705ad24e9f6ca78546a93cf5973a663d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            141,
+            152,
+            875,
+            262
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "10 . 解析：",
+        "text_level": 1,
+        "bbox": [
+            149,
+            266,
+            238,
+            283
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "对于I, 简单选择排序每次选择未排序列中的最小元素放入其最终位置。 对于 II, 希尔排序每次是对划分的子表进行排序，得到局部有序的结果，所以不能保证每一趟排序结束都能确定一个元素的最终位置。 对于III, 快速排序每一趟排序结束后都将枢轴元素放到最终位置。 对于IV, 堆排序属于选择排序，每次都将大根堆的根结点与表尾结点交换， 确定其最终位置。 对于v, 二路归并排序每趟对子表进行两两归并从而得到若干个局部有序的结果，但无法确定最终位置。",
+        "bbox": [
+            106,
+            287,
+            910,
+            407
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "11 . 解析：",
+        "text_level": 1,
+        "bbox": [
+            149,
+            411,
+            238,
+            428
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "折半插入排序与直接插入排序都是将待插入元素插入前面的有序子表， 区别是：确定当前记录在前面有序子表中的位置时，直接插入排序是采用顺序查找 而折半插入排序是采用折半查找法。 排序的总趟数取决于元素个数 $_ n$ , 两者都是 $n - 1$ 趟。 元素的移动次数都取决于初试序列，两者相同。使用辅助空间的数量也都是0(1)。 折半插入排序的比较次数与序列初态无关，为 $\\mathrm { O } ( n \\mathrm { l o g } _ { 2 } n )$ ; 直接插入排序的比较次数与序列初态有关， 为 ${ \\mathsf { O } } ( n ) { \\sim } { \\mathsf { O } } ( n ^ { 2 } )$ 。",
+        "bbox": [
+            106,
+            431,
+            910,
+            532
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "12. 解析：",
+        "text_level": 1,
+        "bbox": [
+            149,
+            533,
+            238,
+            551
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "程序A的运行时间为100s, 除去CPU时间90s, 剩余10s为10/ 时间。CPU提速后运行基准程序A所耗费的时间是 $T = 9 0 / 1 . 5 + 1 0 = 7 0 \\mathrm { s }$ 。",
+        "bbox": [
+            106,
+            553,
+            908,
+            592
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "【误区】CPU速度提高 $50 \\%$ , 则CPU时间减少一半， 而误选A。",
+        "bbox": [
+            145,
+            595,
+            689,
+            613
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1 3. 解析：",
+        "text_level": 1,
+        "bbox": [
+            149,
+            615,
+            238,
+            633
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "将一个16位 unsigned short 转换成32位形式的 unsigned int, 因为都是无符号数， 新表示形式的高位用0填充。16位无符号整数所能表示的最大值为65535, 其十六进制表示为FFFFH,故 $\\mathbf { x }$ 的十六进制表示为FFFFH-5H=FFFAH, 所以y的十六进制表示为0000FFFAH。",
+        "bbox": [
+            106,
+            636,
+            908,
+            695
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "【排除法】先直接排除C、D, 然后分析余下选项的特征。 由于A、B的值相差儿乎近1倍，可采用算出0001 OOOOH (接近B且好算的数） 的值，再推断出答案。",
+        "bbox": [
+            106,
+            698,
+            908,
+            737
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "14. 解析：",
+        "text_level": 1,
+        "bbox": [
+            149,
+            739,
+            238,
+            756
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "IEEE754单精度浮点数是尾数用采取隐藏位策略的原码表示，且阶码用移码(偏置值为127）表示的浮点数。规格化的短浮点数的真值为： $( - 1 ) ^ { S } \\times 1 . m \\times 2 ^ { E - 1 2 7 }$ , $s$ 为符号位，阶码 $E$ 的取值为 $1 \\sim$ 254(8位表示），尾数 $_ m$ 为23位，共23 位；故 float类型 表示的最大整数是 $1 . 1 1 1 . . . 1 { \\times } 2 ^ { 2 5 4 - 1 2 7 } =$ $2 ^ { 1 2 7 } \\times ( 2 - 2 ^ { - 2 3 } ) = 2 ^ { 1 2 8 } - 2 ^ { 1 0 4 }$ , 故选D。",
+        "bbox": [
+            106,
+            758,
+            910,
+            838
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "【另解】IEEE 754单精度浮点数的格式如下图所示。",
+        "bbox": [
+            145,
+            840,
+            582,
+            858
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/95da36abf47ec0c3b32db39d2b0d7ebd427d4dc7026e1b5cf248343d10a79fc6.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>数符(1)</td><td>阶码(8)</td><td>尾数(23)</td></tr></table>",
+        "bbox": [
+            250,
+            859,
+            766,
+            884
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "当表示最大正整数时：数符取0；阶码取最大值为127；尾数部分隐含了整数部分的 $^ { \\prime \\prime } { } _ { 1 } \\ '$ '23 位尾数全取1 时尾数最大，为2-T23 , 此时浮点数的大小为(2-r23)x2'21=2'2s_2'04 0 $2 { - } 2 ^ { - 2 3 }$ $( 2 - 2 ^ { - 2 3 } ) { \\times } 2 ^ { 1 2 7 } { = } 2 ^ { 1 2 8 } { - } 2 ^ { 1 0 4 }$ ",
+        "bbox": [
+            106,
+            892,
+            908,
+            931
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "15. 解析：",
+        "text_level": 1,
+        "bbox": [
+            142,
+            97,
+            229,
+            112
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "尽管 record大小为7个字节（成员a有4个字节，成员b有1个字节，成员 c 2个字节），由于数据按边界对齐方式存储（见考点笔记），故record共占用8个字节。record.a的十六进制表示为 $0 \\dot { \\bf x } 0 0 0 0 0 0 1 1 1$ , 由于采用小端方式存放数据，故地址 $0 \\mathbf { x } C 0 0 8$ 中内容应为低字节 Oxll;record.b只占1个字节，后面的一个字节留空； record. c占2个字节，故其地址为 ${ \\bf 0 x C 0 0 E }$ 。各字节的存储分配如下图所示。",
+        "bbox": [
+            100,
+            116,
+            895,
+            216
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/0e44a50b688e89fc1e865707d4eaf8406018864426274945943c99967ad31901.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>地址</td><td>0xC008</td><td>- 0xC009</td><td>0xC00A</td><td>0xC00B</td></tr><tr><td>内容</td><td>record.a (0x11)</td><td>record.a (0x01)</td><td>record.a (0x00)</td><td>record.a (0x00)</td></tr><tr><td>地址</td><td>0xC00C</td><td>0xC00D</td><td>0xC00E</td><td>0xC00F</td></tr><tr><td>内容</td><td>record.b</td><td>-</td><td>record.c</td><td>record.c</td></tr></table>",
+        "bbox": [
+            142,
+            221,
+            851,
+            304
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "16. 解析：",
+        "text_level": 1,
+        "bbox": [
+            142,
+            316,
+            229,
+            332
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "EEPROM的进一步发展， 可读可写，用MOS管的浮栅上有无电荷来存储信息。闪存依然是ROM的一种， 写入时必须先擦除原有数据，故写的速度比读的速度要慢不少（硬件常识）。闪存是一种非易失性存储器， 它采用随机访问方式。现在常见的SSD固态硬盘， 即由Flash芯片组成。",
+        "bbox": [
+            100,
+            336,
+            895,
+            414
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "17. 解析：",
+        "text_level": 1,
+        "bbox": [
+            142,
+            418,
+            229,
+            434
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "地址映射采用2路组相联， 则主存地址为 $0 { \\sim } 1$ 、 4�5、 g�9可映射到第0组Cache中，主存地址为 $_ { 2 \\sim 3 }$ 、 $6 { \\sim } 7$ 可映射到第1组Cache中。Cache置换过程如下表所示。",
+        "bbox": [
+            100,
+            438,
+            882,
+            476
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/5753c340fff1e747e94843695c3caa7046c198c382aa9d25c1ccefffd7d88b23.jpg",
+        "table_caption": [],
+        "table_footnote": [
+            "注： “＿”表示当前访问块，”＊”表示本次访问命中。"
+        ],
+        "table_body": "<table><tr><td colspan=\"2\">走向</td><td>0</td><td>4</td><td>8</td><td>2</td><td>0</td><td>6</td><td>8</td><td>6</td><td>4</td><td>8</td></tr><tr><td rowspan=\"2\">第0组</td><td>块0</td><td></td><td>0</td><td>4</td><td>4</td><td>8</td><td>8</td><td>0</td><td>0</td><td>8</td><td>4</td></tr><tr><td>块1</td><td>0</td><td>4</td><td>8</td><td>8</td><td>0</td><td>0</td><td>8°</td><td>8</td><td>4</td><td>8°</td></tr><tr><td rowspan=\"2\">第1组</td><td>块2</td><td></td><td></td><td></td><td></td><td></td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><td>块3</td><td></td><td></td><td></td><td>2</td><td>2</td><td>6</td><td>6</td><td>6*</td><td>6</td><td>6</td></tr></table>",
+        "bbox": [
+            142,
+            480,
+            851,
+            582
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "注意：在不同的《计算机组成原理》教材中 关于组相联映射的介绍并不相同。 通常采用唐朔飞教材中的方式，但本题中采用的是蒋本珊教材中的方式。可以推断两次命题的老师应该不是同一位老师， 这也给考生答题带来了困扰。",
+        "bbox": [
+            100,
+            613,
+            894,
+            671
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "18. 解析：",
+        "text_level": 1,
+        "bbox": [
+            142,
+            676,
+            229,
+            692
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "字段直接编码法将微命令 字段分成若干个小字段， 互斥性微命令组合在同一 字段中， 相容性微命令分在不同字段中， 每个字段还要留出一个状态， 表示本字段不发出任何微命令。5 个互斥类分别包含7、 3、 12、 5和6个微命令， 需要3、 2、 4、 3和3 位， 共15位。",
+        "bbox": [
+            100,
+            696,
+            894,
+            754
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "19. 解析：",
+        "text_level": 1,
+        "bbox": [
+            142,
+            757,
+            229,
+            773
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "总线频率为100MHz, 则时钟周期为lOns。总线位宽与存储字长都是32 位，故每一个时钟周期 可传送一个32位存储字。猝发式发送可以连续传送地址连续的数据，故总的传送时间为：传送地址 lOns, 传送128位数据40ns, 共需 ${ 5 0 } \\mathbf { n } \\mathbf { s }$ 。",
+        "bbox": [
+            100,
+            777,
+            894,
+            834
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "20. 解析：",
+        "text_level": 1,
+        "bbox": [
+            138,
+            838,
+            229,
+            853
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "USB(通用串行总线）的特点有： $\\textcircled{1}$ 即插即用： $\\textcircled{2}$ 热插拔： $\\textcircled{3}$ 有很强的连接能力，采用菊花链形式将众多外设连接起来 ； $\\textcircled{4}$ 有很好的可扩充性， 一个USB控制器可扩充高达127个外部USB设备； $\\textcircled{5}$ 高速传输， 速度可达480Mbps。所以A B C选项都符合USB总线的特点。对于D, USB是串行总线， 不能同时传输 2位数据。",
+        "bbox": [
+            100,
+            857,
+            894,
+            936
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "解析：",
+        "text_level": 1,
+        "bbox": [
+            140,
+            94,
+            229,
+            110
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "I/O 接口与CPU之间的I/O 总线有数据线、控制线和地址线。控制线和地址线都是单向传输的，从CPU传送给I/O接口，而I/O接口中的命令字、状态字以及中断类型号均是由IO接口发往CPU的，故只能通过I/O 总线的数据线传输。",
+        "bbox": [
+            100,
+            114,
+            897,
+            173
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "解析：",
+        "text_level": 1,
+        "bbox": [
+            140,
+            176,
+            229,
+            192
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "在响应外部中断的过程中，中断隐指令完成的操作包括： $\\textcircled{1}$ 关中断； $\\textcircled{2}$ 保护断点； $\\textcircled{3}$ 引出中断服务程序（形成中断服务程序入口地址并送 PC)，所以只有I、III 正确。II中的保存通用寄存器的内容是在进入中断服务程序后首先进行的操作。",
+        "bbox": [
+            100,
+            196,
+            897,
+            254
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "解析：",
+        "text_level": 1,
+        "bbox": [
+            140,
+            256,
+            229,
+            274
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "本题关键是对“在用户态发生”（与上题的“执行”区分）的理解。对于A，系统调用是操作系统提供给用户程序的接口，系统调用发生在用户态，被调用程序在核心态下执行。对于B,外部中断是用户态到核心态的“门”，也发生在用户态，在核心态完成中断过程。对于C，进程切换属于系统调用执行过程中的事件，只能发生在核心态。对于D，缺页产生后，在用户态发生缺页中断，然后进入核心态执行缺页中断服务程序。",
+        "bbox": [
+            100,
+            276,
+            897,
+            377
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "解析：",
+        "text_level": 1,
+        "bbox": [
+            140,
+            381,
+            229,
+            397
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "子程序调用只需保存程序断点，即该指令的下一条指令的地址；中断调用子程序不仅要保护断点（PC的内容)，而且要保护程序状态字寄存器的内容PSW。在中断处理中，最重要的两个寄存器是PC 和 PSWR。",
+        "bbox": [
+            100,
+            400,
+            897,
+            458
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "解析：",
+        "text_level": 1,
+        "bbox": [
+            140,
+            462,
+            229,
+            478
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "在程序装入时，可以只将程序的一部分装入内存，而将其余部分留在外存，就可以启动程序执行。采用连续分配方式时，会使相当一部分内存空间都处于暂时或“永久”的空闲状态，造成内存资源的严重浪费，也无法从逻辑上扩大内存容量，因此虚拟内存的实现只能建立在离散分配的内存管理的基础上。有以下三种实现方式： $\\textcircled{1}$ 请求分页存储管理； $\\textcircled{2}$ 请求分段存储管理； $\\textcircled{3}$ 请求段页式存储管理。虚拟存储器容量既不受外存容量限制，也不受内存容量限制，而是由CPU 的寻址范围决定的。",
+        "bbox": [
+            100,
+            481,
+            897,
+            600
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "解析 ：",
+        "text_level": 1,
+        "bbox": [
+            140,
+            604,
+            229,
+            622
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "设备管理软件一般分为四个层次：用户层、与设备无关的系统调用处理层、设备驱动程序以及中断处理程序。",
+        "bbox": [
+            102,
+            625,
+            897,
+            662
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "解析：",
+        "text_level": 1,
+        "bbox": [
+            140,
+            666,
+            229,
+            682
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "首先求得各进程的需求矩阵Need与可利用资源矢量 Available:",
+        "bbox": [
+            142,
+            686,
+            668,
+            704
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/5983e2cee7728fe24d14c39f4a018dcdfb420b59eb8d15d8db4ab7fe2c4d5ec6.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">进程</td><td colspan=\"3\">Need</td></tr><tr><td>R1</td><td>R2</td><td>R3</td></tr><tr><td>P0</td><td>2</td><td>3</td><td>7</td></tr><tr><td>P1</td><td>1</td><td>3</td><td>3</td></tr><tr><td>P2</td><td>0</td><td>0</td><td>6</td></tr><tr><td>P3</td><td>2</td><td>2</td><td>1</td></tr><tr><td>P4</td><td>1</td><td>1</td><td>0</td></tr></table>",
+        "bbox": [
+            144,
+            708,
+            479,
+            850
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/81dfd70ffa52f3fe30ab00737906ad7bc503218b806fc2deefe7f5a63ce7b8f9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">Available</td><td>R1</td><td>R2</td><td>R3</td></tr><tr><td>2</td><td>3</td><td>3</td></tr></table>",
+        "bbox": [
+            504,
+            806,
+            857,
+            850
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "比较Need 和Ayailable可以发现，初始时进程 $\\mathbf { P } _ { 1 }$ 与 ${ \\bf P } _ { 3 }$ 可满足需求 。 尝试给 ${ \\bf P } _ { 1 }$ 分配资源，则 ${ \\bf P } _ { 1 }$ 完成后 Available 将变为 (6 3 6) , 无法满足 ${ \\bf P } _ { 0 }$ 的需求， 排除 B。 尝试给 ${ \\bf P } _ { 3 }$ 分配资源，则 ${ \\bf P } _ { 3 }$ 完成后 Available将变为(4,3,7)，该向量能满足其他所有进程的需求。所以，以 ${ \\bf P } _ { 3 }$ ",
+        "bbox": [
+            102,
+            862,
+            901,
+            920
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "开头的所有序列都是安全序列。",
+        "bbox": [
+            90,
+            92,
+            353,
+            110
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "28. 解析：",
+        "text_level": 1,
+        "bbox": [
+            131,
+            115,
+            220,
+            130
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "对于I, 当所读文件的数据不在内存时， 产生中断（缺页中断）， 原进程进入阻塞状态， 直到所需数据从外存调入内存后，才将该进程唤醒。 对千II, read系统调用通过陷入将CPU 从用户态切换到核心态， 从而获取操作系统提供的服务。 对于III, 要读一个文件首先要用open系统调用打开该文件。open中的参数包含文件的路径名与文件名， 而read只需要使用open返回的文件描述符， 并不使用文件名作为参数。read要求用户提供三个输入参数： $\\textcircled{1}$ 文件描述符fd;$\\textcircled{2}$ buf缓冲区首址； $\\textcircled{3}$ 传送的字节数n。read的功能是试图 从fd所指示的文件中读入 $_ n$ 个字节的数据， 并将它们送至由指针buf所指示的缓冲区中。",
+        "bbox": [
+            90,
+            134,
+            889,
+            276
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "29. 解析：",
+        "text_level": 1,
+        "bbox": [
+            131,
+            278,
+            220,
+            293
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "由于 ${ \\bf P } _ { 2 }$ 比 ${ \\bf P } _ { 1 }$ 晚 $5 \\mathrm { m } \\mathbf { s }$ 到达， $\\mathbf { P } _ { 1 }$ 先占用CPU, 作业运行的甘特图如下所示。",
+        "bbox": [
+            131,
+            297,
+            741,
+            315
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/b311c39bcfef9a549e85549e94ce84648f80e74b8d2f3604dd54f9a77b9ab433.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            233,
+            316,
+            745,
+            429
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "30. 解析：",
+        "text_level": 1,
+        "bbox": [
+            131,
+            436,
+            220,
+            452
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "选项A、B、D显然是可以进行处理机调度的情况。 对于 c, 当进程处于临界区时， 说明进程正在占用处理机，只要不破坏临界资源的使用规则，是不会影响处理机调度的。比如，通常访问的临界资源可能是慢速的外设（如打印机），如果在进程访问打印机时， 不能进行处理机调度， 那么系统的性能将是非常差的。",
+        "bbox": [
+            90,
+            455,
+            888,
+            535
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "31. 解析：",
+        "text_level": 1,
+        "bbox": [
+            131,
+            537,
+            220,
+            553
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "在引入线程后，进程依然还是资源分配的基本单位，线程是调度的基本单位，同一进程中的各个线程共享进程的地址空间。 在用户级线程中， 有关线程管理的所有工作都由应用程序完成， 无须内核的干预， 内核意识不到线程的存在。",
+        "bbox": [
+            90,
+            557,
+            888,
+            617
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "32. 解析：",
+        "text_level": 1,
+        "bbox": [
+            131,
+            619,
+            220,
+            636
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "对于A, 重排1/0请求次序也就是进行1/0调度， 从而使进程之间公平地共享磁盘访问，减少1/0完成所需要的平均等待时间。 对于 c, 缓冲区结合预读和滞后写技术对于具有重复性及阵发性的VO 进程改善磁盘IVO 性能很有帮助。对于D，优化文件物理块的分布可以减少寻找时间与延迟时间， 从而提高磁盘性能。 在一个磁盘上设置多个分区与改善设备1/0性能并无多大联系， 相反还会带来处理的复杂和降低利用率。",
+        "bbox": [
+            90,
+            638,
+            888,
+            739
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "33. 解析：",
+        "text_level": 1,
+        "bbox": [
+            131,
+            742,
+            220,
+            758
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "ICMP报文作为数据字段封装在IP 分组中， 因此，IP协议直接为ICMP 提供服务。UDP和TCP 都是传输层协议， 为应用层提供服务。PPP 协议是链路层协议， 为网络层提供服务。",
+        "bbox": [
+            90,
+            762,
+            888,
+            800
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "34. 解析：",
+        "text_level": 1,
+        "bbox": [
+            131,
+            803,
+            220,
+            819
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "此题为概念题， 过程特性定义各条物理线路的工作过程和时序关系。",
+        "bbox": [
+            131,
+            823,
+            700,
+            840
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "35. 解析：",
+        "text_level": 1,
+        "bbox": [
+            131,
+            843,
+            220,
+            859
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "考虑到局域网信道质量好， 以太网采取了两项重要的措施以使通信更简便： $\\textcircled{1}$ 采用无连接的工作方式； $\\textcircled{2}$ 不对发送的数据帧进行编号， 也不要求对方发回确认。 因此， 以太网提供的服务是不可靠的服务， 即尽最大努力的交付。 差错的纠正由高层完成。",
+        "bbox": [
+            90,
+            863,
+            888,
+            921
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "36. 解析：",
+        "text_level": 1,
+        "bbox": [
+            150,
+            94,
+            237,
+            110
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "本题即求从发送一个 帧到接收到这个帧的确认为止的时间内最多可以发送多少数据帧。 要尽可能多 发帧，应以短的数据 帧计算，首先计算出发送 一帧的时间： $1 2 8 { \\times } 8 / ( 1 6 { \\times } 1 0 ^ { 3 } ) = 6 4 \\mathrm { m s }$ ; 发送一帧到收到确认为止的 总时间： $6 4 + 2 7 0 { \\times } 2 + 6 4 = 6 6 8 \\mathrm { m s }$ ; 这段时间总共可以发送 $6 6 8 / 6 4 =$ 10.4 C帧）， 发送这么多帧至少需要用4位比特进行编号 。",
+        "bbox": [
+            106,
+            115,
+            907,
+            194
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "37. 解析：",
+        "text_level": 1,
+        "bbox": [
+            150,
+            197,
+            237,
+            213
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "和IV显然是IP路由器的功能 。 对千II, 当路由器监测到拥塞时， 可合理丢弃IP分组并向发出该IP分组的源主机发送一个源点抑制的ICMP报文。 对于III, 路由器对收到的IP分组首部进行 差错检验， 丢弃有差错首部的报文 ， 但不保证IP分组不丢失。",
+        "bbox": [
+            106,
+            217,
+            905,
+            276
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "38. 解析：",
+        "text_level": 1,
+        "bbox": [
+            150,
+            279,
+            237,
+            295
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "在实际网络的数据链路层上传送数据时，最终必须使用硬件地址 ，ARP协议是将网络层的IP地址解析为数据链路层的 MAC地址。",
+        "bbox": [
+            106,
+            299,
+            905,
+            337
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "39. 解析：",
+        "text_level": 1,
+        "bbox": [
+            150,
+            340,
+            237,
+            356
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "子网掩码的第3个字节为11111100, 可知前22位为子网号、后10位为主机号。IP地址的第3个字节为QlQQ且01 (下画线为子网号的一部分）， 将主机号（即后10位）全置为1, 可以得到广播地址为180.80.79.255。",
+        "bbox": [
+            106,
+            360,
+            905,
+            418
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "40. 解析：",
+        "text_level": 1,
+        "bbox": [
+            150,
+            422,
+            237,
+            438
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "SMTP采用“推” 的通信方式， 在用户代理向邮件服务器及邮件服务器之间发送邮件时SMTP客户主动将邮件 “推” 送到SMTP服务器。 而POP3采用“拉” 的通信方式， 当用户读取邮件时， 用户代理向邮件服务器 发出请求， “拉” 取用户邮箱中的邮件 。",
+        "bbox": [
+            106,
+            442,
+            905,
+            501
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "二、 综合应用题",
+        "text_level": 1,
+        "bbox": [
+            150,
+            510,
+            288,
+            529
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "41. 解答：",
+        "text_level": 1,
+        "bbox": [
+            150,
+            538,
+            237,
+            555
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "本题同时对多个知识点进行 了综合考查。 对有序表进行两两合并考查 了归并排序中的merge()函数；对合并过程的设计考查了哈夫曼树和最佳归并树。 外部 排序属于大纲新增考点。",
+        "bbox": [
+            106,
+            557,
+            905,
+            596
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1)对千长度分别为m, n的两个有序表的合并，最坏情况下是 一直比较到两个表尾元素比较次数为 $m + n - 1$ 次 。 故最坏情况的比较次数依赖于表长， 为了缩短总的比较次数， 根据",
+        "bbox": [
+            106,
+            599,
+            905,
+            638
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "哈夫曼树（最佳归并树 ）思想的启发， 可采用如图所示的合并顺序 。",
+        "bbox": [
+            106,
+            639,
+            626,
+            677
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "根据上图中的哈夫曼树 ， 6个 序列的合并过程为：",
+        "bbox": [
+            150,
+            680,
+            560,
+            698
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "第1次合并：表A 与表 B合并，生成含有45个元素的表AB ;",
+        "bbox": [
+            106,
+            701,
+            626,
+            737
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "第2次合并：表AB与表C合并，生成含有85个元素的表ABC;",
+        "bbox": [
+            106,
+            741,
+            626,
+            780
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "第3次合并：表D与表E合并，生成含有110 个元素的表DE;",
+        "bbox": [
+            106,
+            783,
+            626,
+            819
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/105c523d82de4d071d33bb5ee36b240f483d73349dbd0f96f9705a7bb09c7bab.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            640,
+            649,
+            907,
+            811
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "第4次合并：表ABC与表DE合并，生成含有195个元素的表ABCDE;",
+        "bbox": [
+            150,
+            823,
+            758,
+            840
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "第5次合并： 表ABCDE与表F合并，生成含有395个元素的最终表。",
+        "bbox": [
+            150,
+            842,
+            740,
+            861
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "由上述分析可知， 最坏清况下的比较次数为：第1次合并， 最多比较次数 $= 1 0 + 3 5 - 1 = 4 4$ ;第2次合并， 最多比较次数 $= 4 5 + 4 0 - \\ 1 = 8 4$ ; 第3次合并， 最多比较次数 $= 5 0 + 6 0 - 1 = 1 0 9$ ;第4次合并，最多比较次数 $= 8 5 + 1 1 0 - 1 = 1 9 4$ ; 第5次合并，最多比较次数 $= 1 9 5 + 2 0 0 - 1 = 3 9 4$ 。",
+        "bbox": [
+            106,
+            864,
+            905,
+            922
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "故比较的总次数最多为： $4 4 + 8 4 + 1 0 9 + 1 9 4 + 3 9 4 = 8 2 5 \\AA$ 。",
+        "bbox": [
+            134,
+            92,
+            615,
+            108
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2）各表的合并策略是：在对多个有序表进行两两合并时，若表长不同，则最坏情况下总的比较次数依赖于表的合并次序。可以借用哈夫曼树的构造思想，依次选择最短的两个表进行合并，可以获得最坏情况下最佳的合并效率。",
+        "bbox": [
+            92,
+            112,
+            888,
+            170
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "【1)2)评分说明】 $\\textcircled{1}$ 对于用类似哈夫曼树（或最佳归并树）思想进行合并，过程描述正确，给5分。按其他策略进行合并，过程描述正确，给3",
+            "$\\textcircled{2}$ 正确算出与合并过程一致的总比较次数，给2分。若计算过程正确，但结果错误，可给1分。",
+            "$\\textcircled{3}$ 考生只要说明采用的是类似哈夫曼树（或最佳归并树）的构造方法作为合并策略，即可给3分。如果采用其他策略，只要能够完成合并，给2分。"
+        ],
+        "bbox": [
+            92,
+            174,
+            888,
+            292
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "42. 解答：",
+        "text_level": 1,
+        "bbox": [
+            134,
+            297,
+            225,
+            312
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "顺序遍历两个链表到尾结点时，并不能保证两个链表同时到达尾结点。这是因为两个链表的长度不同。假设一个链表比另一个链表长 $k$ 个结点，我们先在长链表上遍历 $k$ 个结点，之后同步遍历两个链表，这样就能够保证它们同时到达最后一个结点。由于两个链表从第一个公共结点到链表的尾结点都是重合的，所以它们肯定同时到达第一个公共结点。",
+        "bbox": [
+            92,
+            316,
+            888,
+            395
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/23aa8cba73c5661c26b3871cbba6c1bf702f059ec0cc0533ecb51147212e9e31.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            271,
+            395,
+            711,
+            496
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "算法的基本设计思想：",
+        "bbox": [
+            134,
+            504,
+            319,
+            520
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\textcircled{1}$ 分别求出strl和str2所指的两个链表的长度 $\\pmb { m }$ 和 $_ n$ 。",
+            "$\\textcircled{2}$ 将两个链表以表尾对齐：令指针p、q分别指向strl和 $\\mathsf { s t r } 2$ 的头结点，若 $m { \\geqslant } n$ , 则使p指向链表中的第 $m - n + 1$ 个结点；若 $m < n$ , 则使 $\\mathsf { q }$ 指向链表中的第 $n ^ { - } m + 1$ 个结点，即使指针 $\\mathfrak { p }$ 和 $\\mathsf { q }$ 所指的结点到表尾的长度相等。",
+            "$\\textcircled{3}$ 反复将指针 $\\mathfrak { p }$ 和q同步向后移动，并判断它们是否指向同一结点。若p和 $\\mathsf { q }$ 指向同一结点，则该点即为所求的共同后缀的起始位置。"
+        ],
+        "bbox": [
+            92,
+            524,
+            888,
+            642
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2)算法的C语言代码描述：",
+        "bbox": [
+            134,
+            646,
+            371,
+            663
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "LinkNode \\*Find_lst/Common(LinkList str1,LinkList str2){ int lenl=Length(strl),len2=Length(str2); LinkNode $^{\\star}\\mathbb{P},^{\\star}\\mathbb{Q};$ for(p=str1;lenl>len2;len1--） //使p指向的链表与q指向的链表等长 p=p->next; for(q=str2;len1<len2;len2--） //使q指向的链表与p指向的链表等长 q=q->next; while(p->next!=NULL&&p->next!=q->next) { //查找共同后缀起始点 p=p->next; //两个指针同步向后移动 q=q->next; } return p->next; //返回共同后缀的起始点",
+        "bbox": [
+            161,
+            665,
+            855,
+            873
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "【1)、2)的评分说明】 $\\textcircled{1}$ 若考生所给算法实现正确，且时间复杂度为 ${ \\mathrm { O } } ( m + n )$ , 可给 12分；若算法正确，但时间复杂度超过 ${ \\mathrm { O } } ( m + n )$ , 则最高可给9分。",
+        "bbox": [
+            92,
+            877,
+            886,
+            914
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\textcircled{2}$ 若在算法的基本设计思想描述中因文字表达没有非常清晰反映出算法思路，但在算法",
+        "bbox": [
+            130,
+            918,
+            886,
+            936
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "实现中能够清晰看出算法思想且正确的，可参照 $\\textcircled{1}$ 的标准给分。",
+        "bbox": [
+            106,
+            92,
+            638,
+            108
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\textcircled{3}$ 若算法的基本设计思想描述或算法实现中部分正确，可参照 $\\textcircled{1}$ 中各种情况的相应给分标准酌情给分。",
+            "3）时间复杂度为 O(len1+len2)或 O(max(lenl,len2))，其中 len1、len2 分别为两个链表的长度。",
+            "【3）的评分说明】若考生所估计的时间复杂度与考生所实现的算法一致，可给1分。"
+        ],
+        "bbox": [
+            104,
+            112,
+            901,
+            210
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "43．解答：",
+        "text_level": 1,
+        "bbox": [
+            146,
+            214,
+            237,
+            230
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "本题综合涉及多个考点：计算机的性能指标、存储器的性能指标、DMA的性能分析，DMA方式的特点，多体交叉存储器的性能分析。",
+        "bbox": [
+            106,
+            234,
+            903,
+            272
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1）平均每秒CPU执行的指令数为： $8 0 \\mathbf { M } / 4 = 2 0 \\mathbf { M }$ ，故MIPS数为20；（1分）",
+        "bbox": [
+            146,
+            275,
+            797,
+            292
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "平均每条指令访存1.5次，故平均每秒Cache 缺失的次数 $= 2 0 \\mathbf { M } { \\times } 1 . 5 { \\times } ( 1 { - } 9 9 \\% ) = 3 0 0 \\mathbf { k }$ ；(1分）",
+        "bbox": [
+            146,
+            296,
+            903,
+            312
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "当Cache缺失时，CPU访问主存，主存与Cache之间以块为传送单位，此时，主存带宽为$1 6 \\mathbf { B } { \\times } 3 0 0 \\mathbf { k } / \\mathbf { s } = 4 . 8 \\mathbf { M } \\mathbf { B } / \\mathbf { s }$ 在不考虑 DMA 传送的情况下 主存带宽至少达到 4 8MB/s 才能满足CPU 的访存要求。（2分）",
+        "bbox": [
+            104,
+            316,
+            901,
+            374
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "2)题中假定在Cache缺失的情况下访问主存，平均每秒产生缺页中断 $3 0 0 0 0 0 { \\times } 0 . 0 0 0 5 \\% = 1 . 5$ 次。因为存储器总线宽度为32位，所以每传送32位数据，磁盘控制器发出一次DMA请求，故平均每秒磁盘DMA 请求的次数至少为 $1 . 5 { \\times } 4 \\mathrm { K B } / 4 \\mathrm { B } = 1 . 5 \\mathrm { K } = 1 5 3 6 .$ 。(2分）",
+            "3）CPU和DMA控制器同时要求使用存储器总线时，DMA请求优先级更高；（1分）"
+        ],
+        "bbox": [
+            104,
+            378,
+            903,
+            456
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "因为 DMA 请求得不到及时响应，V/O 传输数据可能会丢失。（1分)",
+            "4）四体交叉存储模式能提供的最大带宽为 $4 { \\times } 4 \\mathrm { B } / 5 0 \\mathrm { n s } = 3 2 0 \\mathrm { M B } / { \\bf s }$ 。(2分）"
+        ],
+        "bbox": [
+            146,
+            459,
+            762,
+            496
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "解答：",
+        "text_level": 1,
+        "bbox": [
+            146,
+            500,
+            237,
+            515
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1) $\\mathbf { x }$ 的 机 器码 为 [x] 补 = 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 1 B , 即 指 令 执 行 前(R I ) $=$ FDFFH, 右移 l 位后位1 1 1 0 1 1 1 1 1 1 1 1 B , 即 指令 执 行 后 (R l ) $=$ FEFFH 。 ( 2 分 ）",
+            "2）每个时钟周期只能有一条指令进入流水线，从第5个时钟周期开始，每个时钟周期都会有一条指令执行完毕，故至少需要 $4 + ( 5 - 1 ) = 8$ 个时钟周期。（2分)",
+            "3）I的ID段被阻塞的原因：因为 ${ \\mathrm { I } } _ { 3 }$ 与 $\\mathrm { I } _ { 1 }$ 和 $\\mathrm { I } _ { 2 }$ 都存在数据相关，需等到I和 $\\mathrm { I } _ { 2 }$ 将结果写回寄存器后， $\\mathrm { I } _ { 3 }$ 才能读寄存器内容，所以 $\\mathrm { I } _ { 3 }$ 的 ID 段被阻塞（1分）。 $\\mathrm { I } _ { 4 }$ 的 IF段被阻塞的原因：因为 $\\mathrm { I } _ { 4 }$ 的前一条指令 $\\mathrm { I } _ { 3 }$ 在ID段被阻塞，所以 $\\mathrm { I } _ { 4 }$ 的IF段被阻塞（1分）。"
+        ],
+        "bbox": [
+            106,
+            520,
+            901,
+            660
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "注意：要求“按序发射，按序完成”，故2）中下一条指令的IF必须和上一条指令的 ID并以免因上一条指令发生冲突而导致下一条指令先执行完",
+        "bbox": [
+            106,
+            661,
+            901,
+            699
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4）因 $2 ^ { * } \\mathbf { x }$ 操作有左移和加法两种实现方法，故 $\\mathbf { x } { = } \\mathbf { x } ^ { * } 2 { + } \\mathbf { a }$ 对应的指令序列为",
+        "bbox": [
+            146,
+            703,
+            779,
+            720
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/80589e05e97980d4a5e0d747f1eef66d28741840acd1090539e40955ee7a50fe.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>I1</td><td>LOAD</td><td>R1, [x]</td><td></td><td></td><td></td></tr><tr><td>I2</td><td>LOAD</td><td>R2, [a]</td><td></td><td></td><td></td></tr><tr><td>I3</td><td>SHL</td><td>R1</td><td>//或者</td><td>ADD</td><td>R1, R1</td></tr><tr><td>I4</td><td>ADD</td><td>R1, R2</td><td></td><td></td><td></td></tr><tr><td>I5</td><td>STORE</td><td>R2, [x]</td><td></td><td></td><td></td></tr></table>",
+        "bbox": [
+            179,
+            723,
+            637,
+            802
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "这5条指令在流水线中执行过程如下表所示。",
+        "bbox": [
+            148,
+            805,
+            528,
+            822
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/9e4f8fdeb3d55c273033251f52c55e53e10c4150d01c83db26f763d95d423327.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td colspan=\"17\">时间单元</td></tr><tr><td>指令</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>\\(I_1\\)</td><td>IF</td><td>ID</td><td>EX</td><td>M</td><td>WB</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>\\(I_2\\)</td><td></td><td>IF</td><td>ID</td><td>EX</td><td>M</td><td>WB</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>\\(I_3\\)</td><td></td><td></td><td>IF</td><td></td><td></td><td>ID</td><td>EX</td><td>M</td><td>WB</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+        "bbox": [
+            150,
+            826,
+            862,
+            928
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/fba668223172469b13c52f0aa38dca4effe6239c0c5cbeda17cf14174be7f2da.jpg",
+        "table_caption": [
+            "（续表）"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td colspan=\"18\">时间单元</td></tr><tr><td>指令</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td></td></tr><tr><td>\\(I_4\\)</td><td></td><td></td><td></td><td></td><td></td><td>IF</td><td></td><td></td><td></td><td>ID</td><td>EX</td><td>M</td><td>WB</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>\\(I_5\\)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>IF</td><td></td><td></td><td></td><td>ID</td><td>EX</td><td>M</td><td>WB</td><td></td></tr></table>",
+        "bbox": [
+            138,
+            108,
+            851,
+            190
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "故执行 $\\mathbf { x } { = } \\mathbf { x } ^ { * } 2 { + } \\mathbf { a }$ 语句最少需要17个时钟周期。",
+        "bbox": [
+            137,
+            202,
+            528,
+            219
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "45. 解答：",
+        "text_level": 1,
+        "bbox": [
+            137,
+            225,
+            227,
+            241
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1)页框号为21。 理由： 因为起始驻留集为空， 因此0页对应的页框为空闲链表中的第三个空闲页框 21, 其对应的页框号为21。",
+            "2)页框号为32。 理由：因 $1 1 > 1 0$ 故发生第三轮扫描，页号为1的页框在第二轮已处千空闲页框链表中，此刻该页又被重新访问，因此应被重新放回驻留集中， 其页 框号为32。",
+            "3)页框号为41。 理由： 因为第2页从来没有被访问过， 它不在驻留集中， 因此从 空闲页框链表中取出链表头的页框 41, 页框号为41。",
+            "4)合适。 理 由：如果程序的时间局部性越好， 那么从空闲页框链表中重新取回的机会越大， 该策略的优势越明显。"
+        ],
+        "bbox": [
+            94,
+            245,
+            893,
+            416
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "46. 解答：",
+        "text_level": 1,
+        "bbox": [
+            137,
+            420,
+            227,
+            436
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1)文件系统中所能容纳的磁盘块总数为 $4 \\mathrm { T B } / 1 \\mathrm { K B } = 2 ^ { 3 2 }$ 。 要完全表示所有磁盘块，索引项中的块号最少要占 $3 2 / 8 \\ = \\ 4 \\mathrm { B }$ 。 而索引表区仅采用直接索引结构， 故512B的索引表区能容纳$5 1 2 \\mathrm { B } / 4 \\mathrm { B } = 1 2 8$ 个索引项。每个索引项对应一 个磁盘块，所以该系统可支持的单个文件最大长度是 $1 2 8 \\times 1 \\mathrm { K B } = 1 2 8 \\mathrm { K B }$ 。",
+            "2)这里的考查的分配方式不同于我们所熟悉的三种经典分配方式， 但是题目中给出了详细的解释。 所求的单个文件最大长度一共包含两部分： 预分配的连续空间和直接索引区。"
+        ],
+        "bbox": [
+            94,
+            440,
+            893,
+            568
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "连续区块数 占2B, 共可以表示 $2 ^ { 1 6 }$ 个磁盘块， 即 $2 ^ { 2 6 } \\mathrm { \\mathbf { B } }$ 。 直接索引区共 $5 0 4 \\mathrm { B } / 6 \\mathrm { B } = 8 4 $ 个索引项 。 所以该系统可支持的单个文件最大长度是 $2 ^ { 2 6 } \\mathrm { B } + 8 4 \\mathrm { K B }$ 。",
+        "bbox": [
+            94,
+            572,
+            891,
+            612
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "为了使单个文件的长度达到最大， 应使连续区的块数字段最大容量4TB。 分别设起始块号和块数分别占4B, 这样 起始块号可以寻址的范围是 $2 ^ { 3 2 }$ 个磁盘块，共4TB, 即整个系统空间。 同样，块数字段可以表示最多 $2 ^ { 3 2 }$ 个磁盘块，共4TB。",
+        "bbox": [
+            94,
+            615,
+            891,
+            677
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "47. 解答：",
+        "text_level": 1,
+        "bbox": [
+            137,
+            681,
+            227,
+            697
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "【解析】1)由题47-a 表看出，源IP地址为IP分组 头的第 $1 3 \\sim 1 6$ 字节。 表中 1、 3、 4号分组的源IP地址均为192.168.0.8 Cc0a8 0008H), 所以1、 3、 4号分组是由H发送的。",
+        "bbox": [
+            94,
+            702,
+            891,
+            741
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "题47-a 表中， 1号分组封装的 TCP段的 $\\mathbf { S Y N } = 1$ , $\\mathbf { A C K } = 0$ , $\\mathtt { s e q } = 8 4 6 \\mathtt { b } 4 1 \\mathtt { c } 5 \\mathrm { H }$ ; 2号分组封装的TCP段的 $\\begin{array} { r } { \\mathbb { S } \\mathbb { Y } \\mathbb { N } = 1 , \\mathrm { A C K } = 1 } \\end{array}$ , $\\mathtt { s e q } = \\mathtt { e 0 } 5 9$ 9fefH, $\\mathrm { a c k } = 8 4 6 \\mathrm { b } 4 1 \\mathrm { c } 6 \\mathrm { H } ; 3$ 号分组封装的TCP段的 $\\mathbf { A C K } = 1$ ,$\\mathtt { s e q } = 8 4 6 \\mathsf { b } 4 1 \\mathsf { c } 6 \\mathrm { H }$ , $\\mathbf { a c k } = \\mathbf { e } 0 5 9 9 \\mathbf { f } \\mathbf { f } 0 \\mathbf { H }$ , 所以1、2、3号分组 完成了TCP连接的建立过程。",
+        "bbox": [
+            94,
+            745,
+            893,
+            807
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "由于快速以太网数据帧有效载荷的最小长度为 46字节， 表中 3、5号分组的总长度为40(28H)字节，小 于46字节， 其余分组总长度均大 于46字节 。 所以 3、 5号分组通过快速以太网传输时需要填充。",
+        "bbox": [
+            94,
+            811,
+            893,
+            873
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2)由3号分组封装的TCP段可知，发送应用层数据初始序号为 $\\mathsf { s e q } = 8 4 6 \\mathsf { b } \\ 4 1 \\mathsf { c 6 H }$ , 由5号分组封装的TCP段可知，ack为seq = 846b 41d6H, 所以S已经收到的应用层数据的字节数",
+        "bbox": [
+            94,
+            876,
+            891,
+            916
+        ],
+        "page_idx": 10
+    }
+]
