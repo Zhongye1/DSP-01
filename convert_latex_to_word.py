@@ -53,17 +53,18 @@ def main():
         print("没有找到LaTeX文件")
         return
     
-    # 转换数据结构2009题库
-    target_file = "数据结构2009-题库.tex"
-    if target_file in [f.name for f in latex_files]:
-        print(f"\n正在转换 {target_file} ...")
-        result = convert_latex_to_docx(target_file)
-        if result:
-            print(f"转换成功: {result}")
+    # 循环处理从2009到2023年的数据结构题库
+    for year in range(2009, 2024):  # range(2009, 2024) 包含2009到2023
+        target_file = f"数据结构{year}-题库.tex"
+        if target_file in [f.name for f in latex_files]:
+            print(f"\n正在转换 {target_file} ...")
+            result = convert_latex_to_docx(target_file)
+            if result:
+                print(f"转换成功: {result}")
+            else:
+                print(f"转换失败: {target_file}，可能需要手动安装pandoc")
         else:
-            print("转换失败，可能需要手动安装pandoc")
-    else:
-        print(f"未找到 {target_file}")
+            print(f"未找到 {target_file}")
 
 if __name__ == "__main__":
     main()
