@@ -57,9 +57,9 @@
 \newcounter{questioncounter}
 
 % 问题格式化命令
-\newcommand{\question}[2]{%
+\newcommand{\question}[1]{%
     \stepcounter{questioncounter}%
-    \noindent\textbf{\thequestioncounter} #1%
+    \noindent\textbf{\thequestioncounter.} #1%
 }
 
 % 选择题选项格式
@@ -83,8 +83,8 @@
 \section{单项选择题}
 
 \begin{choicequestion}[单选题]
-\question{下列对顺序存储的有序表（长度为 $n$ ）实现给定操作的算法中，平均时间复杂度为 $O(1)$ 的是（）。}{D}
-\choices{查找包含指定值元素的算法}{插入包含指定值元素的算法}{删除第 $i(1 \leqslant i \leqslant n)$ 个元素的算法}{获取第 $i$ （ $1\leqslant i\leqslant n$ ）个元素的算法}}
+\question{下列对顺序存储的有序表（长度为 $n$ ）实现给定操作的算法中，平均时间复杂度为 $O(1)$ 的是（）。}
+\choices{查找包含指定值元素的算法}{插入包含指定值元素的算法}{删除第 $i(1 \leqslant i \leqslant n)$ 个元素的算法}{获取第 $i$ （ $1\leqslant i\leqslant n$ ）个元素的算法}
 
 \begin{answersection}
 D. 获取第 $i$ （ $1\leqslant i\leqslant n$ ）个元素的算法
@@ -96,8 +96,8 @@ D. 获取第 $i$ （ $1\leqslant i\leqslant n$ ）个元素的算法
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{现有非空双向链表 L, 其结点结构为: prev data next, prev 是指向直接前驱结点的指针, next 是指向后继结点的指针。若要在 L 中指针 p 所指向的节点 (非尾结点) 之后插入指针 s 指向的新结点, 则在执行了语句序列 "s -> next = p -> next; p -> next = s" 后, 下列语句序列中还需要执行的是 ( )。}{C}
-\choices{s -> next -> prev = p; s -> prev = p;}{p->next->prev = s; s->prev = p;}{s \rightarrow \text{prev} = s \rightarrow \text{next} \rightarrow \text{prev}; s \rightarrow \text{next} \rightarrow \text{prev} = s;}{p \rightarrow next -> prev = s -> prev; s \rightarrow next -> prev = p;}}
+\question{现有非空双向链表 L, 其结点结构为: prev data next, prev 是指向直接前驱结点的指针, next 是指向后继结点的指针。若要在 L 中指针 p 所指向的节点 (非尾结点) 之后插入指针 s 指向的新结点, 则在执行了语句序列 "s -> next = p -> next; p -> next = s" 后, 下列语句序列中还需要执行的是 ( )。}
+\choices{s -> next -> prev = p; s -> prev = p;}{p->next->prev = s; s->prev = p;}{s \rightarrow \text{prev} = s \rightarrow \text{next} \rightarrow \text{prev}; s \rightarrow \text{next} \rightarrow \text{prev} = s;}{p \rightarrow next -> prev = s -> prev; s \rightarrow next -> prev = p;}
 
 \begin{answersection}
 C. s \rightarrow \text{prev} = s \rightarrow \text{next} \rightarrow \text{prev}; s \rightarrow \text{next} \rightarrow \text{prev} = s;
@@ -114,7 +114,7 @@ I. M的行数\newline
 II. M中包含非零元素的行数\newline
 III.M的列数\newline
 IV.M中包含非零元素的列数}{A}
-\choices{仅 I、III}{仅 I、IV}{仅 II、IV}{I、II、III、IV}}
+\choices{仅 I、III}{仅 I、IV}{仅 II、IV}{I、II、III、IV}
 
 \begin{answersection}
 A. 仅 I、III
@@ -127,7 +127,7 @@ A. 仅 I、III
 
 \begin{choicequestion}[单选题]
 \question{在由 6 个字符组成的字符集 S 中, 各字符出现的频次分别为 3, 4, 5, 6, 8, 10, 为 S 构造的哈夫曼编码的加权平均长度为 ( )。}{B}
-\choices{2.4}{2.5}{2.67}{2.75}}
+\choices{2.4}{2.5}{2.67}{2.75}
 
 \begin{answersection}
 B. 2.5
@@ -139,14 +139,14 @@ B. 2.5
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{已知一棵二叉树的树形如右图所示，若其后序遍历序列为 f, d, b, e, c, a，则其先（前）序遍历序列是（）。}{A}
+\question{已知一棵二叉树的树形如右图所示，若其后序遍历序列为 f, d, b, e, c, a，则其先（前）序遍历序列是（）。}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.3\textwidth]{images/bbead846e08c25bd9b1ef0f9c3134f75fa306d74b5d2054eb876fa93c3796a0a.jpg}
 \end{figure}
 
-\choices{a, e, d, f, b, c}{a, c, e, b, d, f}{c, a, b, e, f, d}{d, f, e, b, a, c}}
+\choices{a, e, d, f, b, c}{a, c, e, b, d, f}{c, a, b, e, f, d}{d, f, e, b, a, c}
 
 \begin{answersection}
 A. a, e, d, f, b, c
@@ -161,8 +161,8 @@ A. a, e, d, f, b, c
 \question{已知无向连通图 G 中各边的权值均为 1。下列算法中，一定能够求出图 G 中从某顶点到其余各个顶点最短路径的是（）。\newline
 I.普里姆（Prim）算法\newline
 II. 克鲁斯卡尔（Kruskal）算法\newline
-III. 广度优先搜索算法}{B}
-\choices{仅 I}{仅 III}{仅 I、II}{I、II、III}}
+III. 广度优先搜索算法}
+\choices{仅 I}{仅 III}{仅 I、II}{I、II、III}
 
 \begin{answersection}
 B. 仅 III
@@ -178,8 +178,8 @@ B. 仅 III
 I. 插入操作可能增加树的高度\newline
 II. 删除操作一定会导致叶结点的变化\newline
 III.查找某关键字总是要查找到叶结点\newline
-IV.插入的新关键字最终位于叶结点中}{A}
-\choices{仅 I}{仅 I、II}{仅 III、IV}{仅 I、II、IV}}
+IV.插入的新关键字最终位于叶结点中}
+\choices{仅 I}{仅 I、II}{仅 III、IV}{仅 I、II、IV}
 
 \begin{answersection}
 A. 仅 I
@@ -195,7 +195,7 @@ IV. 错误，插入的关键字可能在内部节点。
 
 \begin{choicequestion}[单选题]
 \question{对含有 600 个元素的有序顺序表进行折半查找, 关键字间的比较次数最多是 ( )。}{B}
-\choices{9}{10}{30}{300}}
+\choices{9}{10}{30}{300}
 
 \begin{answersection}
 B. 10
@@ -208,7 +208,7 @@ B. 10
 
 \begin{choicequestion}[单选题]
 \question{现有长度为 5, 初始为空的散列表 HT, 散列表函数 $H(k) = (k + 4)\% 5$ , 用线性探查再散列法解决冲突。若将关键字序列 2022, 12, 25 依次插入 HT 中, 然后删除关键字 25, 则 HT 中查找失败的平均查找长度为( )。}{D}
-\choices{1}{1.6}{1.8}{2.2}}
+\choices{1}{1.6}{1.8}{2.2}
 
 \begin{answersection}
 D. 2.2
@@ -230,8 +230,8 @@ I. 希尔排序\newline
 Ⅱ. 归并排序\newline
 III. 快速排序\newline
 IV.堆排序\newline
-V. 基数排序}{C}
-\choices{仅 I、II}{仅 II、V}{仅 I、III、IV}{仅 III、IV、V}}
+V. 基数排序}
+\choices{仅 I、II}{仅 II、V}{仅 I、III、IV}{仅 III、IV、V}
 
 \begin{answersection}
 C. 仅 I、III、IV
@@ -244,7 +244,7 @@ C. 仅 I、III、IV
 
 \begin{choicequestion}[单选题]
 \question{使用快速排序算法对数据进行升序排序，若经过一次划分后得到的数据序列是68，11，70，23，80，77，48，81，93，88，则该次划分的枢轴是（）。}{C}
-\choices{11}{70}{80}{81}}
+\choices{11}{70}{80}{81}
 
 \begin{answersection}
 C. 80
@@ -283,9 +283,7 @@ int Edge[MAXV][MAXV]; // 邻接矩阵
 遍历图的每个顶点，计算每个顶点的入度和出度。入度是邻接矩阵中该顶点对应列中值为1的元素个数，出度是该顶点对应行中值为1的元素个数。然后比较每个顶点的出度和入度，如果出度大于入度，则该顶点为K顶点。
 
 (2) 算法实现：
-\end{answersection}
-
-\begin{analysissection}
+```
 #include <stdio.h>
 
 int printVertices(MGraph G) {
@@ -319,7 +317,50 @@ int printVertices(MGraph G) {
     
     return count;  // 返回K顶点个数
 }
-\end{analysissection}
+```
+
+
+\end{answersection}
+
+\begin{analysissection}
+```
+#include <stdio.h>
+
+int printVertices(MGraph G) {
+    int count = 0;  // K顶点计数
+    
+    // 遍历每个顶点
+    for (int i = 0; i < G.numVertices; i++) {
+        int inDegree = 0;    // 入度
+        int outDegree = 0;   // 出度
+        
+        // 计算顶点i的出度（邻接矩阵第i行中值为1的元素个数）
+        for (int j = 0; j < G.numVertices; j++) {
+            if (G.Edge[i][j] == 1) {
+                outDegree++;
+            }
+        }
+        
+        // 计算顶点i的入度（邻接矩阵第i列中值为1的元素个数）
+        for (int k = 0; k < G.numVertices; k++) {
+            if (G.Edge[k][i] == 1) {
+                inDegree++;
+            }
+        }
+        
+        // 如果出度大于入度，则为K顶点
+        if (outDegree > inDegree) {
+            printf("K vertex: %c\n", G.VerticesList[i]);  // 输出K顶点
+            count++;  // 计数器加1
+        }
+    }
+    
+    return count;  // 返回K顶点个数
+}
+```
+
+
+\end{answersection}
 \end{choicequestion}
 
 \begin{choicequestion}[问答题]
