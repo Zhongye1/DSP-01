@@ -1,0 +1,6 @@
+{
+  "api_base_url": "https://mineru.net/api/v4",
+  "api_token": "",
+  "default_model": "vlm",
+  "extract_model": "vlm"
+}

@@ -1,0 +1,274 @@
+## 接口列表
+
+目前支持与openai兼容的 `/v1/chat/completions` 接口，可自行使用与openai或其他兼容的客户端接入接口，或者使用 [dify](https://dify.ai/) 等线上服务接入使用。
+
+### 对话补全
+
+对话补全接口，与openai的 [chat-completions-api](https://platform.openai.com/docs/guides/text-generation/chat-completions-api) 兼容。
+
+**POST /v1/chat/completions**
+
+header 需要设置 Authorization 头部：
+
+```
+Authorization: Bearer [tongyi_sso_ticket/login_aliyunid_ticket]
+```
+
+请求数据：
+
+```json
+{
+    // 模型名称随意填写
+    "model": "qwen",
+    // 目前多轮对话基于消息合并实现，某些场景可能导致能力下降且受单轮最大token数限制
+    // 如果您想获得原生的多轮对话体验，可以传入上一轮消息获得的id，来接续上下文
+    // "conversation_id": "bc9ef150d0e44794ab624df958292300-40811965812e4782bb87f1a9e4e2b2cd",
+    "messages": [
+        {
+            "role": "user",
+            "content": "你是谁？"
+        }
+    ],
+    // 如果使用SSE流请设置为true，默认false
+    "stream": false
+}
+```
+
+响应数据：
+
+```json
+{
+    // 如果想获得原生多轮对话体验，此id，你可以传入到下一轮对话的conversation_id来接续上下文
+    "id": "bc9ef150d0e44794ab624df958292300-40811965812e4782bb87f1a9e4e2b2cd",
+    "model": "qwen",
+    "object": "chat.completion",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "我是阿里云研发的超大规模语言模型，我叫通义千问。"
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 1,
+        "total_tokens": 2
+    },
+    "created": 1710152062
+}
+```
+
+### AI绘图
+
+对话补全接口，与openai的 [images-create-api](https://platform.openai.com/docs/api-reference/images/create) 兼容。
+
+**POST /v1/images/generations**
+
+header 需要设置 Authorization 头部：
+
+```
+Authorization: Bearer [tongyi_sso_ticket/login_aliyunid_ticket]
+```
+
+请求数据：
+
+```json
+{
+    // 可以乱填
+    "model": "wanxiang",
+    "prompt": "一只可爱的猫"
+}
+```
+
+响应数据：
+
+```json
+{
+    "created": 1711507734,
+    "data": [
+        {
+            "url": "https://wanx.alicdn.com/wanx/1111111111/text_to_image/7248e85cfda6491aae59c54e7e679b17_0.png"
+        }
+    ]
+}
+```
+
+### 文档解读
+
+提供一个可访问的文件URL或者BASE64_URL进行解析。
+
+**POST /v1/chat/completions**
+
+header 需要设置 Authorization 头部：
+
+```
+Authorization: Bearer [refresh_token]
+```
+
+请求数据：
+
+```json
+{
+    "model": "qwen",
+    "messages": [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "file",
+                    "file_url": {
+                        "url": "https://mj101-1317487292.cos.ap-shanghai.myqcloud.com/ai/test.pdf"
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": "文档里说了什么？"
+                }
+            ]
+        }
+    ]
+}
+```
+
+响应数据：
+
+```json
+{
+    "id": "b56ea6c9e86140429fa2de6a6ec028ff",
+    "model": "qwen",
+    "object": "chat.completion",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "文档中包含了四个古代魔法仪式或咒语的描述，它们似乎旨在影响或控制一个特定女性的情感和行为，使其对施术者产生强烈的爱意。以下是每个仪式的具体内容：\n\n1. **仪式一**（PMG 4.1390 – 1495）：\n   - 施术者需留下一些面包，将其掰成七小块。\n   - 前往一处英雄、角斗士或其他暴力死亡者丧生的地方。\n   - 对着面包碎片念诵咒语后丢弃，并从该地取一些受污染的泥土扔进目标女性的住所。\n   - 咒语内容包括向命运三女神（Moirai）、罗马版的命运女神（Fates）、自然力量（Daemons）、饥荒与嫉妒之神以及非正常死亡者献祭食物，并请求他们以痛苦折磨目标，使她在梦中惊醒，心生忧虑与恐惧，最终跟随施术者的步伐并顺从其意愿。此过程以赫卡忒（Hecate）女神为命令的源泉。\n\n2. **仪式二**（PMG 4.1342 – 57）：\n   - 施术者召唤恶魔（Daemon），通过一系列神秘的神祇名号（如Erekisephthe Araracharara Ephthesikere）要求其将名为Tereous的女子（Apia所生）带至施术者Didymos（Taipiam所生）身边。\n   - 请求该女子在灵魂、心智及女性器官上遭受剧烈痛苦，直至她主动找寻Didymos并与之紧密相连（唇对唇、发对发、腹部对腹部）。整个过程要求立即执行。\n\n3. **仪式三**（PGM 4.1265 – 74）：\n   - 揭示了阿佛洛狄忒（Aphrodite）鲜为人知的名字——NEPHERIĒRI[nfr-iry-t]。\n   - 如果想赢得一位美丽女子的芳心，施术者应保持三天纯净，献上乳香，并在心中默念该名字七次。\n   - 这样的做法需持续七天，据说这样便能成功吸引女子。\n\n4. **仪式四**（PGM 4.1496 – 1）：\n   - 施术者在燃烧的煤炭上供奉没药（myrrh），同时念诵咒语。\n   - 咒语将没药称为“苦涩的调和者”、“热力的激发者”，并命令它前往指定的女子（及其母亲的名字）处，阻止她进行日常活动（如坐、饮、食、注视他人、亲吻他人），迫使她心中只有施术者，对其产生强烈的欲望与爱意。\n   - 咒语还指示没药直接穿透女子的灵魂，驻留在其心中，焚烧其内脏、胸部、肝脏、气息、骨骼、骨髓，直到她来到施术者身边。\n\n这些仪式反映了古代魔法实践中试图借助超自然力量操控他人情感与行为的企图，涉及对神灵、恶魔、神秘名字及特定物质（如面包、泥土、乳香、没药）的运用，通常伴随着严格的仪式规程和咒语念诵。此类行为在现代伦理和法律框架下被视为不恰当甚至违法，且缺乏科学依据。"
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 1,
+        "total_tokens": 2
+    },
+    "created": 1712253736
+}
+```
+
+### 图像解析
+
+提供一个可访问的图像URL或者BASE64_URL进行解析。
+
+此格式兼容 [gpt-4-vision-preview](https://platform.openai.com/docs/guides/vision) API格式，您也可以用这个格式传送文档进行解析。
+
+**POST /v1/chat/completions**
+
+header 需要设置 Authorization 头部：
+
+```
+Authorization: Bearer [refresh_token]
+```
+
+请求数据：
+
+```json
+{
+    "model": "qwen",
+    "messages": [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "file",
+                    "file_url": {
+                        "url": "https://img.alicdn.com/imgextra/i1/O1CN01CC9kic1ig1r4sAY5d_!!6000000004441-2-tps-880-210.png"
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": "图像描述了什么？"
+                }
+            ]
+        }
+    ]
+}
+```
+
+响应数据：
+
+```json
+{
+    "id": "895fbe7fa22442d499ba67bb5213e842",
+    "model": "qwen",
+    "object": "chat.completion",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "图像展示了通义千问的标志，一个紫色的六边形和一个蓝色的三角形，以及“通义千问”四个白色的汉字。"
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1,
+        "completion_tokens": 1,
+        "total_tokens": 2
+    },
+    "created": 1712254066
+}
+```
+
+### ticket存活检测
+
+检测tongyi_sso_ticket或login_aliyunid_ticket是否存活，如果存活live未true，否则为false，请不要频繁（小于10分钟）调用此接口。
+
+**POST /token/check**
+
+请求数据：
+
+```json
+{
+    "token": "QIhaHrrXUaIrWMUmL..."
+}
+```
+
+响应数据：
+
+```json
+{
+    "live": true
+}
+```
+
+## 注意事项
+
+### Nginx反代优化
+
+如果您正在使用Nginx反向代理qwen-free-api，请添加以下配置项优化流的输出效果，优化体验感。
+
+```nginx
+# 关闭代理缓冲。当设置为off时，Nginx会立即将客户端请求发送到后端服务器，并立即将从后端服务器接收到的响应发送回客户端。
+proxy_buffering off;
+# 启用分块传输编码。分块传输编码允许服务器为动态生成的内容分块发送数据，而不需要预先知道内容的大小。
+chunked_transfer_encoding on;
+# 开启TCP_NOPUSH，这告诉Nginx在数据包发送到客户端之前，尽可能地发送数据。这通常在sendfile使用时配合使用，可以提高网络效率。
+tcp_nopush on;
+# 开启TCP_NODELAY，这告诉Nginx不延迟发送数据，立即发送小数据包。在某些情况下，这可以减少网络的延迟。
+tcp_nodelay on;
+# 设置保持连接的超时时间，这里设置为120秒。如果在这段时间内，客户端和服务器之间没有进一步的通信，连接将被关闭。
+keepalive_timeout 120;
+```
+
+### Token统计
+
+由于推理侧不在qwen-free-api，因此token不可统计，将以固定数字返回。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=LLM-Red-Team/qwen-free-api&type=Date)](https://star-history.com/#LLM-Red-Team/qwen-free-api&Date)
