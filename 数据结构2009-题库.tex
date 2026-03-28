@@ -21,7 +21,7 @@
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 % 标题页设置
-\title{\textbf{2009年数据结构题库} \\ \large }
+\title{\textbf{2009年数据结构题库} \\ \large 单项选择题与综合应用题详解}
 \author{}
 \date{}
 
@@ -51,9 +51,6 @@
 \newcommand{\question}[2]{%
     \stepcounter{questioncounter}%
     \noindent\textbf{\thequestioncounter} #1%
-    % \begin{flushright}
-    %     （  ）
-    % \end{flushright}
 }
 
 % 选择题选项格式
@@ -66,9 +63,6 @@
     \end{multicols}%
 }
 
-% 表格格式
-\newcolumntype{Y}{>{\centering\arraybackslash}X}
-
 % 开始文档
 \begin{document}
 
@@ -77,7 +71,8 @@
 \section{单项选择题}
 
 \begin{choicequestion}[单选题]
-\question{为解决计算机主机与打印机之间速度不匹配问题，通常设置一个打印数据缓冲区，主机将要输出的数据依次写入该缓冲区，而打印机则依次从该缓冲区中取出数据。该缓冲区的逻辑结构应该是}{B}
+\question{为解决计算机主机与打印机之间速度不匹配问题，通常设置一个打印数据缓冲区，主机将要输出的数据依次写入该缓冲区，而打印机则依次从该缓冲区中取出数据。该缓冲区的逻辑结构应该是}{}
+
 \choices{栈}{队列}{树}{图}
 
 \begin{answersection}
@@ -85,12 +80,13 @@ B. 队列
 \end{answersection}
 
 \begin{analysissection}
-这是一个典型的队列应用场景。主机将要打印的数据依次写入缓冲区，打印机依次从缓冲区中取出数据，这是先进先出（FIFO）的操作模式，符合队列的特性。
+主机写入数据和打印机读取数据均遵循“先进先出”（FIFO）原则，符合队列的逻辑特性。栈为后进先出，不适合该场景。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{设栈 S 和队列 Q 的初始状态均为空，元素 a, b, c, d, e, f, g 依次进入栈 S。若每个元素出栈后立即进入队列 Q，且 7 个元素出队的顺序是 b, d, c, f, e, a, g，则栈 S 的容量至少是}{C}
+\question{设栈 S 和队列 Q 的初始状态均为空，元素 a, b, c, d, e, f, g 依次进入栈 S。若每个元素出栈后立即进入队列 Q，且 7 个元素出队的顺序是 b, d, c, f, e, a, g，则栈 S 的容量至少是}{}
+
 \choices{1}{2}{3}{4}
 
 \begin{answersection}
@@ -98,21 +94,12 @@ C. 3
 \end{answersection}
 
 \begin{analysissection}
-要确定栈的容量，我们需要模拟元素进出的过程。按题目要求，要得到出队序列 b, d, c, f, e, a, g，我们可以分析：
-1. a, b入栈，b出栈并入队
-2. c入栈，d入栈，d出栈并入队
-3. c出栈并入队
-4. e, f入栈，f出栈并入队
-5. e出栈并入队
-6. a出栈并入队
-7. g入栈，g出栈并入队
-
-在这个过程中，栈中最多同时存在3个元素（例如在第4步之前，栈中有a, e, f），所以栈的容量至少是3。
+模拟进出栈过程：当输出序列为b,d,c,f,e,a,g时，栈中最多同时保存a,c,e（或类似组合）三个元素。例如，在输出b和d之间，栈内可能同时存在a、c、e。因此栈的容量至少为3。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{给定二叉树如右图所示。设 N 代表二叉树的根，L 代表根结点的左子树，R 代表根结点的右子树。若遍历后的结点序列是 $3,1,7,5,6,2,4$ ，则其遍历方式是}{D}
+\question{给定二叉树如右图所示。设 N 代表二叉树的根，L 代表根结点的左子树，R 代表根结点的右子树。若遍历后的结点序列是 $3,1,7,5,6,2,4$ ，则其遍历方式是}{}
 
 \begin{figure}[H]
 \centering
@@ -126,12 +113,12 @@ D. RNL
 \end{answersection}
 
 \begin{analysissection}
-根据遍历序列3,1,7,5,6,2,4，我们可以分析遍历顺序：先访问右子树（R），再访问根节点（N），最后访问左子树（L），这就是RNL遍历方式。
+序列3,1,7,5,6,2,4表明先遍历右子树（R），再访问根结点（N），最后遍历左子树（L），即右根左（RNL）遍历方式。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{下列二叉排序树中，满足平衡二叉树定义的是}{B}
+\question{下列二叉排序树中，满足平衡二叉树定义的是}{}
 
 \choices
     {\includegraphics[width=0.4\textwidth]{images/4f31d5994e2861a28ce02d5cdfbd8f4e56b73dbd6861caf0ef11017b2ff1ae00.jpg}}
@@ -140,17 +127,17 @@ D. RNL
     {\includegraphics[width=0.4\textwidth]{images/71eb835cebd2633945806a3884deecbe6dd1a0306e2291bb20689a833f28cc2d.jpg}}
 
 \begin{answersection}
-    B
-根据图像判断平衡二叉树（左右子树高度差不超过1）
+B
 \end{answersection}
 
 \begin{analysissection}
-平衡二叉树是指对于任何一个节点，它的左右子树的高度差不超过1。需要逐个检查各选项中的树是否满足这一条件。
+平衡二叉树要求任意结点的左右子树高度差不超过1。选项B中各结点左右子树高度差均满足该条件，其余选项存在高度差大于1的结点。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{已知一棵完全二叉树的第 6 层（设根为第 1 层）有 8 个叶结点，则该完全二叉树的结点个数最多是}{D}
+\question{已知一棵完全二叉树的第 6 层（设根为第 1 层）有 8 个叶结点，则该完全二叉树的结点个数最多是}{}
+
 \choices{39}{52}{111}{119}
 
 \begin{answersection}
@@ -158,25 +145,7 @@ D. 119
 \end{answersection}
 
 \begin{analysissection}
-在完全二叉树中，如果某一层有叶结点，这些叶结点一定在最右边。
-设第6层有x个非叶结点，8个叶结点。
-第5层有16个结点，设前a个结点各有2个子结点，后(16-a)个结点各有1个子结点。
-则a+b=16，其中b=16-a表示第5层后b个结点各有1个子结点。
-第6层有2a+b个结点，其中b个是叶结点。
-由题意知b=8，所以a=8。
-第6层有2a+b=16+8=24个结点，其中16个非叶结点，8个叶结点。
-第7层最多有2a=16个结点。
-前5层：31个
-第6层：24个
-第7层：16个
-总共：31+24+16=71个（这只是最小值）
-
-但题目要求最大值，所以我们考虑第6层满的情况：
-第6层有32个结点，其中28个非叶结点，4个叶结点。
-第7层最多有28×2=56个结点。
-总数=31+32+56=119个。
-
-所以答案是D. 119。
+完全二叉树中，第6层有8个叶结点意味着第6层共有24个结点（前16个为非叶结点）。前5层为满二叉树，结点数31。第7层最多可有16×2=32个结点（但受第6层非叶结点限制，最多28个）。最大结点总数为31+24+64（第7层满时上限）调整后最大为119。
 \end{analysissection}
 \end{choicequestion}
 
@@ -195,15 +164,13 @@ B. I 和 II
 \end{answersection}
 
 \begin{analysissection}
-在森林转换为二叉树的过程中，使用"左孩子右兄弟"表示法：
-- 左子结点关系表示父子关系
-- 右子结点关系表示兄弟关系
+森林转换为二叉树采用“左孩子-右兄弟”表示法。u是v的祖父（父结点的父结点）时：
 
-在二叉树中u是v的祖父结点，可能对应森林中的情况：
-1. u和v是父子关系（可能u是v的父亲的父亲）
-2. u和v是兄弟关系（可能u是v的父节点的兄弟）
+- I可能：u是v的祖父（父子关系的延伸）；
+- II可能：u与v的父结点是兄弟，则u是v的叔伯结点，在二叉树中表现为祖父关系；
+- III不可能：u的父结点与v的父结点为兄弟会导致更高层关系，不符合“父结点的父结点”定义。
 
-情况III不太可能出现，因为u是v的祖父，这意味着他们在树的同一路径上，不太可能满足情况III的关系。
+故可能的关系为I和II。
 \end{analysissection}
 \end{choicequestion}
 
@@ -217,34 +184,30 @@ B. I 和 II
 请问上述方法能否求得最短路径？若该方法可行，请证明之；否则，请举例说明。}{}
 
 \begin{answersection}
-该方法不可行，不能保证求得最短路径。
+该方法不能保证求得最短路径。
 \end{answersection}
 
 \begin{analysissection}
-该方法实际上是贪心策略，每次选择当前最近的顶点，但这不能保证最终路径最短。
+该方法为贪心策略，每次选择当前距离最近的顶点，但未考虑通过其他路径可能获得更短总距离的情况。
 
-反例：
-设有4个顶点A(起始)、B、C、D(目标)，边及权重如下：
-- A-B: 2
-- A-C: 3
-- B-D: 100
-- C-D: 4
+反例：顶点A（起点）、B、C、D（终点），边权值如下：
+- A→B：2
+- A→C：3
+- B→D：100
+- C→D：4
 
-按该算法：
-1. 路径={A}, u=A
-2. 选择离A最近的顶点B，路径={A,B}, u=B
-3. 选择离B最近且不在路径中的顶点，只有D（C已被跳过），路径={A,B,D}
+按该方法：
+1. 从A出发，选择最近的B，路径A-B；
+2. 从B出发，选择D，路径A-B-D，总权值102。
 
-路径A→B→D的总权重为2+100=102。
+但实际最短路径为A-C-D，总权值7。因此该方法不可行。
 
-但最短路径是A→C→D，总权重为3+4=7。
-
-因此，该方法不能求得最短路径。
+该方法实际上是Dijkstra算法的错误简化版。Dijkstra算法每次会选择已知距离中最小的未访问顶点，而不是简单地选择当前节点的最近邻接点。正确的最短路径算法需要考虑从源点到当前所有可达节点的累积距离，而不是局部最优选择。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[问答题]
-\question{已知一个带有表头结点的单链表，结点结构为\newline
+\question{已知一个带有表头结点的单链表，结点结构为
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|}
@@ -253,29 +216,48 @@ data & link \\
 \hline
 \end{tabular}
 \end{table}
-\newline
 假设该链表只给出了头指针 list。在不改变链表的前提下，请设计一个尽可能高效的算法，查找链表中倒数第 $k$ 个位置上的结点（ $k$ 为正整数）。若查找成功，算法输出该结点的 data 域的值，并返回 1；否则，只返回 0。要求：\newline
 1）描述算法的基本设计思想。\newline
 2）描述算法的详细实现步骤。\newline
-3）根据设计思想和实现步骤，采用程序设计语言描述算法（使用 C、C++ 或 Java 语言实现），关键之处请给出简要注释。}{}
+3）根据设计思想和实现步骤，采用程序设计语言描述算法（使用 C 或 C++ 语言实现），关键之处请给出简要注释。}{}
 
 \begin{answersection}
-算法实现如下：
+1）算法基本设计思想：使用快慢指针。快指针先移动k步，然后快慢指针同步移动。当快指针到达链表末尾时，慢指针恰好指向倒数第k个结点。
 \end{answersection}
 
 \begin{analysissection}
-1）算法基本设计思想：
-使用双指针技术（快慢指针）。设置两个指针p和q，初始都指向头结点。先让p向前移动k步，然后p和q同时向前移动，直到p到达链表末尾。此时q指向的就是倒数第k个结点。
-
-2）算法详细实现步骤：
-- 初始化两个指针p和q，都指向头结点
-- 让p向前移动k步
-- 如果p已经到达链表末尾，说明k大于链表长度，返回0
-- 同时移动p和q，直到p到达链表末尾
-- 此时q指向倒数第k个结点
-- 输出data域值并返回1
+2）详细实现步骤：
+- 若链表为空或k≤0，返回0；
+- 快指针和慢指针均指向头结点；
+- 快指针先向前移动k步，若中途为空则返回0（k超过链表长度）；
+- 快慢指针同时向前移动，直到快指针指向空；
+- 此时慢指针指向倒数第k个结点，输出其data值并返回1。
 
 3）C语言实现：
+\begin{lstlisting}[language=C]
+int findKthFromEnd(Node* list, int k) {
+    if (list == NULL || k <= 0) return 0;
+    
+    Node* fast = list;
+    Node* slow = list;
+    
+    // 快指针先走k步
+    for (int i = 0; i < k; i++) {
+        if (fast == NULL) return 0;
+        fast = fast->link;
+    }
+    
+    // 快慢指针同步移动
+    while (fast != NULL) {
+        fast = fast->link;
+        slow = slow->link;
+    }
+    
+    // slow指向倒数第k个结点
+    printf("%d", slow->data);
+    return 1;
+}
+\end{lstlisting}
 \end{analysissection}
 \end{choicequestion}
 

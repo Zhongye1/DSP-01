@@ -20,17 +20,20 @@
 
 % 代码高亮设置
 \lstset{
-    basicstyle=\ttfamily,
+    basicstyle=\ttfamily\small,
     keywordstyle=\color{blue},
-    commentstyle=\color{green},
-    stringstyle=\color{red}
+    commentstyle=\color{green!70!black},
+    stringstyle=\color{red},
+    breaklines=true,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
 }
 
 % 页面设置
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 % 标题页设置
-\title{\textbf{2015年数据结构题库} \\ \large }
+\title{\textbf{2015年数据结构题库} \\ \large 单项选择题与综合应用题详解}
 \author{}
 \date{}
 
@@ -56,6 +59,9 @@
 % 定义题号计数器
 \newcounter{questioncounter}
 
+% 定义题号计数器
+\newcounter{questioncounter}
+
 % 问题格式化命令
 \newcommand{\question}[2]{%
     \stepcounter{questioncounter}%
@@ -64,16 +70,13 @@
 
 % 选择题选项格式
 \newcommand{\choices}[4]{%
-    \begin{multicols}{2}
+    \begin{multicols}
     \noindent \textbf{A.} #1 \par
     \noindent \textbf{B.} #2 \par
     \noindent \textbf{C.} #3 \par
     \noindent \textbf{D.} #4 \par
     \end{multicols}%
 }
-
-% 表格格式
-\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 % 开始文档
 \begin{document}
@@ -90,7 +93,8 @@ int S(int n)
 void main()  
 { cout << S(1);} 
 \end{lstlisting}\newline
-程序运行时使用栈来保存调用过程的信息，自栈底到栈顶保存的信息依次对应的是}{A}
+程序运行时使用栈来保存调用过程的信息，自栈底到栈顶保存的信息依次对应的是}{}
+
 \choices{main() $\rightarrow$ S(1) $\rightarrow$ S(0)}{S(0) $\rightarrow$ S(1) $\rightarrow$ main()}{main() $\rightarrow$ S(0) $\rightarrow$ S(1)}{S(1) $\rightarrow$ S(0) $\rightarrow$ main()}
 
 \begin{answersection}
@@ -98,12 +102,13 @@ A. main() $\rightarrow$ S(1) $\rightarrow$ S(0)
 \end{answersection}
 
 \begin{analysissection}
-程序执行流程：main()调用S(1)，S(1)调用S(0)，S(0)返回0。所以调用栈从栈底到栈顶为：main() $\rightarrow$ S(1) $\rightarrow$ S(0)。
+程序执行时，main()首先调用S(1)。S(1)因n=1>0，继续递归调用S(0)。S(0)满足n<=0，返回0。函数调用遵循后进先出原则，调用栈从栈底到栈顶依次为：main() $\rightarrow$ S(1) $\rightarrow$ S(0)。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{先序序列为a,b,c,d的不同二叉树的个数是}{B}
+\question{先序序列为a,b,c,d的不同二叉树的个数是}{}
+
 \choices{13}{14}{15}{16}
 
 \begin{answersection}
@@ -111,12 +116,13 @@ B. 14
 \end{answersection}
 
 \begin{analysissection}
-先序序列确定了根节点和各子树的节点，但没有确定节点之间的父子关系。对于n个节点的不同二叉树个数是第n个卡塔兰数。对于4个节点，第4个卡塔兰数为C(4) = C(8,4)/(4+1) = 70/5 = 14。
+先序序列固定了根结点a及各子树结点集合，但未确定左右子树划分。具有n个结点的不同二叉树个数为第n个卡塔兰数。对于n=4，第4个卡塔兰数$C_4=\frac{1}{5}\binom{8}{4}=14$。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{下列选项给出的是从根分别到达两个叶结点路径上的权值序列，能属于同一棵哈夫曼树的是}{A}
+\question{下列选项给出的是从根分别到达两个叶结点路径上的权值序列，能属于同一棵哈夫曼树的是}{}
+
 \choices{24, 10, 5 和 24, 10, 7}{24, 10, 5 和 24, 12, 7}{24, 10, 10 和 24, 14, 11}{24, 10, 5 和 24, 14, 6}
 
 \begin{answersection}
@@ -124,12 +130,13 @@ A. 24, 10, 5 和 24, 10, 7
 \end{answersection}
 
 \begin{analysissection}
-在哈夫曼树中，从根到两个叶子节点的路径，在到达分叉点之前应该是相同的。选项A中，两个序列都以24, 10开始，然后分叉到5和7，这符合哈夫曼树的特征。
+哈夫曼树中，从根到不同叶结点的路径在分叉前权值序列完全相同。选项A中两条路径前两个权值（24,10）相同，随后分叉，符合哈夫曼树结构特征。其他选项在分叉前权值存在差异，不可能属于同一棵哈夫曼树。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{现有一棵无重复关键字的平衡二叉树（AVL 树），对其进行中序遍历可得到一个降序序列。下列关于该平衡二叉树的叙述中，正确的是}{D}
+\question{现有一棵无重复关键字的平衡二叉树（AVL 树），对其进行中序遍历可得到一个降序序列。下列关于该平衡二叉树的叙述中，正确的是}{}
+
 \choices{根结点的度一定为 2}{树中最小元素一定是叶结点}{最后插入的元素一定是叶结点}{树中最大元素一定是无左子树}
 
 \begin{answersection}
@@ -137,12 +144,13 @@ D. 树中最大元素一定是无左子树
 \end{answersection}
 
 \begin{analysissection}
-中序遍历得到降序序列，说明对于任意节点，其值大于其右子树的所有节点值，小于其左子树的所有节点值。这意味着树的实际结构与常规BST相反。在这样的树中，最大元素在最左边，且不会有左子树。
+中序遍历得到降序序列，表明该AVL树满足“左子树结点值均大于根结点值，右子树结点值均小于根结点值”（与常规BST相反）。在这样的树中，最大元素必然位于最左侧路径的末端，因此其一定无左子树。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{设有向图 $\mathrm{G} = (\mathrm{V}, \mathrm{E})$ ，顶点集 $\mathrm{V} = \{\mathrm{v}_0, \mathrm{v}_1, \mathrm{v}_2, \mathrm{v}_3\}$ ，边集 $\mathrm{E} = \{<\mathrm{v}_0, \mathrm{v}_1>, <\mathrm{v}_0, \mathrm{v}_2>, <\mathrm{v}_0, \mathrm{v}_3>, <\mathrm{v}_1, \mathrm{v}_3>\}$ 。若从顶点 $\mathrm{V}_0$ 开始对图进行深度优先遍历，则可能得到的不同遍历序列个数是}{C}
+\question{设有向图 $\mathrm{G} = (\mathrm{V}, \mathrm{E})$ ，顶点集 $\mathrm{V} = \{\mathrm{v}_0, \mathrm{v}_1, \mathrm{v}_2, \mathrm{v}_3\}$ ，边集 $\mathrm{E} = \{<\mathrm{v}_0, \mathrm{v}_1>, <\mathrm{v}_0, \mathrm{v}_2>, <\mathrm{v}_0, \mathrm{v}_3>, <\mathrm{v}_1, \mathrm{v}_3>\}$ 。若从顶点 $\mathrm{v}_0$ 开始对图进行深度优先遍历，则可能得到的不同遍历序列个数是}{}
+
 \choices{2}{3}{4}{5}
 
 \begin{answersection}
@@ -150,31 +158,32 @@ C. 4
 \end{answersection}
 
 \begin{analysissection}
-从v0出发，可以依次访问v1、v2、v3，顺序不同会产生不同的遍历序列。从v0可以到达v1、v2、v3，所以有3个邻接点可以选择下一个访问。从v1还可以到达v3，所以可能的遍历序列有：v0,v1,v3,v2; v0,v2,v1,v3; v0,v2,v3,v1; v0,v3,v1,v2。共4种。
+从$\mathrm{v}_0$出发，其邻接点为$\mathrm{v}_1,\mathrm{v}_2,\mathrm{v}_3$，可按不同顺序访问。$\mathrm{v}_1$还有指向$\mathrm{v}_3$的边。可能的DFS序列包括：v0-v1-v3-v2、v0-v2-v1-v3、v0-v2-v3-v1、v0-v3-v1-v2等，共4种。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{求下面带权图的最小（代价）生成树时，可能是克鲁斯卡（Kruskal）算法第2次选中但不是普里姆（Prim）算法（从 $\mathrm{V}_4$ 开始）第2次选中的边是}{B}
+\question{求下面带权图的最小（代价）生成树时，可能是克鲁斯卡（Kruskal）算法第2次选中但不是普里姆（Prim）算法（从 $\mathrm{V}_4$ 开始）第2次选中的边是}{}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.3\textwidth]{images/97f00253ce52f55e799a2dae98c9137a24e15bb433588379c388e61acda7e346.jpg}
 \end{figure}
 
-\choices{$(\mathrm{V}_{1}, \mathrm{~V}_{3})$}{$\left(\mathrm{V}_{1}, \mathrm{~V}_{4}\right)$}{$\left(\mathrm{V}_{2}, \mathrm{~V}_{3}\right)$}{$\left(\mathrm{V}_{3}, \mathrm{~V}_{4}\right)$}
+\choices{$(\mathrm{V}_{1}, \mathrm{V}_{3})$}{$\left(\mathrm{V}_{1}, \mathrm{V}_{4}\right)$}{$\left(\mathrm{V}_{2}, \mathrm{V}_{3}\right)$}{$\left(\mathrm{V}_{3}, \mathrm{V}_{4}\right)$}
 
 \begin{answersection}
-B. $\left(\mathrm{V}_{1}, \mathrm{~V}_{4}\right)$
+B. $\left(\mathrm{V}_{1}, \mathrm{V}_{4}\right)$
 \end{answersection}
 
 \begin{analysissection}
-Kruskal算法按边权值从小到大选择边，Prim算法从起始顶点开始逐步扩展。根据图中边的权值，(V1,V4)可能是Kruskal算法第二次选中的边，但不是Prim算法从V4开始的第二次选中的边。
+Kruskal算法按权值从小到大依次选择不构成回路的边。Prim算法从指定顶点$\mathrm{V}_4$开始，逐步选择与已选集合相连的最小权值边。根据图中边权值关系，$(\mathrm{V}_1,\mathrm{V}_4)$可能在Kruskal第2次被选中，但在Prim从$\mathrm{V}_4$开始时并非第2次选中的边。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{下列选项中，不能构成折半查找中关键字比较序列的是}{A}
+\question{下列选项中，不能构成折半查找中关键字比较序列的是}{}
+
 \choices{500, 200, 450, 180}{450, 200, 180}{180, 500, 200, 450}{180, 200, 500, 450}
 
 \begin{answersection}
@@ -182,71 +191,27 @@ A. 500, 200, 450, 180
 \end{answersection}
 
 \begin{analysissection}
-在折半查找中，如果在某一步比较后决定向左查找，则后续的所有元素都应该小于当前元素；如果决定向右查找，则后续的所有元素都应该大于当前元素。选项A中：500>200(向左)→450>200，这是矛盾的，因为既然450>200却在200的左边。
+折半查找中，若某次比较后向左子表查找，则后续所有比较的关键字均应小于当前关键字；向右子表查找则均应大于当前关键字。选项A中500→200（向左）后出现450>200，存在矛盾，不可能构成合法比较序列。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{已知字符串 S 为 "abaabaabacacaabaabcc", 模式串 t 为 "abaabc"。采用 KMP 算法进行匹配, 第一次出现 "失配" (s[i] ≠ t[j]) 时, i = j = 5 , 下次开始匹配时, i 和 j 的值分别是}{D}
+\question{已知字符串 S 为 "abaabaabacacaabaabcc", 模式串 t 为 "abaabc"。采用 KMP 算法进行匹配, 第一次出现 "失配" (s[i] ≠ t[j]) 时, i = j = 5 , 下次开始匹配时, i 和 j 的值分别是}{}
+
 \choices{i = 1, j = 0}{i = 5, j = 0}{i = 5, j = 2}{i = 6, j = 2}
 
 \begin{answersection}
-D. i = 6, j = 2
+C. i = 5, j = 2
 \end{answersection}
 
 \begin{analysissection}
-在KMP算法中，当发生失配时，主串指针i不变，模式串指针j移动到next[j]位置。如果i=j=5时失配，j的下一个位置是next[5]。对于模式串"abaabc"，其next数组为[0,0,1,1,2,0]，所以j=next[5]=0。但这里应该是j=next[5]=2（因为模式串abaabc的next数组应该是[0,0,1,1,2,3]中前几位），实际应该是j=2，i保持不变，即i=5。等等，让我重新分析：i=5,j=5失配时，根据KMP算法，i不变，j=next[5]。对于"abaabc"，next数组是[0,0,1,1,2,0]，所以j=0。不对，重新分析。
-
-S: a b a a b a a b a c a c a a b a a b c c
-   0 1 2 3 4 5 6 7 8 9...
-T: a b a a b c
-   0 1 2 3 4 5
-   
-S[5]='a', T[5]='c'，不匹配。
-i=5, j=5时失配，按照KMP算法，i不变，j=next[j]。
-模式串"abaabc"的next数组计算：
-j:  0 1 2 3 4 5
-T:  a b a a b c
-next: 0 0 1 1 2 0
-
-所以j=next[5]=0，i保持为5。这与选项不符。
-
-重新分析：如果i=j=5时失配，根据KMP算法，i应该不变，j=next[j]。但有时实现中i会加1。在某些实现中，当s[i] != t[j]时，如果j != 0, j = next[j]，否则i++。所以i=6, j=next[5]=0。这仍不符合。
-
-让我重新分析模式串"abaabc"的next数组：
-位置 0 1 2 3 4 5
-字符 a b a a b c
-next 0 0 1 1 2 0
-(前缀函数: 0 0 1 1 2 0)
-
-如果i=j=5失配，j=next[5]=0，i应该保持不变，即i=5,j=0，这对应选项B。但题目答案是D，让我重新考虑。
-
-如果失配后i也要移动一位，那么i=6, j=0，但仍不对。
-等等，可能是nextval数组：nextval[0]=0, nextval[1]=0, nextval[2]=1, nextval[3]=0, nextval[4]=0, nextval[5]=0
-这样j=nextval[5]=0。
-
-根据题目要求答案是D，即i=6,j=2，这意味着在失配后i增加1，j增加到2，可能是因为next[5]=2（这与我计算的不符）。
-
-实际上，对于"abaabc":
-- next[0]=0
-- next[1]=0 (a,b无公共前后缀)
-- next[2]=1 (a, a的最长公共前后缀是"a")
-- next[3]=1 (a, aa的最长公共前后缀是空或"a"，实际是1)
-- next[4]=2 (ab, aab的最长公共前后缀是"ab")
-- next[5]=? (aba, abaab的最长公共前后缀是"ab"，长度为2)
-
-所以next[5]=2，即当j=5失配时，j=next[5]=2，i保持不变？还是i增加？
-
-在某些实现中，当s[i] != t[j]时：
-- 如果j == 0，则i++
-- 否则 j = next[j]
-
-但题目说是i=6，说明i增加了，这可能是特定的KMP实现。
+模式串t="abaabc"的next数组为[-1,0,0,1,1,2]。当i=j=5失配时，按照KMP规则，主串指针i保持不变，模式串指针j回退至next[5]=2的位置。因此下次匹配时i=5，j=2。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{下列排序算法中，元素的移动次数与关键字的初始排列次序无关的是}{C}
+\question{下列排序算法中，元素的移动次数与关键字的初始排列次序无关的是}{}
+
 \choices{直接插入排序}{起泡排序}{基数排序}{快速排序}
 
 \begin{answersection}
@@ -254,12 +219,13 @@ C. 基数排序
 \end{answersection}
 
 \begin{analysissection}
-基数排序的移动次数只与元素个数和基数有关，与关键字的初始排列无关。而其他排序算法的移动次数都与初始排列有关。
+基数排序通过按位分配和收集，元素的移动次数仅取决于元素个数和基数，与初始排列顺序无关。其他三种排序算法的移动次数均与初始顺序密切相关。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{已知小根堆为8,15,10,21,34,16,12，删除关键字8之后需重建堆，在此过程中，关键字之间的比较次数是}{C}
+\question{已知小根堆为8,15,10,21,34,16,12，删除关键字8之后需重建堆，在此过程中，关键字之间的比较次数是}{}
+
 \choices{1}{2}{3}{4}
 
 \begin{answersection}
@@ -267,16 +233,13 @@ C. 3
 \end{answersection}
 
 \begin{analysissection}
-删除堆顶元素8后，将最后一个元素12移到堆顶，然后向下调整：
-1. 12与8和10中较小者（10）比较，12>10，将10上移，12下移
-2. 12与16和12中较小者比较，12=12，比较一次
-3. 完成调整
-所以比较次数为3。
+删除堆顶8后，将最后一个元素12置于堆顶，然后进行向下调整。12依次与左右孩子比较（涉及10、16、12等），共发生3次有效关键字比较。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{希尔排序的组内排序采用的是}{A}
+\question{希尔排序的组内排序采用的是}{}
+
 \choices{直接插入排序}{折半插入排序}{快速排序}{归并排序}
 
 \begin{answersection}
@@ -284,90 +247,62 @@ A. 直接插入排序
 \end{answersection}
 
 \begin{analysissection}
-希尔排序的基本思想是将数组按照一定增量分成若干子序列，对每个子序列进行直接插入排序，然后逐渐减小增量，重复此过程直至增量为1。
+希尔排序的核心是将数组按增量划分为多个子序列，对每个子序列分别采用直接插入排序，随后逐步减小增量，直至增量为1。
 \end{analysissection}
 \end{choicequestion}
 
 \section{综合应用题}
 
 \begin{choicequestion}[问答题]
-\question{(15分)用单链表保存 $m$ 个整数，结点的结构为[data][link]，且|data| $\leqslant n(n$ 为正整数）。现要求设计一个时间复杂度尽可能高效的算法，对于链表中 data 的绝对值相等的结点，仅保留第一次出现的结点而删除其余绝对值相等的结点。例如，若给定的单链表 HEAD 如下：\newline
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{images/829013fbbd7ef6cb28c103de7edf42c7821e3ab809ac0a331c5295531da62d0b.jpg}
-\end{figure}\newline
-
-则删除结点后的 HEAD 为\newline
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{images/5998f445d746ce73fbafa04e06b542db17184518aa6a8fd5033896bc03012969.jpg}
-\end{figure}\newline
-
-要求：\newline
+\question{(15分)用单链表保存 $m$ 个整数，结点的结构为[data][link]，且|data| $\leqslant n(n$ 为正整数）。现要求设计一个时间复杂度尽可能高效的算法，对于链表中 data 的绝对值相等的结点，仅保留第一次出现的结点而删除其余绝对值相等的结点。要求：\newline
 1）给出算法的基本设计思想。  \newline
-(2) 使用 C 或 $\mathrm{C}++$ 语言, 给出单链表结点的数据类型定义。  \newline
-(3) 根据设计思想, 采用 C 或 $\mathrm{C}++$ 语言描述算法, 关键之处给出注释。  \newline
+2）使用 C 或 $\mathrm{C}++$ 语言, 给出单链表结点的数据类型定义。  \newline
+3）根据设计思想, 采用 C 或 $\mathrm{C}++$ 语言描述算法, 关键之处给出注释。  \newline
 4）说明你所设计算法的时间复杂度和空间复杂度。}{}
 
 \begin{answersection}
-1) 算法的基本设计思想：
-使用一个布尔数组记录已经出现过的绝对值，遍历链表，对于每个节点，检查其绝对值是否已经出现过，如果出现过则删除该节点，否则标记该绝对值为已出现。
-
-2) 单链表节点的数据类型定义：
+1) 算法的基本设计思想：使用辅助数组（大小为n+1）标记绝对值是否已出现。遍历链表，对每个结点的绝对值进行检查：若已标记，则删除该结点；否则标记并保留。
 \end{answersection}
 
 \begin{analysissection}
+2) 单链表结点数据类型定义：
+\begin{lstlisting}[language=C]
 typedef struct Node {
     int data;
-    struct Node* link;
+    struct Node *link;
 } Node, *LinkList;
+\end{lstlisting}
 
-3) 算法实现：
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
-
-Node* removeDuplicateAbs(Node* head, int n) {
-    if (!head) return head;
-    
-    // 创建布尔数组，用于标记绝对值是否出现过
-    // 数组大小为n+1，索引0到n分别表示绝对值0到n
-    bool* visited = (bool*)calloc(n + 1, sizeof(bool));
-    
-    Node* prev = NULL;
-    Node* curr = head;
-    
+3) 算法实现（C语言）：
+\begin{lstlisting}[language=C]
+LinkList removeDuplicateAbs(LinkList head, int n) {
+    if (head == NULL) return NULL;
+    bool *visited = (bool *)calloc(n + 1, sizeof(bool));  // 标记数组
+    Node *prev = NULL, *curr = head;
     while (curr != NULL) {
-        int absValue = abs(curr->data);
-        
-        // 如果该绝对值已经出现过，则删除当前节点
-        if (visited[absValue]) {
-            Node* toDelete = curr;
-            if (prev) {
-                prev->link = curr->link;  // 跳过当前节点
-                curr = curr->link;
+        int absVal = abs(curr->data);
+        if (visited[absVal]) {  // 已出现，删除当前结点
+            Node *temp = curr;
+            if (prev != NULL) {
+                prev->link = curr->link;
             } else {
-                // 如果删除的是头节点
                 head = curr->link;
-                curr = head;
             }
-            free(toDelete);
+            curr = curr->link;
+            free(temp);
         } else {
-            // 否则标记该绝对值为已出现，并移动指针
-            visited[absValue] = true;
+            visited[absVal] = true;
             prev = curr;
             curr = curr->link;
         }
     }
-    
-    free(visited);  // 释放辅助数组
+    free(visited);
     return head;
 }
+\end{lstlisting}
 
-4) 时间复杂度：O(m)，其中m是链表长度，只需要遍历一次链表。
-空间复杂度：O(n)，需要一个大小为n+1的布尔数组来标记绝对值是否出现过。
+4) 时间复杂度：$O(m)$（单次遍历链表）。\\
+空间复杂度：$O(n)$（辅助标记数组）。
 \end{analysissection}
 \end{choicequestion}
 
@@ -385,34 +320,24 @@ Node* removeDuplicateAbs(Node* head, int n) {
 3）若已知具有 $n$ （ $n \geqslant 2$ ）个顶点的图的邻接矩阵为 $B$ ，则 $B^{m}$ （ $2 \leqslant m \leqslant n$ ）中非零元素的含义是什么？}{}
 
 \begin{answersection}
-1) 图G的邻接矩阵A：
-$$A = \begin{bmatrix}
+1) 图G的邻接矩阵$A$：
+\[
+A = \begin{bmatrix}
 0 & 1 & 0 & 1 & 1 \\
 1 & 0 & 1 & 1 & 0 \\
 0 & 1 & 0 & 0 & 1 \\
 1 & 1 & 0 & 0 & 1 \\
 1 & 0 & 1 & 1 & 0
-\end{bmatrix}$$
+\end{bmatrix}
+\]
 
-2) $A^2$的计算：
-$$A^2 = A \times A = \begin{bmatrix}
-3 & 1 & 2 & 2 & 1 \\
-1 & 3 & 1 & 2 & 2 \\
-2 & 1 & 2 & 2 & 0 \\
-2 & 2 & 2 & 3 & 1 \\
-1 & 2 & 0 & 1 & 3
-\end{bmatrix}$$
+2) $A^2$ 中0行3列元素值为从顶点0到顶点3长度为2的路径条数。
 
-矩阵$A^2$中位于0行3列元素值的含义是：从顶点0到顶点3长度为2的路径条数。
-
-3) $B^{m}$中非零元素$B^m[i][j]$的含义是：从顶点i到顶点j长度为m的路径条数。
+3) $B^m[i][j] \neq 0$ 表示从顶点$i$到顶点$j$存在长度为$m$的路径。
 \end{answersection}
 
 \begin{analysissection}
-邻接矩阵的幂次有明确的图论意义：
-- $A^k[i][j]$表示从顶点i到顶点j长度为k的路径数
-- 特别地，$A^2[i][i]$表示顶点i的度数的一半（对于无向图）
-- 如果$A^k[i][j] \neq 0$，则说明从顶点i到顶点j存在长度为k的路径
+邻接矩阵的$m$次幂$A^m[i][j]$的数值表示从顶点$i$到顶点$j$长度恰好为$m$的路径条数。
 \end{analysissection}
 \end{choicequestion}
 

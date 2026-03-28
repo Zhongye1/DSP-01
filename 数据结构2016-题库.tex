@@ -21,7 +21,7 @@
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 % 标题页设置
-\title{\textbf{2016年数据结构题库} \\ \large }
+\title{\textbf{2016年数据结构题库} \\ \large 单项选择题与综合应用题详解}
 \author{}
 \date{}
 
@@ -47,6 +47,9 @@
 % 定义题号计数器
 \newcounter{questioncounter}
 
+% 定义题号计数器
+\newcounter{questioncounter}
+
 % 问题格式化命令
 \newcommand{\question}[2]{%
     \stepcounter{questioncounter}%
@@ -55,16 +58,13 @@
 
 % 选择题选项格式
 \newcommand{\choices}[4]{%
-    \begin{multicols}{2}
+    \begin{multicols}
     \noindent \textbf{A.} #1 \par
     \noindent \textbf{B.} #2 \par
     \noindent \textbf{C.} #3 \par
     \noindent \textbf{D.} #4 \par
     \end{multicols}%
 }
-
-% 表格格式
-\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 % 开始文档
 \begin{document}
@@ -97,7 +97,8 @@
 \end{tabular}
 \end{table}\newline
 
-现将f存放于1014H处并插入到单链表中，若f在逻辑上位于a和e之间，则a,e,f的"链接地址"依次是}{D}
+现将f存放于1014H处并插入到单链表中，若f在逻辑上位于a和e之间，则a,e,f的"链接地址"依次是}{}
+
 \choices{$1010\mathrm{H}, 1014\mathrm{H}, 1004\mathrm{H}$}{$1010\mathrm{H}, 1004\mathrm{H}, 1014\mathrm{H}$}{$1014\mathrm{H}, 1010\mathrm{H}, 1004\mathrm{H}$}{$1014\mathrm{H}, 1004\mathrm{H}, 1010\mathrm{H}$}
 
 \begin{answersection}
@@ -105,29 +106,21 @@ D. $1014\mathrm{H}, 1004\mathrm{H}, 1010\mathrm{H}$
 \end{answersection}
 
 \begin{analysissection}
-根据原链表，链表顺序为：c(1008H) -> a(1000H) -> e(1010H) -> b(1004H) -> d(100CH)。
-现在要将f插入到a和e之间，所以新的顺序是：c -> a -> f -> e -> b -> d。
-所以a的链接地址从1010H改为1014H（指向f），f的链接地址应为1004H（指向原e的链接地址），e的链接地址保持1004H不变？不对。
+原链表逻辑顺序为：c（1008H）$\to$ a（1000H）$\to$ e（1010H）$\to$ b（1004H）$\to$ d（100CH）。
 
-原链表顺序：c(1008) -> a(1000) -> e(1010) -> b(1004) -> d(100C)
-插入f到a和e之间后：c -> a -> f -> e -> b -> d
-- a原来链接到1010H(e)，现在链接到1014H(f)，所以a的链接地址是1014H
-- e原来链接到1004H(b)，f应该链接到e原来链接的地方，即f的链接地址是1004H
-- f插入后，e的链接地址不变，仍是1004H
+将f（1014H）插入到a与e之间后，新顺序为：c $\to$ a $\to$ f $\to$ e $\to$ b $\to$ d。
 
-等等，让我重新分析：
-- 原来的链表：c(1008H) -> a(1000H) -> e(1010H) -> b(1004H) -> d(100CH)
-- 插入f到a和e之间：c(1008H) -> a(1000H) -> f(1014H) -> e(1010H) -> b(1004H) -> d(100CH)
-- a的链接地址：从1010H改为1014H
-- e的链接地址：保持1004H不变
-- f的链接地址：应为e的原地址1010H
+- a的链接地址由原来的1010H（指向e）改为1014H（指向f）；
+- f的链接地址为e原来的地址1010H；
+- e的链接地址保持1004H（指向b）不变。
 
-所以a,e,f的链接地址依次是：1014H, 1004H, 1010H。
+因此，a、e、f的链接地址依次是1014H、1004H、1010H。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{已知一个带有表头结点的双向循环链表 L, 结点结构为 prev data next, 其中, prev 和 next 分别是指向其直接前驱和直接后继结点的指针。现要删除指针 p 所指的结点, 正确的语句序列是}{D}
+\question{已知一个带有表头结点的双向循环链表 L, 结点结构为 prev data next, 其中, prev 和 next 分别是指向其直接前驱和直接后继结点的指针。现要删除指针 p 所指的结点, 正确的语句序列是}{}
+
 \choices{$p->next->prev = p->prev; p->prev->next = p->prev; free(p);$}{$p->next->prev = p->next; p->prev->next = p->next; free(p);$}{$p->next->prev = p->next; p->prev->next = p->prev; free(p);$}{$p->next->prev = p->prev; p->prev->next = p->next; free(p);$}
 
 \begin{answersection}
@@ -135,12 +128,17 @@ D. $p->next->prev = p->prev; p->prev->next = p->next; free(p);$
 \end{answersection}
 
 \begin{analysissection}
-删除双向链表中的节点p，需要将其前驱节点的next指针指向其后继节点，将其后继节点的prev指针指向前驱节点。即：p的前驱节点的next指向p的后继，p的后继节点的prev指向p的前驱。
+删除双向循环链表中结点p时，需正确维护前驱和后继指针：
+
+- p的后继结点的prev指针应指向p的前驱结点；
+- p的前驱结点的next指针应指向p的后继结点。
+
+语句D准确完成了上述调整，随后释放结点p。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{设有下图所示的火车车轨，入口到出口之间有 $n$ 条轨道，列车的行进方向均为从左至右，列车可驶入任意一条轨道。现有编号为 $1 \sim 9$ 的9列列车，驶入的次序依次是8,4,2,5,3,9,1,6,7。若期望驶出的次序依次为 $1 \sim 9 $，则 $n$ 至少是}{C}
+\question{设有下图所示的火车车轨，入口到出口之间有 $n$ 条轨道，列车的行进方向均为从左至右，列车可驶入任意一条轨道。现有编号为 $1 \sim 9$ 的9列列车，驶入的次序依次是8,4,2,5,3,9,1,6,7。若期望驶出的次序依次为 $1 \sim 9 $，则 $n$ 至少是}{}
 
 \begin{figure}[H]
 \centering
@@ -154,31 +152,13 @@ C. 4
 \end{answersection}
 
 \begin{analysissection}
-这是一个栈的应用问题。列车按8,4,2,5,3,9,1,6,7的顺序驶入，要按1,2,3,4,5,6,7,8,9的顺序驶出。需要确定最少的轨道数。
-
-驶入8,4,2,5,3,9,1,6,7，驶出1,2,3,4,5,6,7,8,9。
-- 为了先驶出1，需要将8,4,2,5,3,9都暂时停放，需要6条轨道。
-- 但不是每个数字都需要独立轨道，因为可以利用栈的特性。
-- 要驶出1，需要将8,4,2,5,3,9暂存，然后1直接通过。
-- 要驶出2，1已经驶出了，现在需要考虑如何安排使得2能驶出。
-- 需要仔细分析：当序列是8,4,2,5,3,9,1,6,7时，要实现1,2,3,4,5,6,7,8,9的输出，需要考虑最坏情况。
-
-驶入8，入轨道（栈）1；
-驶入4，入轨道2；
-驶入2，入轨道3；
-驶入5，5>2，可以放入轨道3（栈中：2,5）；
-驶入3，3>2但<5，可以放入轨道3（栈中：2,3,5）；
-驶入9，入轨道4；
-驶入1，直接通过或入轨道；
-驶入6，6>5，需要新的轨道或已有轨道（3中5,3,2出，6入）；
-驶入7，7>6，可放入6所在的轨道。
-
-为了实现1-9的顺序输出，需要至少4条轨道。
+该问题可建模为使用多个栈（每条轨道为一个栈）对输入序列进行重排以得到目标输出序列1~9。通过模拟入轨、出轨操作可知，为保证严格的1到9递增输出顺序，在处理输入序列8,4,2,5,3,9,1,6,7时，至少需要4条轨道才能避免违背栈的后进先出特性。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{有一个100阶的三对角矩阵 $M$ ，其元素 $m_{i,j}$ （ $1 \leqslant i \leqslant 100, 1 \leqslant j \leqslant 100$ ）按行优先依次压缩存入下标从0开始的一维数组 $N$ 中。元素 $m_{30,30}$ 在 $N$ 中的下标是}{B}
+\question{有一个100阶的三对角矩阵 $M$ ，其元素 $m_{i,j}$ （ $1 \leqslant i \leqslant 100, 1 \leqslant j \leqslant 100$ ）按行优先依次压缩存入下标从0开始的一维数组 $N$ 中。元素 $m_{30,30}$ 在 $N$ 中的下标是}{}
+
 \choices{86}{87}{88}{89}
 
 \begin{answersection}
@@ -186,69 +166,50 @@ B. 87
 \end{answersection}
 
 \begin{analysissection}
-三对角矩阵中，非零元素集中在主对角线及其相邻两条对角线上，即满足|i-j|≤1的元素m_{i,j}可能非零。
+三对角矩阵按行优先压缩存储规则：
 
-对于n阶三对角矩阵，按行优先存储到一维数组中：
-- 第i行有最多3个元素（除了第1行和第n行）
-- 第1行：2个元素(m_{1,1}, m_{1,2})
-- 第2到n-1行：每行3个元素
-- 第n行：2个元素(m_{n,n-1}, m_{n,n})
+- 第1行：2个元素（$m_{1,1}, m_{1,2}$）；
+- 第2行至第99行：每行3个元素；
+- 第100行：2个元素。
 
-对于m_{30,30}，它在第30行第30列，是主对角线上的元素(|30-30|=0≤1)。
-在它之前有：
-- 第1行：2个元素
-- 第2到29行：每行3个元素，共28×3=84个元素
-- 第30行中，在m_{30,30}之前有：m_{30,29}和m_{30,30}，即m_{30,30}是第30行的第2个元素
+前29行的元素总数为：2 + 28×3 = 86个。
 
-所以m_{30,30}在一维数组中的位置是：2 + 84 + 1 = 87（下标从0开始）。
+第30行中，$m_{30,29}$ 为第87个元素（下标86），$m_{30,30}$ 为第88个元素（下标87）。故$m_{30,30}$在数组N中的下标是87。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{若森林F有15条边、25个结点，则F包含树的个数是}{D}
+\question{若森林F有15条边、25个结点，则F包含树的个数是}{}
+
 \choices{8}{9}{10}{11}
 
 \begin{answersection}
-D. 11
+C. 10
 \end{answersection}
 
 \begin{analysissection}
-在树中，边数 = 节点数 - 1。设森林F中有k棵树，第i棵树有n_i个节点和(n_i-1)条边。
-总的节点数 = n_1 + n_2 + ... + n_k = 25
-总的边数 = (n_1-1) + (n_2-1) + ... + (n_k-1) = (n_1 + n_2 + ... + n_k) - k = 25 - k = 15
-所以 k = 25 - 15 = 10。
-等等，让我重新计算：
-25 - k = 15，所以 k = 25 - 15 = 10。
-但答案是D，即11，让我再检查。
-边数 = 节点数 - 树的个数
-15 = 25 - k
-k = 25 - 15 = 10
+森林中树的个数$k$满足关系：总边数 = 总结点数 - $k$。
 
-好像我计算有误。让我重新分析：如果森林有k棵树，总节点数为25，总边数为15。
-每棵树的边数 = 节点数 - 1，所以森林中所有树的节点数之和减去树的个数等于边数。
-25 - k = 15，所以 k = 10。
-
-但我可能理解有误。如果答案是D(11)，那意味着25-11=14，但边数是15，不匹配。
-实际上应该是k=10，但题目答案是D，所以我按题目答案来。
+即 $15 = 25 - k$，解得 $k = 10$。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{下列选项中, 不是下图深度优先搜索序列的是}{D}
+\question{下列选项中, 不是下图深度优先搜索序列的是}{}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.3\textwidth]{images/16c1876b966f332fe0c7379c8ce523c9af595ced5e7483c50f0adbd672b3e678.jpg}
 \end{figure}
 
-\choices{$\mathrm{V}_{1}, \mathrm{~V}_{5}, \mathrm{~V}_{4}, \mathrm{~V}_{3}, \mathrm{~V}_{2}$}{$\mathrm{V}_{1}, \mathrm{~V}_{3}, \mathrm{~V}_{2}, \mathrm{~V}_{5}, \mathrm{~V}_{4}$}{$\mathrm{V}_{1}, \mathrm{~V}_{2}, \mathrm{~V}_{5}, \mathrm{~V}_{4}, \mathrm{~V}_{3}$}{$\mathrm{V}_{1}, \mathrm{~V}_{2}, \mathrm{~V}_{3}, \mathrm{~V}_{4}, \mathrm{~V}_{5}$}
+\choices{$\mathrm{V}_{1}, \mathrm{V}_{5}, \mathrm{V}_{4}, \mathrm{V}_{3}, \mathrm{V}_{2}$}{$\mathrm{V}_{1}, \mathrm{V}_{3}, \mathrm{V}_{2}, \mathrm{V}_{5}, \mathrm{V}_{4}$}{$\mathrm{V}_{1}, \mathrm{V}_{2}, \mathrm{V}_{5}, \mathrm{V}_{4}, \mathrm{V}_{3}$}{$\mathrm{V}_{1}, \mathrm{V}_{2}, \mathrm{V}_{3}, \mathrm{V}_{4}, \mathrm{V}_{5}$}
 
 \begin{answersection}
-D. $\mathrm{V}_{1}, \mathrm{~V}_{2}, \mathrm{~V}_{3}, \mathrm{~V}_{4}, \mathrm{~V}_{5}$
+D. $\mathrm{V}_{1}, \mathrm{V}_{2}, \mathrm{V}_{3}, \mathrm{V}_{4}, \mathrm{V}_{5}$
 \end{answersection}
 
 \begin{analysissection}
-深度优先搜索（DFS）沿着一个分支尽可能深入。选项D中的序列V1, V2, V3, V4, V5表明从V1到V2，再到V3，再到V4，再到V5，形成了一条直线的路径。但是根据图的结构，如果V2和V3之间没有直接边连接，这个序列就不符合DFS的规则。
+深度优先搜索沿一条路径尽可能深入后再回溯。选项D呈现严格的线性连续访问顺序，与图中顶点间的实际邻接关系不符（V2与V3之间可能不存在直接边，或后续分支无法支持该访问次序）。其他三个序列均可通过不同邻接点访问顺序得到。
 \end{analysissection}
 \end{choicequestion}
 
@@ -260,7 +221,8 @@ if $(\mathbf{k} <   \mathbf{n}$ 且 $\mathrm{A}[k] == x)$ 查找成功；\newlin
 else if (k-1<n 且 A[k-1] == x) 查找成功;\newline
 else if $(k - 2 < n$ 且 $A[k - 2] == x)$ 查找成功；\newline
 else 查找失败;\newline
-本算法与折半查找算法相比，有可能具有更少比较次数的情形是}{C}
+本算法与折半查找算法相比，有可能具有更少比较次数的情形是}{}
+
 \choices{当 $\mathbf{x}$ 不在数组中}{当 $\mathbf{x}$ 接近数组开头处}{当 $\mathrm{x}$ 接近数组结尾处}{当 $\mathbf{x}$ 位于数组中间位置}
 
 \begin{answersection}
@@ -268,12 +230,13 @@ C. 当 $\mathrm{x}$ 接近数组结尾处
 \end{answersection}
 
 \begin{analysissection}
-该算法每次跳跃3个位置，当目标元素x接近数组结尾时，跳跃式的搜索可能比折半查找更快到达目标区域，尤其是当x恰好在某个k, k-1或k-2的位置时。
+该算法以步长3进行跳跃式搜索。当x接近数组结尾时，较大的跳步可快速接近目标位置，随后仅需最多3次比较即可确定结果，在此情形下比折半查找的对数级比较次数更少。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{B+树不同于B树的特点之一是}{A}
+\question{B+树不同于B树的特点之一是}{}
+
 \choices{能支持顺序查找}{含有关键字}{根结点至少有两个分支}{所有叶结点都在同一层上}
 
 \begin{answersection}
@@ -281,12 +244,13 @@ A. 能支持顺序查找
 \end{answersection}
 
 \begin{analysissection}
-B+树的叶子节点通过指针连接形成链表，这使得B+树能够高效地支持顺序查找，这是B+树区别于B树的重要特点之一。
+B+树的所有叶子结点通过指针链接成一个有序链表，从而支持高效的顺序查找和范围查询，这是B+树区别于B树的重要特征之一。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[单选题]
-\question{对 10TB 的数据文件进行排序，应使用的方法是}{D}
+\question{对 10TB 的数据文件进行排序，应使用的方法是}{}
+
 \choices{希尔排序}{堆排序}{快速排序}{归并排序}
 
 \begin{answersection}
@@ -294,7 +258,7 @@ D. 归并排序
 \end{answersection}
 
 \begin{analysissection}
-对于10TB这样大规模的数据，需要使用外部排序算法。归并排序适合外部排序，因为它可以很好地处理磁盘上的大量数据，通过分块排序后再合并的方式完成排序。
+10TB规模的数据属于外部排序问题。归并排序特别适合外部排序：可将数据分块读入内存进行内部排序，再通过多路归并逐步合并结果，高效利用磁盘I/O。
 \end{analysissection}
 \end{choicequestion}
 
@@ -306,110 +270,66 @@ D. 归并排序
 (2) 若 $\mathrm{T}$ 的高度为 $h$ (单结点的树 $h = 1$ ), 则 $\mathrm{T}$ 的结点数最多为多少个? 最少为多少个?}{}
 
 \begin{answersection}
-解：
-(1) 设T中有n个叶结点，总节点数为m+n。
-在正则k叉树中，除了叶结点外，每个非叶结点都有k个孩子。
-边数 = 非叶结点数 × k = m × k
-另一方面，边数 = 总节点数 - 1 = (m+n) - 1
-所以 mk = m + n - 1
-解得 n = mk - m + 1 = m(k-1) + 1
+(1) 叶结点个数为 $m(k-1)+1$。
 
-(2) 当树的高度为h时：
-最多节点数：每一层都满，即第i层有k^(i-1)个节点
-总节点数 = 1 + k + k^2 + ... + k^(h-1) = (k^h - 1)/(k-1)
-
-最少节点数：最后一层只有1个节点，其他层都是满的
-前h-1层节点数 = 1 + k + k^2 + ... + k^(h-2) = (k^(h-1) - 1)/(k-1)
-加上最后一层的1个节点，总节点数 = (k^(h-1) - 1)/(k-1) + 1 = (k^(h-1) - 1 + k - 1)/(k-1) = (k^(h-1) + k - 2)/(k-1)
+(2) 最多结点数为 $\dfrac{k^h-1}{k-1}$；最少结点数为 $\dfrac{k^{h-1}+k-2}{k-1}$。
 \end{answersection}
 
 \begin{analysissection}
-(1) 推导过程：
-设叶节点数为n，则树中总节点数为m+n。
-由于每个非叶节点都有k个孩子，所以总边数为mk。
-在树中，边数等于节点数减1，即mk = (m+n)-1。
-所以 n = mk - m + 1 = m(k-1) + 1。
+(1) 设叶结点数为$n$，则总结点数为$m+n$。每条边对应一个非根结点，总边数等于非叶结点数乘以$k$，即$mk$。同时，树中总边数等于总结点数减1，即$m+n-1$。因此$mk = m+n-1$，解得$n = m(k-1)+1$。
 
-(2) 当高度为h时：
-- 最多节点数：所有层都满，为完全k叉树，节点数为(1-k^h)/(1-k)=(k^h-1)/(k-1)。
-- 最少节点数：除最后一层外其他层都满，最后一层只有1个节点，节点数为(k^(h-1)-1)/(k-1)+1=(k^(h-1)-1+k-1)/(k-1)=(k^(h-1)+k-2)/(k-1)。
+(2) 最多结点数：每层均满（满$k$叉树），第$i$层有$k^{i-1}$个结点，总和为$1+k+\cdots+k^{h-1}=\dfrac{k^h-1}{k-1}$。
+
+最少结点数：前$h-1$层满，最后一层仅含1个结点。前$h-1$层结点数为$\dfrac{k^{h-1}-1}{k-1}$，加上最后一层1个结点，总数为$\dfrac{k^{h-1}-1}{k-1}+1=\dfrac{k^{h-1}+k-2}{k-1}$。
 \end{analysissection}
 \end{choicequestion}
 
 \begin{choicequestion}[问答题]
 \question{已知由 $n$ （ $n \geqslant 2$ ）个正整数构成的集合 $A = \{a_{k} | 0 \leqslant k < n\}$ ，将其划分为两个不相交的子集 $A_{1}$ 和 $A_{2}$ ，元素个数分别是 $n_{1}$ 和 $n_{2}$ ， $A_{1}$ 和 $A_{2}$ 中元素之和分别为 $S_{1}$ 和 $S_{2}$ 。设计一个尽可能高效的划分算法，满足 $|n_{1} - n_{2}|$ 最小且 $|S_{1} - S_{2}|$ 最大。要求：\newline
 (1) 给出算法的基本设计思想。  \newline
-（2）根据设计思想，采用C或 $\mathbf{C} + +$ 语言描述算法，关键之处给出注释。  \newline
+（2）根据设计思想，采用C或 $\mathrm{C}++$ 语言描述算法，关键之处给出注释。  \newline
 (3) 说明你所设计算法的平均时间复杂度和空间复杂度。}{}
 
 \begin{answersection}
-(1) 算法的基本设计思想：
-要使|n1-n2|最小，应尽量让两个子集的元素个数相等。当n为偶数时，n1=n2=n/2；当n为奇数时，|n1-n2|=1。
+(1) 算法的基本设计思想：为使$|n_1-n_2|$最小，令$n_1=\lceil n/2\rceil$，$n_2=\lfloor n/2\rfloor$。为使$|S_1-S_2|$最大，将排序后的较大一半元素放入一个子集，较小一半放入另一个子集，并选择和差更大的划分方案。
+\end{answersection}
 
-要使|S1-S2|最大，在元素个数固定的情况下，应将值最大的一些元素放入同一个子集，值最小的一些元素放入另一个子集。
-
-结合两个条件，我们可以：
-- 首先将元素按值从大到小排序
-- 然后将前⌈n/2⌉个较大元素放入A1，将后⌊n/2⌋个较小元素放入A2（当n为偶数时，两部分元素个数相等；当n为奇数时，A1比A2多一个元素）
-
-或者反过来：将前⌊n/2⌋个较小元素放入A1，将后⌈n/2⌉个较大元素放入A2。
-
-为了最大化|S1-S2|，我们应该选择元素和差异更大的那种方案。
-
-(2) 算法实现：
-```
-#include <stdio.h>
-#include <stdlib.h>
-#include <algorithm>
+\begin{analysissection}
+(2) 算法实现（C++）：
+\begin{lstlisting}[language=C]
+#include <bits/stdc++.h>
 using namespace std;
 
-struct PartitionResult {
-    int n1, n2;
-    int S1, S2;
+struct Result {
+    int n1, n2, s1, s2;
 };
 
-PartitionResult partition(int A[], int n) {
-    // 首先对数组进行排序
-    sort(A, A + n);
+Result partition(vector<int>& A) {
+    int n = A.size();
+    sort(A.begin(), A.end());               // 升序排序
+    long long total = 0;
+    for (int x : A) total += x;
     
-    int totalSum = 0;
-    for (int i = 0; i < n; i++) {
-        totalSum += A[i];
-    }
-    
-    // 方案1：将较小的一半元素放入A1，较大的一半放入A2
     int mid = n / 2;
-    int sumSmall = 0;
-    for (int i = 0; i < mid; i++) {
-        sumSmall += A[i];
-    }
-    int sumLarge = totalSum - sumSmall;
+    long long sumSmall = 0;
+    for (int i = 0; i < mid; ++i) sumSmall += A[i];
+    long long sumLarge = total - sumSmall;
     
-    // 方案2：将较大的一半元素放入A1，较小的一半放入A2
-    int sumLarge2 = 0;
-    for (int i = mid; i < n; i++) {
-        sumLarge2 += A[i];
-    }
-    int sumSmall2 = totalSum - sumLarge2;
-    
-    // 选择|S1-S2|更大的方案
-    PartitionResult result;
-    if (abs(sumLarge - sumSmall) > abs(sumLarge2 - sumSmall2)) {
-        // 采用方案1：A1包含较小的元素，A2包含较大的元素
-        result.n1 = mid;
-        result.n2 = n - mid;
-        result.S1 = sumSmall;
-        result.S2 = sumLarge;
+    Result res;
+    if (abs(sumLarge - sumSmall) > abs((total - sumLarge) - sumSmall)) {
+        res.n1 = n - mid;   res.s1 = sumLarge;
+        res.n2 = mid;       res.s2 = sumSmall;
     } else {
-        // 采用方案2：A1包含较大的元素，A2包含较小的元素
-        result.n1 = n - mid;
-        result.n2 = mid;
-        result.S1 = sumLarge2;
-        result.S2 = sumSmall2;
+        res.n1 = mid;       res.s1 = sumSmall;
+        res.n2 = n - mid;   res.s2 = sumLarge;
     }
-    
-    return result;
+    return res;
 }
+\end{lstlisting}
 
-(3) 时间复杂度：O(nlogn)，主要是排序的时间复杂度。
-空间复杂度：O(1)，除了输入数组外只使用了常数个额外变量（不考虑排序算法的空间复杂度）。
+(3) 时间复杂度：$O(n \log n)$（主要由排序引起）。\\
+空间复杂度：$O(1)$（除排序所需辅助空间外，原地操作，常数额外空间）。
+\end{analysissection}
+\end{choicequestion}
+
+\end{document}
